@@ -1,0 +1,5 @@
+/* Google Fonts, SIL Open Font License 1.1 */
+@font-face{ font-family: 'Shippori'; font-weight: 500; font-display: block; src:url('/core/fonts/bundled/shipporimincho/ShipporiMincho-Medium.ttf') format('truetype'); }
+@font-face{ font-family: 'Shippori'; font-weight: 700; font-display: block; src:url('/core/fonts/bundled/shipporimincho/ShipporiMincho-Bold.ttf') format('truetype'); }
+@font-face{ font-family: 'ShipporiK'; font-weight: 600; font-display: block; src:url('/core/fonts/bundled/shipporimincho/ShipporiMincho-SemiBold.ttf') format('truetype'); }
+@font-face{ font-family: 'Yuji'; font-weight: 400; font-display: block; src:url('/core/fonts/bundled/yujisyuku/YujiSyuku-Regular.ttf') format('truetype'); }

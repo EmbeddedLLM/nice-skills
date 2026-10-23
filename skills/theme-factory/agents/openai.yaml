@@ -1,0 +1,8 @@
+interface:
+  display_name: Theme Factory
+  short_description: Curated colour themes for websites and slide decks
+  default_prompt: Use $theme-factory to choose and apply a cohesive theme with attractive primary buttons and readable colour pairings.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

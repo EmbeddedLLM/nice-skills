@@ -63,7 +63,7 @@ For every skill addition or behavior change:
 4. Run changed helpers with representative inputs and relevant failure cases. Keep tests local and deterministic where practical.
 5. Record what ran, the environment, and any limitations in the PR.
 
-CI currently checks formatting. It does not execute skills in an agent or establish behavioral correctness or visual quality. If agent behavioral verification is unavailable, say so explicitly so reviewers can assess the remaining work.
+CI checks formatting, published skill metadata, local helper contracts, and skill-local regressions. See [tests/README.md](tests/README.md) for the pinned environment, commands, coverage, and optional skips. These checks do not execute the complete skills in an agent or establish visual quality. If agent behavioral verification is unavailable, say so explicitly so reviewers can assess the remaining work.
 
 From the repository root, run the same pinned formatter as CI:
 

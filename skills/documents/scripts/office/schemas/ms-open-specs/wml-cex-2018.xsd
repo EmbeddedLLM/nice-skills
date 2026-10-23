@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Source: Microsoft Open Specifications [MS-DOCX] Appendix A, section 5.6,
+  retrieved from learn.microsoft.com.  Local adaptations:
+  - schemaLocation values remapped to this package's schema layout
+  - published errata corrected: w12:ST_OnOff -> s:ST_OnOff
+    (these types are defined in ISO/IEC 29500 sharedTypes / wml, not in
+    the wordprocessingml/2006/main namespace as printed)
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:w12="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:s="http://schemas.openxmlformats.org/officeDocument/2006/sharedTypes" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" elementFormDefault="qualified" attributeFormDefault="qualified" blockDefault="#all" xmlns="http://schemas.microsoft.com/office/word/2018/wordml/cex" targetNamespace="http://schemas.microsoft.com/office/word/2018/wordml/cex">
+  <xsd:import id="w16" namespace="http://schemas.microsoft.com/office/word/2018/wordml" schemaLocation="wml-2018.xsd"/>
+  <xsd:import id="w12" namespace="http://schemas.openxmlformats.org/wordprocessingml/2006/main" schemaLocation="../ecma376-transitional/wml.xsd"/>
+  <xsd:import id="s" namespace="http://schemas.openxmlformats.org/officeDocument/2006/sharedTypes" schemaLocation="../ecma376-transitional/shared-commonSimpleTypes.xsd"/>
+  <xsd:complexType name="CT_CommentsExtensible">
+    <xsd:sequence>
+      <xsd:element name="commentExtensible" type="CT_CommentExtensible" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="extLst" type="w16:CT_ExtensionList" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CT_CommentExtensible">
+    <xsd:sequence>
+      <xsd:element name="extLst" type="w16:CT_ExtensionList" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+    <xsd:attribute name="durableId" type="w12:ST_LongHexNumber" use="required"/>
+    <xsd:attribute name="dateUtc" type="w12:ST_DateTime" use="optional"/>
+    <xsd:attribute name="intelligentPlaceholder" type="s:ST_OnOff" use="optional"/>
+  </xsd:complexType>
+  <xsd:element name="commentsExtensible" type="CT_CommentsExtensible"/>
+</xsd:schema>

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "about": "Example page screenshots kept as design references. They embed openly licensed photographs and are distributed under CC BY-SA 4.0, not MIT; see examples/NOTICE.md and examples/v2/CREDITS.md.",
+  "bundles": [
+    {
+      "id": "example-screenshots",
+      "title": "Four example page screenshots plus per-photograph credits and the CC BY-SA 4.0 legal code",
+      "path": "examples/v2",
+      "source": {
+        "repository": "https://github.com/Leonxlnx/taste-skill",
+        "commit": "6010f91a9935f1c167dfc500fb1a475681892e6b",
+        "retrieved": "2026-10-22",
+        "upstream_path": "examples/v2/"
+      },
+      "license": {
+        "spdx": "CC-BY-SA-4.0",
+        "file": "examples/v2/LICENSE-CC-BY-SA-4.0.txt",
+        "note": "The screenshots are adaptations of photographs licensed CC BY, CC BY-SA, CC0 or public domain, credited per photograph in examples/v2/CREDITS.md; see NOTICE-examples.md. The legal code is the canonical Creative Commons text retrieved from creativecommons.org on 2026-10-22."
+      },
+      "files": [
+        {
+          "path": "examples/v2/CREDITS.md",
+          "sha256": "5e865281e168253eb49ce77ee2028c797a5c5c9eb2db54213ec9d1dae35de18e",
+          "bytes": 10491
+        },
+        {
+          "path": "examples/v2/LICENSE-CC-BY-SA-4.0.txt",
+          "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+          "bytes": 20138
+        },
+        {
+          "path": "examples/v2/coffee-questions.webp",
+          "sha256": "9bdbbf34a628babd282f7a551ab6950ddbe9f39276bd6339d482c2c032b5c718",
+          "bytes": 26692
+        },
+        {
+          "path": "examples/v2/coffee-roast.webp",
+          "sha256": "58c09f2a49e70aba014064d51a8964d8ee8bc816f060df84cb647fe453a8f523",
+          "bytes": 113142
+        },
+        {
+          "path": "examples/v2/coffee-storefront.webp",
+          "sha256": "56cce0f3f4afdff3b8d977479fb892278caca5dee7599fd78252e56f7d98f0ff",
+          "bytes": 29172
+        },
+        {
+          "path": "examples/v2/night-dates.webp",
+          "sha256": "a312f4f1c8fdee4f242adcf17e9724f6d5533b9cfe4ece5a7d25560002ec9e56",
+          "bytes": 173606
+        }
+      ]
+    }
+  ]
+}

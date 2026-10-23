@@ -1,0 +1,5 @@
+numpy==2.2.6
+scipy==1.15.3
+soundfile==0.13.1
+soxr==0.5.0.post1
+Pillow==11.3.0

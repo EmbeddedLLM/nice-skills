@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "reference_package": "adaptive-deep-research",
+  "release": "2.0.0",
+  "reference_review_date": "2026-10-21",
+  "scope": "Selected guidance from the supplied MIT reference, using its recorded source review. No source engine, research dataset, or retrieved social content is bundled.",
+  "adaptation": "Integrated user-owned questions, partial-answer handling, resumable research, observed source locators, forum coverage limits, source-unit deduplication, and time-budget accounting into the existing portable workflow. Optional evidence auditor and templates were not imported.",
+  "reference_files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "e029c2d677c01bd0c334f5257473f0984f1d54c669a855b1a0b8740123b43afe"
+    },
+    {
+      "path": "references/clarification.md",
+      "sha256": "4b4abd1294e535b58eb9f01f44b84937edae7a1eab960920008a7ff63bbe0251"
+    },
+    {
+      "path": "references/browser-forums.md",
+      "sha256": "4f0d1f4a6b56934c0c83e4b517f08822064366cb9070b49dbad3f26c1957d41a"
+    },
+    {
+      "path": "references/evidence.md",
+      "sha256": "c89ddba3b9d8702541d50bb10cfe656c186a90a4dc267ea0a422f8eb57720e1b"
+    }
+  ],
+  "package_notices": [
+    {
+      "local_path": "LICENSE.txt",
+      "sha256": "435b004966caeab2380c4ad39e83356b0b674eaa366cf18744a27766288844a4"
+    },
+    {
+      "local_path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "018919f71bdba906f5c74417d77016d3559d7820ff79c76ec674b62e401ee425"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bggg",
+      "repository_url": "https://github.com/binggandata/bggg-skills",
+      "commit": "1034ee5805f3fd5b010a4f57affa4aa796ab75d5",
+      "license_spdx": "MIT",
+      "scope_review": "Root MIT license applies to selected first-party Reddit skill and reference documents; no conflicting file-level notice found. Full untruncated tree and README inspected. Bundled third-party web-access and unrelated subskills with distinct notices are excluded.",
+      "source_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/binggandata/bggg-skills/blob/1034ee5805f3fd5b010a4f57affa4aa796ab75d5/LICENSE",
+          "sha256": "c2e29beae33a8dd3b269787ebb1a4521de5e58d97d765eb05231390a99142c16"
+        },
+        {
+          "path": "bggg-data-reddit/SKILL.md",
+          "url": "https://github.com/binggandata/bggg-skills/blob/1034ee5805f3fd5b010a4f57affa4aa796ab75d5/bggg-data-reddit/SKILL.md",
+          "sha256": "e586db59448ed56c418fe92b60617671cf4a0edcddfa6a85a6a4721624582c01"
+        },
+        {
+          "path": "bggg-data-reddit/references/chrome_same_origin.md",
+          "url": "https://github.com/binggandata/bggg-skills/blob/1034ee5805f3fd5b010a4f57affa4aa796ab75d5/bggg-data-reddit/references/chrome_same_origin.md",
+          "sha256": "4db046aed7499a5491aaafbff3fc6809d6814afc5ea787b43f6b990c07d9a1c8"
+        },
+        {
+          "path": "bggg-data-reddit/references/schema.md",
+          "url": "https://github.com/binggandata/bggg-skills/blob/1034ee5805f3fd5b010a4f57affa4aa796ab75d5/bggg-data-reddit/references/schema.md",
+          "sha256": "2d9eea9cf3145d792cb471212027052d87b0f33e4f6e4aa6aaadf5eed606ef6c"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/bggg-MIT.txt",
+          "sha256": "c2e29beae33a8dd3b269787ebb1a4521de5e58d97d765eb05231390a99142c16"
+        }
+      ]
+    },
+    {
+      "id": "ecc",
+      "repository_url": "https://github.com/affaan-m/ECC",
+      "commit": "90606c8315ee09cafc303515c5f33024db6b9882",
+      "license_spdx": "MIT",
+      "scope_review": "Complete untruncated repository tree checked. No nearer LICENSE/NOTICE beneath skills/deep-research. Selected file has origin ECC metadata and no third-party copyright/attribution block. Unrelated directories with separate notices are excluded.",
+      "source_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/affaan-m/ECC/blob/90606c8315ee09cafc303515c5f33024db6b9882/LICENSE",
+          "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2"
+        },
+        {
+          "path": "skills/deep-research/SKILL.md",
+          "url": "https://github.com/affaan-m/ECC/blob/90606c8315ee09cafc303515c5f33024db6b9882/skills/deep-research/SKILL.md",
+          "sha256": "ca02a97ff8cd794c55a1313ab423a6a165fdf2ce59059a73e08f7cfd957b5319"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/ecc-MIT.txt",
+          "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2"
+        }
+      ]
+    },
+    {
+      "id": "last30days",
+      "repository_url": "https://github.com/mvanhorn/last30days-skill",
+      "commit": "832d09591568e37dd990ccb9d5c51fb4a403f5ed",
+      "license_spdx": "MIT",
+      "scope_review": "Root MIT license plus matching MIT declaration in SKILL frontmatter. Full untruncated repository tree inspected. Vendored bird-search has its own license and is not selected, copied, or a runtime dependency of the proposed adaptation.",
+      "source_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/mvanhorn/last30days-skill/blob/832d09591568e37dd990ccb9d5c51fb4a403f5ed/LICENSE",
+          "sha256": "31803213a789825dc419de43542381e1d570b4408cf2bcf2e8a9947a6d3fd2ab"
+        },
+        {
+          "path": "skills/last30days/SKILL.md",
+          "url": "https://github.com/mvanhorn/last30days-skill/blob/832d09591568e37dd990ccb9d5c51fb4a403f5ed/skills/last30days/SKILL.md",
+          "sha256": "3b78bfeb9a5674b499a03e05da5fd2c0cdabe59e8c4f3a23c42499559b081ae2"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/last30days-MIT.txt",
+          "sha256": "31803213a789825dc419de43542381e1d570b4408cf2bcf2e8a9947a6d3fd2ab"
+        }
+      ]
+    },
+    {
+      "id": "makerskills",
+      "repository_url": "https://github.com/coreyhaines31/makerskills",
+      "commit": "cc31579798ec98b89c6b0d18439c13a795d8d5fb",
+      "license_spdx": "MIT",
+      "scope_review": {
+        "tree_was_complete": true,
+        "repository_license_files": ["LICENSE"],
+        "selected_file_override": "Selected files were read in full; no separate restrictive file-level license notice observed. Full tree inspected for LICENSE/COPYING/NOTICE/THIRD_PARTY paths; selected paths have no overriding ancestor license.",
+        "external_material": "Repository licensing does not extend to linked sites, dependencies, third-party materials or trademarks."
+      },
+      "source_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/coreyhaines31/makerskills/blob/cc31579798ec98b89c6b0d18439c13a795d8d5fb/LICENSE",
+          "sha256": "b2d9111757b83e03f30f420bf298617b451724aaebdf1294fbe7193ae364ceee"
+        },
+        {
+          "path": "skills/deep-research/SKILL.md",
+          "url": "https://github.com/coreyhaines31/makerskills/blob/cc31579798ec98b89c6b0d18439c13a795d8d5fb/skills/deep-research/SKILL.md",
+          "sha256": "589aa4e0c1a3e01a55cedf37456a24533c8600f1d9c12a62bf3cdfded4853ddf"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/makerskills-MIT.txt",
+          "sha256": "b2d9111757b83e03f30f420bf298617b451724aaebdf1294fbe7193ae364ceee"
+        }
+      ]
+    },
+    {
+      "id": "mattpocock",
+      "repository_url": "https://github.com/mattpocock/skills",
+      "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "license_spdx": "MIT",
+      "scope_review": {
+        "tree_was_complete": true,
+        "repository_license_files": ["LICENSE"],
+        "selected_file_override": "Selected files were read in full; no separate restrictive file-level license notice observed. Full tree inspected for LICENSE/COPYING/NOTICE/THIRD_PARTY paths; selected paths have no overriding ancestor license.",
+        "external_material": "Repository licensing does not extend to linked sites, dependencies, third-party materials or trademarks."
+      },
+      "source_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+        },
+        {
+          "path": "skills/productivity/grilling/SKILL.md",
+          "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md",
+          "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15"
+        },
+        {
+          "path": "skills/engineering/wayfinder/SKILL.md",
+          "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/wayfinder/SKILL.md",
+          "sha256": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7"
+        },
+        {
+          "path": "skills/engineering/research/SKILL.md",
+          "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/research/SKILL.md",
+          "sha256": "985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/mattpocock-MIT.txt",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+        }
+      ]
+    },
+    {
+      "id": "omnara",
+      "repository_url": "https://github.com/Stunspot/omnara-deep-research",
+      "commit": "33759527bf75258df9fac43afd2f87fdae255ac5",
+      "license_spdx": "MIT",
+      "scope_review": {
+        "tree_was_complete": true,
+        "repository_license_files": ["LICENSE.md", "release-v1.3.1/LICENSE.md"],
+        "selected_file_override": "Selected files were read in full; no separate restrictive file-level license notice observed. Full tree inspected for LICENSE/COPYING/NOTICE/THIRD_PARTY paths; selected paths have no overriding ancestor license.",
+        "external_material": "Repository licensing does not extend to linked sites, dependencies, third-party materials or trademarks."
+      },
+      "source_files": [
+        {
+          "path": "LICENSE.md",
+          "url": "https://github.com/Stunspot/omnara-deep-research/blob/33759527bf75258df9fac43afd2f87fdae255ac5/LICENSE.md",
+          "sha256": "2fca94eb398b7232ffef41f9cb0aaaca84afde2ce50a55bd1053acb73e85b10b"
+        },
+        {
+          "path": "SKILL.md",
+          "url": "https://github.com/Stunspot/omnara-deep-research/blob/33759527bf75258df9fac43afd2f87fdae255ac5/SKILL.md",
+          "sha256": "a518b088426e6e676e247f754d2b2d40d207dbea1e138bf2cfa3234570fcae21"
+        },
+        {
+          "path": "references/operating-doctrine.md",
+          "url": "https://github.com/Stunspot/omnara-deep-research/blob/33759527bf75258df9fac43afd2f87fdae255ac5/references/operating-doctrine.md",
+          "sha256": "2f3bc7e713537d08d7909cda54aeaf0c8cb47848eeb17037dfb944c30b771f80"
+        },
+        {
+          "path": "references/evidence-and-investigation.md",
+          "url": "https://github.com/Stunspot/omnara-deep-research/blob/33759527bf75258df9fac43afd2f87fdae255ac5/references/evidence-and-investigation.md",
+          "sha256": "55c65e4745160080b20101201eca6db8b346c068cfa8e4ed87eecedc53ffed02"
+        },
+        {
+          "path": "references/campaign-operations.md",
+          "url": "https://github.com/Stunspot/omnara-deep-research/blob/33759527bf75258df9fac43afd2f87fdae255ac5/references/campaign-operations.md",
+          "sha256": "63e7b74a5a94b9ae3be88329958d2fd1bae5d96b11e0ab6e9a4d965b67ee95ef"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/omnara-MIT.txt",
+          "sha256": "2fca94eb398b7232ffef41f9cb0aaaca84afde2ce50a55bd1053acb73e85b10b"
+        }
+      ]
+    }
+  ]
+}

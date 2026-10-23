@@ -1,0 +1,40 @@
+@font-face{
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src:url('/core/fonts/bundled/cinzel/Cinzel[wght].ttf') format('truetype');
+  
+}
+@font-face{
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src:url('/core/fonts/bundled/cinzel/Cinzel[wght].ttf') format('truetype');
+  
+}
+@font-face{
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: block;
+  src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond-Italic[wght].ttf') format('truetype');
+  
+}
+@font-face{
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond[wght].ttf') format('truetype');
+  
+}
+@font-face{
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond[wght].ttf') format('truetype');
+  
+}

@@ -1,0 +1,7 @@
+@font-face{font-family:'IBM Plex Mono';font-weight:500;src:url('/core/fonts/bundled/ibmplexmono/IBMPlexMono-Medium.ttf') format('truetype')}
+@font-face{font-family:'IBM Plex Mono';font-weight:600;src:url('/core/fonts/bundled/ibmplexmono/IBMPlexMono-SemiBold.ttf') format('truetype')}
+@font-face{font-family:'IBM Plex Sans';font-weight:400;src:url('/core/fonts/bundled/ibmplexsans/IBMPlexSans[wdth,wght].ttf') format('truetype')}
+@font-face{font-family:'IBM Plex Sans';font-weight:600;src:url('/core/fonts/bundled/ibmplexsans/IBMPlexSans[wdth,wght].ttf') format('truetype')}
+@font-face{font-family:'IBM Plex Sans';font-weight:700;src:url('/core/fonts/bundled/ibmplexsans/IBMPlexSans[wdth,wght].ttf') format('truetype')}
+@font-face{font-family:'IBM Plex Sans Condensed';font-weight:600;src:url('/core/fonts/bundled/ibmplexsanscondensed/IBMPlexSansCondensed-SemiBold.ttf') format('truetype')}
+@font-face{font-family:'IBM Plex Sans Condensed';font-weight:700;src:url('/core/fonts/bundled/ibmplexsanscondensed/IBMPlexSansCondensed-Bold.ttf') format('truetype')}

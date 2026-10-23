@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "about": "Bundled third-party media and kits. Every file under each bundle path is listed with its SHA-256; tests/test_media_skill_packaging.py verifies the list is complete and unmodified.",
+  "bundles": [
+    {
+      "id": "hand-painted-cartoon",
+      "title": "Clawd hand-painted cartoon starter kit (guide, character rig, model sheets, renderer)",
+      "path": "assets/hand-painted-cartoon",
+      "source": {
+        "repository": "https://github.com/JohnHeibel/ClaudeAnimationBase",
+        "commit": "0ac8bf2b31942376cb6b8c4074715595d512acd2",
+        "retrieved": "2026-10-22",
+        "upstream_path": ""
+      },
+      "license": {
+        "spdx": "MIT",
+        "file": "assets/hand-painted-cartoon/LICENSE",
+        "note": "MIT, copyright 2026 John Heibel. Unmodified upstream files; the kit installs p5, p5.brush and puppeteer-core at run time and is optional."
+      },
+      "files": [
+        {
+          "path": "assets/hand-painted-cartoon/ANIMATION_GUIDE.md",
+          "sha256": "f638e1fb3876f587e39ec11a20e2df3aac91421c926d82c2743768642caab990",
+          "bytes": 36029
+        },
+        {
+          "path": "assets/hand-painted-cartoon/LICENSE",
+          "sha256": "7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33",
+          "bytes": 1068
+        },
+        {
+          "path": "assets/hand-painted-cartoon/README.md",
+          "sha256": "c383c6bf64add0bdd38c0244616faa4adf859e1aae93cb93223a8de822924801",
+          "bytes": 3786
+        },
+        {
+          "path": "assets/hand-painted-cartoon/docs/emotions.jpg",
+          "sha256": "66a0337d8a9db6735b5fc2e5495bd1b8c9a3868d11d83d6b24add6cbfe32001d",
+          "bytes": 557572
+        },
+        {
+          "path": "assets/hand-painted-cartoon/docs/emotions.webp",
+          "sha256": "868a72dc0840e273cc31609c5532fc61909143aa9bc9103ebd2d6fa123184c7b",
+          "bytes": 6678428
+        },
+        {
+          "path": "assets/hand-painted-cartoon/docs/views.jpg",
+          "sha256": "c067a20d24aa1f81edbc99f8fb0ee1f57a3cfd81786f99bc4070b90b37559d9e",
+          "bytes": 491103
+        },
+        {
+          "path": "assets/hand-painted-cartoon/gpu_probe.mjs",
+          "sha256": "62b370f9687383870c69ad8edb2646211c32460fe2e779a5b02ff33786b01e42",
+          "bytes": 1299
+        },
+        {
+          "path": "assets/hand-painted-cartoon/package-lock.json",
+          "sha256": "4c79bac79ca749472c0b9f74cef1c6409ef7ab0513417c9ba4b94838731667d1",
+          "bytes": 19940
+        },
+        {
+          "path": "assets/hand-painted-cartoon/package.json",
+          "sha256": "c14fb0dd2641a316e54b90c4658ba10b6ce3b02b1921417e8128368dbcd005cb",
+          "bytes": 468
+        },
+        {
+          "path": "assets/hand-painted-cartoon/render.mjs",
+          "sha256": "1151ad59ad0c7bbe59e4e273465689d81d41f896d6bafc8981b527d110b77fe6",
+          "bytes": 11754
+        },
+        {
+          "path": "assets/hand-painted-cartoon/src/clawd.js",
+          "sha256": "578fbd46d21cdcc92b14806f3cc8c7b1b9e9f7ea53ddda7b1c150afa9f3c512a",
+          "bytes": 50584
+        },
+        {
+          "path": "assets/hand-painted-cartoon/src/config.js",
+          "sha256": "6d9374c59bd90bede9d4761eea6136b772a5883c414a67b8a5673510b8c1d435",
+          "bytes": 363
+        },
+        {
+          "path": "assets/hand-painted-cartoon/src/core.js",
+          "sha256": "7d8942e917c35089a6db94610367c12e849fe51cbd56ab8e73489046852b0ae2",
+          "bytes": 21863
+        },
+        {
+          "path": "assets/hand-painted-cartoon/src/scenes/demo.js",
+          "sha256": "c783bd05af05875e014afd215d1945b189121910e8cef3218a5a8c7aac1dc361",
+          "bytes": 11982
+        },
+        {
+          "path": "assets/hand-painted-cartoon/src/sheets.js",
+          "sha256": "cdd9320e0cb5e1e5bbfdeac221e21b69714b96e4a9b05e62cda4817b4d80010c",
+          "bytes": 2651
+        },
+        {
+          "path": "assets/hand-painted-cartoon/src/timeline.js",
+          "sha256": "93d455142bf642355cb77cce64ad1a8397996be4f23e121bd18d6fce52bc1503",
+          "bytes": 2994
+        },
+        {
+          "path": "assets/hand-painted-cartoon/studio.html",
+          "sha256": "e5bf9fba40e75807ec616fb0af280b717e822b9838677120cd8557fcf0703b1b",
+          "bytes": 1567
+        }
+      ]
+    },
+    {
+      "id": "mg-styles15",
+      "title": "MG style prompts, review rubric, authoring template, film stills and two CC0 textures",
+      "path": "assets/mg-styles15",
+      "source": {
+        "repository": "https://github.com/Vincentwei1021/mg-styles-15",
+        "commit": "49052d80bfaf9fa8412cc9710530e5e95a3b8d8c",
+        "retrieved": "2026-10-22",
+        "upstream_path": "rubric.md, template.md, docs/readme/films/, assets/textures/paper/, assets/hdri/"
+      },
+      "license": {
+        "spdx": "MIT",
+        "file": "assets/mg-styles15/LICENSE",
+        "note": "MIT, copyright 2026 Vincentwei1021, for the prompts, rubric, template and stills. The paper texture and HDRI are CC0; see references/mg-styles15-asset-notices.md."
+      },
+      "files": [
+        {
+          "path": "assets/mg-styles15/LICENSE",
+          "sha256": "7f03fee9299a401615e13e2c636ead0394f47395da4f816ae60b35ed2d91a932",
+          "bytes": 1071
+        },
+        {
+          "path": "assets/mg-styles15/hdri/studio_small_09_2k.hdr",
+          "sha256": "36724313c0fc66dab126ff90f081b85a0b1ef47be65eda1417bd20b033f0573f",
+          "bytes": 6312947
+        },
+        {
+          "path": "assets/mg-styles15/rubric.md",
+          "sha256": "1cb93025d54407317c15005ad58bd47389baa9532f4ed359161247fb0def375a",
+          "bytes": 3676
+        },
+        {
+          "path": "assets/mg-styles15/stills/01-flat-vector.webp",
+          "sha256": "4237ebc06eb4d4559759c8cb141bde8a90eb3d9b10e6902427b0adf3598f024d",
+          "bytes": 366364
+        },
+        {
+          "path": "assets/mg-styles15/stills/02-line-art.webp",
+          "sha256": "248884061706929c2c9d09923a04d0cab6cdd1068a27e1e4cf6e134ce2026e4c",
+          "bytes": 154904
+        },
+        {
+          "path": "assets/mg-styles15/stills/03-isometric.webp",
+          "sha256": "1c3a8c71427aa024ba4d0c81bec38913caab1a8b0150a9410a88b798fb09154f",
+          "bytes": 966044
+        },
+        {
+          "path": "assets/mg-styles15/stills/04-3d-render.webp",
+          "sha256": "8f724faf2460686d9aaf2fbec8b786474a51da80bd6c7f3c48aeb62d7d2843aa",
+          "bytes": 935696
+        },
+        {
+          "path": "assets/mg-styles15/stills/05-cel-boil.webp",
+          "sha256": "9c5f943f8903fff2df9421eba0f71ddf2ae468b7f5eced66b11e82fda32d7f19",
+          "bytes": 836604
+        },
+        {
+          "path": "assets/mg-styles15/stills/06-collage.webp",
+          "sha256": "6b29ea4592adacca488503137c2b625ba43b5bc4c0e3c63f039f61074744b6e8",
+          "bytes": 1165224
+        },
+        {
+          "path": "assets/mg-styles15/stills/07-liquid.webp",
+          "sha256": "b8eb89816c599df8b9402c28aa8aa9445d120d648ec6d974bdebcf0eebb4e459",
+          "bytes": 156392
+        },
+        {
+          "path": "assets/mg-styles15/stills/08-morph.webp",
+          "sha256": "42cfaf55dce89404e875a4ad74c2c4a104935d309506685bf057ae2ec4883171",
+          "bytes": 104664
+        },
+        {
+          "path": "assets/mg-styles15/stills/09-bauhaus.webp",
+          "sha256": "6838a41c3d083c1bc9b65a0018389dba98da4d33a4767a163851f942e9358fdd",
+          "bytes": 193682
+        },
+        {
+          "path": "assets/mg-styles15/stills/10-synthwave.webp",
+          "sha256": "b51c7ca8c45365ec78504b96a9f9c1fea3441aab60808b52182458019964317e",
+          "bytes": 820802
+        },
+        {
+          "path": "assets/mg-styles15/stills/12-aurora-glass.webp",
+          "sha256": "15ec6ed510d45414984ea8b32a1c4e77981c3e31a534faa948ee52e473e2f631",
+          "bytes": 328384
+        },
+        {
+          "path": "assets/mg-styles15/stills/18-hanazi.webp",
+          "sha256": "f8b33d0d1c36972b11706e32130ca3ee4716c8572d69c938929cddc20daa47d3",
+          "bytes": 554214
+        },
+        {
+          "path": "assets/mg-styles15/stills/19-paperclip.webp",
+          "sha256": "c314a4f846c2100679b1a768eb24bda8869065d8b721a15b064f3433fa9394d7",
+          "bytes": 637040
+        },
+        {
+          "path": "assets/mg-styles15/stills/20-pixel.webp",
+          "sha256": "e57592ee6b04ec221c9d85be3de048701d431df966c38f53dd144d7c171b6fb2",
+          "bytes": 859416
+        },
+        {
+          "path": "assets/mg-styles15/stills/22-hud.webp",
+          "sha256": "23bd051de5594c1fb461e34030660d1f17d3ba832450ca92647ae9124b2dda58",
+          "bytes": 662192
+        },
+        {
+          "path": "assets/mg-styles15/template.md",
+          "sha256": "258709df6bfe71a53a1f9e05d6a130dece77751e667e096ed91d9809aaa24370",
+          "bytes": 1945
+        },
+        {
+          "path": "assets/mg-styles15/textures/paper/Paper001_4K_color.jpg",
+          "sha256": "3aaed6c30f8bc7ea98628ccd75acb852e75d910f32f384f6193169214ab4bec1",
+          "bytes": 3684106
+        }
+      ]
+    },
+    {
+      "id": "lyric-alignment",
+      "title": "Lyric alignment and audio analysis pipeline (Demucs stems, CTC alignment, Whisper cross-check, beat grid)",
+      "path": "assets/lyric-alignment",
+      "source": {
+        "repository": "https://github.com/mexicat/pdoom-video",
+        "commit": "fa164b74fd0b26a99375715b619c55b4a0fb3d05",
+        "retrieved": "2026-10-22",
+        "upstream_path": "analysis/"
+      },
+      "license": {
+        "spdx": "MIT",
+        "file": "assets/lyric-alignment/LICENSE",
+        "note": "MIT, copyright 2026 Giacomo Magnanini. Code only: the song, lyrics and derived timing data are not bundled. A few comments quote short lyric fragments while explaining alignment decisions."
+      },
+      "files": [
+        {
+          "path": "assets/lyric-alignment/LICENSE",
+          "sha256": "5fc212466ce7183be5d85a3ee34fea461712842d5cd256b470978a83577083cb",
+          "bytes": 1074
+        },
+        {
+          "path": "assets/lyric-alignment/align.py",
+          "sha256": "16c52ff97438d97eaccb52663844fd97f757ab82c378708ac5ed214312615ea4",
+          "bytes": 19625
+        },
+        {
+          "path": "assets/lyric-alignment/analyze.py",
+          "sha256": "a1bdfc7082aaed9b94183250903c02318b5f0b2679e9a6088e3d7605f1861095",
+          "bytes": 19530
+        },
+        {
+          "path": "assets/lyric-alignment/common.py",
+          "sha256": "ddff5a922e887832ec649f8226ec9695eade47b523bcd0ac2db45085d119d18b",
+          "bytes": 3439
+        },
+        {
+          "path": "assets/lyric-alignment/ctc_emissions.py",
+          "sha256": "6f6950775afdf3dfd8c2f97bf8a669f350aa861c0a027ca941d7332d13225c7e",
+          "bytes": 2201
+        },
+        {
+          "path": "assets/lyric-alignment/ctcalign.py",
+          "sha256": "dfc9b0682e36a4aec62f43391e9ba29c04cda33d2b36715c4b2b0a5982772512",
+          "bytes": 6612
+        },
+        {
+          "path": "assets/lyric-alignment/make_fonts.py",
+          "sha256": "15a5e30d5673df02d6e602343137e8c0b5f06a00d32c4c1c7226331393a1a067",
+          "bytes": 1023
+        },
+        {
+          "path": "assets/lyric-alignment/pron.py",
+          "sha256": "394a94dd9fa3e95522385ee6b52de813a78d1cd003f4c032cec17316a7196000",
+          "bytes": 1469
+        },
+        {
+          "path": "assets/lyric-alignment/pyproject.toml",
+          "sha256": "5ab918bd3c2fbf09388dea89de98fcba03871a2e0dfecddb9fecd87940b5fdec",
+          "bytes": 407
+        },
+        {
+          "path": "assets/lyric-alignment/qa_plot.py",
+          "sha256": "fad9c10259cc75e22ad182b50fed2e638c4a0044bc62512a656c39d180941512",
+          "bytes": 3762
+        },
+        {
+          "path": "assets/lyric-alignment/uv.lock",
+          "sha256": "7ab359cca900b5a2553936b996256171cd0256ff6862264310f4db113128e7d1",
+          "bytes": 523093
+        },
+        {
+          "path": "assets/lyric-alignment/vocal_feats.py",
+          "sha256": "dbfa09c54ac61d25310067502f1ef3856ff68009a52de317b9e858f573f733e8",
+          "bytes": 1798
+        },
+        {
+          "path": "assets/lyric-alignment/whisper_run.py",
+          "sha256": "75ecc9f9902606b28412df2e312bf235c9e6ce72f774909906c6d534b4e5ce27",
+          "bytes": 1356
+        },
+        {
+          "path": "assets/lyric-alignment/zoom.py",
+          "sha256": "9882ba138ce883efedc1460fdccf0a402e9a5a1661f47680e200c55d51725f9e",
+          "bytes": 4301
+        }
+      ]
+    }
+  ]
+}

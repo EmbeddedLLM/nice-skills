@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A clear idea · six-second motion starter</title>
+  <style>
+    :root { color-scheme: light; font-family: ui-sans-serif, system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; }
+    body { color: #173335; background: #f6f5ee; }
+    #stage { position: absolute; inset: 0; overflow: hidden; }
+    #grid { position: absolute; inset: 0; opacity: .3; background-image: linear-gradient(#d9ded8 1px, transparent 1px), linear-gradient(90deg, #d9ded8 1px, transparent 1px); background-size: 3.4vw 3.4vw; }
+    header { position: absolute; left: 8%; top: 10%; }
+    .eyebrow { margin: 0 0 1.3vw; font-size: 1.1vw; font-weight: 650; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: 4.6vw; line-height: 1.06; font-weight: 730; letter-spacing: -.045em; }
+    h1 span { color: #168c85; }
+    #orbit { position: absolute; right: 9%; top: 12%; width: 8vw; height: 8vw; border: 1px solid #b9c9bf; border-radius: 50%; }
+    #orb { position: absolute; width: 1.6vw; height: 1.6vw; left: calc(50% - .8vw); top: calc(50% - .8vw); border-radius: 50%; background: #e5a354; }
+    #rail { position: absolute; top: 62%; left: 18%; right: 18%; height: 2px; background: #d1ddd3; }
+    #fill { width: 0; height: 100%; background: #168c85; transform-origin: left; }
+    #cards { position: absolute; inset: 45% 8% 13%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3%; }
+    .card { padding: 2.2vw; border: 1px solid #d6e1d7; border-radius: 1.6vw; background: #fffffa; box-shadow: 0 1vw 2vw #244e3710; opacity: 0; }
+    .number { display: grid; place-items: center; width: 3.7vw; height: 3.7vw; margin-bottom: 1.9vw; border-radius: 50%; background: #e0f0e8; color: #167970; font-size: 1.65vw; font-weight: 700; }
+    h2 { margin: 0 0 1vw; font-size: 2vw; letter-spacing: -.025em; }
+    .card p { margin: 0; max-width: 15em; font-size: 1.1vw; line-height: 1.5; color: #59716a; }
+    footer { position: absolute; left: 8%; bottom: 5.5%; font-size: 1.05vw; color: #6f8178; }
+    #controls { position: fixed; bottom: 12px; right: 16px; display: flex; align-items: center; gap: 10px; padding: 10px 13px; background: #ffffffed; border: 1px solid #bed0c5; border-radius: 10px; font: 13px ui-sans-serif, system-ui, sans-serif; }
+    #controls button { border: 0; border-radius: 6px; padding: 6px 10px; background: #173335; color: white; cursor: pointer; }
+    #controls input { width: 150px; accent-color: #168c85; }
+    #controls output { font-variant-numeric: tabular-nums; min-width: 3.8em; }
+    html[data-capture="true"] #controls { display: none; }
+  </style>
+</head>
+<body>
+  <main id="stage">
+    <div id="grid"></div>
+    <header><p class="eyebrow">A good explanation</p><h1>Make the idea<br><span>clear.</span></h1></header>
+    <div id="orbit"><div id="orb"></div></div>
+    <div id="rail"><div id="fill"></div></div>
+    <section id="cards">
+      <article class="card"><div class="number">1</div><h2>One question</h2><p>Start with what your audience wants to understand.</p></article>
+      <article class="card"><div class="number">2</div><h2>One example</h2><p>Show the mechanism in a way people can follow.</p></article>
+      <article class="card"><div class="number">3</div><h2>One takeaway</h2><p>Leave a clear point they can use.</p></article>
+    </section>
+    <footer>A small story. A lasting idea.</footer>
+  </main>
+  <div id="controls"><button id="play" type="button">Play</button><input id="time" type="range" min="0" max="5.999" step="0.001" value="0" aria-label="Preview time"><output id="readout">0.00s</output></div>
+  <script type="module">
+    window.DUR = 6;
+    window.READY = false;
+    const capture = window.__MOTION_CAPTURE__ === true || new URLSearchParams(location.search).has('capture');
+    document.documentElement.dataset.capture = String(capture);
+    const cards = [...document.querySelectorAll('.card')];
+    const fill = document.getElementById('fill'), orb = document.getElementById('orb');
+    const slider = document.getElementById('time'), readout = document.getElementById('readout'), button = document.getElementById('play');
+    const clamp = x => Math.max(0, Math.min(1, x));
+    const smooth = x => { x = clamp(x); return x * x * (3 - 2 * x); };
+    // Closed-form underdamped response. Its state depends only on elapsed scene time.
+    function spring(t) {
+      if (t <= 0) return 0;
+      const zeta = .65, omega = 11, d = Math.sqrt(1 - zeta * zeta), wd = omega * d;
+      return 1 - Math.exp(-zeta * omega * t) * (Math.cos(wd * t) + zeta / d * Math.sin(wd * t));
+    }
+    window.seek = async seconds => {
+      const t = ((seconds % window.DUR) + window.DUR) % window.DUR;
+      const exit = smooth((t - 5.15) / .85);
+      cards.forEach((card, i) => {
+        const local = t - .2 - i * 1.22, arrival = spring(local);
+        card.style.opacity = String(clamp(local / .22) * (1 - exit));
+        card.style.transform = `translateY(${Math.round((1 - arrival) * 55 - exit * 20)}px)`;
+      });
+      fill.style.width = `${100 * smooth(t / 4.4) * (1 - exit)}%`;
+      const angle = 2 * Math.PI * t / window.DUR;
+      orb.style.left = `${innerWidth * (.04 - .008 + Math.cos(angle) * .04)}px`;
+      orb.style.top = `${innerWidth * (.04 - .008 + Math.sin(angle) * .04)}px`;
+      if (!capture) { slider.value = String(t); readout.value = `${t.toFixed(2)}s`; }
+    };
+    await document.fonts.ready;
+    await window.seek(0);
+    window.READY = true;
+
+    // Wall-clock playback is a preview convenience only; capture never starts this loop.
+    if (!capture) {
+      let playing = false, baseTime = 0, started = 0, frame;
+      const tick = async now => {
+        if (!playing) return;
+        await window.seek(baseTime + (now - started) / 1000);
+        frame = requestAnimationFrame(tick);
+      };
+      button.addEventListener('click', () => {
+        playing = !playing;
+        button.textContent = playing ? 'Pause' : 'Play';
+        if (playing) { baseTime = Number(slider.value); started = performance.now(); frame = requestAnimationFrame(tick); }
+        else cancelAnimationFrame(frame);
+      });
+      slider.addEventListener('input', async () => {
+        playing = false; cancelAnimationFrame(frame); button.textContent = 'Play';
+        await window.seek(Number(slider.value));
+      });
+    }
+  </script>
+</body>
+</html>

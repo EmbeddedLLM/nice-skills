@@ -1,0 +1,5 @@
+@font-face{font-family:'SC';src:url('/core/fonts/bundled/notosanssc/NotoSansSC[wght].ttf') format('truetype');font-weight:300}
+@font-face{font-family:'SC';src:url('/core/fonts/bundled/notosanssc/NotoSansSC[wght].ttf') format('truetype');font-weight:500}
+@font-face{font-family:'IT';src:url('/core/fonts/bundled/intertight/InterTight[wght].ttf') format('truetype');font-weight:200}
+@font-face{font-family:'IT';src:url('/core/fonts/bundled/intertight/InterTight[wght].ttf') format('truetype');font-weight:400}
+@font-face{font-family:'PM';src:url('/core/fonts/bundled/ibmplexmono/IBMPlexMono-Regular.ttf') format('truetype');font-weight:400}

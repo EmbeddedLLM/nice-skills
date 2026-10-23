@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "reference_package": "design-office-artifacts",
+  "reference_review_date": "2026-10-21",
+  "scope": "Selected guidance from the user-supplied permissive-source revision. Its recorded license review is the basis for these adaptations; no new audit of upstream ownership is claimed. This manifest does not grant rights to unrelated retained files or future retrieved content.",
+  "adaptation": "Reorganized format-preservation, calculation, layout, and verification guidance for the existing local tools. Reimplemented the issue 6 flagged helpers from behavior contracts; no upstream engine, palette, font, template, or sample artifact was imported.",
+  "reference_files": [
+    {
+      "path": "references/documents.md",
+      "sha256": "03814c70cb7329f40394ddadc82bbdeea951b9bfeb30e37067dffe12a9d5f205"
+    },
+    {
+      "path": "references/design-system.md",
+      "sha256": "9adb6a7843947c3548aece1b0bc0e3b6cee1ba9412260a7e353a228115c1b11f"
+    }
+  ],
+  "package_notices": [
+    {
+      "local_path": "LICENSE.design-office-artifacts.txt",
+      "sha256": "87ccb57080a836f19396fb9018b93254a8f375b293b3ea057aa4c710a055ffa3"
+    },
+    {
+      "local_path": "NOTICE.design-office-artifacts.txt",
+      "sha256": "182471cea65ae3a06bc9982b8bacb62dcbcf33ee14383d5dd49aa88cf107c8f8"
+    }
+  ],
+  "sources": [
+    {
+      "id": "docx-report-skill",
+      "name": "DOCX Report Skill",
+      "repository_url": "https://github.com/drharunyuksel/docx-report-skill",
+      "commit": "efbd76eecad7e1aa070a8ca17dffc51a685833d7",
+      "license_spdx": "MIT",
+      "permitted_scope": {
+        "paths": [
+          "README.md",
+          "SKILL.md",
+          "references/brand-config.js",
+          "references/color-palette.md",
+          "references/typography.js",
+          "references/table-templates.js",
+          "references/page-setup.js",
+          "references/package.json"
+        ],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "Full applicable licence text verified at the pinned commit.",
+      "known_exclusions": [
+        {
+          "paths": ["references/example-output.png", "installed docx npm dependency and node_modules/**", "Arial or other font binaries"],
+          "reason": "Retain only MIT source instructions/helpers as design evidence. The example image, external runtime library and fonts are not bundled. The font setting names a font; it does not license or embed it.",
+          "evidence_urls": []
+        }
+      ],
+      "source_files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/README.md",
+          "sha256": "3dc5b518432998021bd301eb62a977e8a4238a906741b803a5f92dca5c44cc8f"
+        },
+        {
+          "path": "SKILL.md",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/SKILL.md",
+          "sha256": "b035866fd1f57b9d602e1cf2e7c99d90fbc7f62a90efece4110efd06b1ed5bb9"
+        },
+        {
+          "path": "references/brand-config.js",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/references/brand-config.js",
+          "sha256": "016d0d511e44874bb5d799cdcc78de374e3e8c7e60698d236aea884815a178a2"
+        },
+        {
+          "path": "references/color-palette.md",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/references/color-palette.md",
+          "sha256": "2ff1a4d6c162bc8cfb64ae0f088d33daca50b9f09cd8992cb91f3c793b6e671d"
+        },
+        {
+          "path": "references/typography.js",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/references/typography.js",
+          "sha256": "6e90532068d5eaa986d6baf8d5f10da936169e2cce610368c88223e363ff6b2b"
+        },
+        {
+          "path": "references/table-templates.js",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/references/table-templates.js",
+          "sha256": "69cd207dea4324351790ec62cbbe75b8d992a4a63b7a26445bf63e17f7c10e37"
+        },
+        {
+          "path": "references/page-setup.js",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/references/page-setup.js",
+          "sha256": "16497c805942be733ffc5c9f49496e19cf7f041bf09ba312b0101c16ae691043"
+        },
+        {
+          "path": "references/package.json",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/references/package.json",
+          "sha256": "170987fd86fa7f8cfd464b24b59a4329ffa624363a582af032c88fab8edbed7d"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/docx-report-skill/LICENSE",
+          "url": "https://github.com/drharunyuksel/docx-report-skill/blob/efbd76eecad7e1aa070a8ca17dffc51a685833d7/LICENSE",
+          "sha256": "99b5b2993404ad1542f1e5bbbf32e204df3b1afab18289f11dab280bae351d92"
+        }
+      ]
+    },
+    {
+      "id": "huashu_md_html",
+      "name": "Huashu Markdown / HTML / DOCX",
+      "repository_url": "https://github.com/alchaincyf/huashu-md-html",
+      "commit": "5826f83f3050c19aa45acdd7f9405af48011736f",
+      "license_spdx": "MIT",
+      "permitted_scope": {
+        "paths": ["SKILL.md", "references/md-to-docx-cookbook.md", "scripts/md_to_docx.py", "templates/report/theme.css"],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "Full applicable licence text verified at the pinned commit.",
+      "known_exclusions": [
+        {
+          "paths": ["demos/**", "examples/**", "external fonts and software dependencies"],
+          "reason": "Only the allowlisted source prose, implementation evidence and report CSS are retained as sources; published images, demos, font binaries and external dependencies are not bundled.",
+          "evidence_urls": []
+        }
+      ],
+      "source_files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://github.com/alchaincyf/huashu-md-html/blob/5826f83f3050c19aa45acdd7f9405af48011736f/SKILL.md",
+          "sha256": "a7e6ae1f89719aa79d80a676754735366e75b5915e1a2a938abd66589f98f4bd"
+        },
+        {
+          "path": "references/md-to-docx-cookbook.md",
+          "url": "https://github.com/alchaincyf/huashu-md-html/blob/5826f83f3050c19aa45acdd7f9405af48011736f/references/md-to-docx-cookbook.md",
+          "sha256": "586c51e4558213681b67acde2a6536f106edf7491e9a4c0a95074d30d691b929"
+        },
+        {
+          "path": "scripts/md_to_docx.py",
+          "url": "https://github.com/alchaincyf/huashu-md-html/blob/5826f83f3050c19aa45acdd7f9405af48011736f/scripts/md_to_docx.py",
+          "sha256": "e98543c967556ec018ad995bbeb4e5c0d1d59a257580cb03c4f99341f3a9c032"
+        },
+        {
+          "path": "templates/report/theme.css",
+          "url": "https://github.com/alchaincyf/huashu-md-html/blob/5826f83f3050c19aa45acdd7f9405af48011736f/templates/report/theme.css",
+          "sha256": "9d205da6b905552af3b0da141adf6dd06bd5eaf18eac23c1e98863f1c0c2c56c"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/huashu_md_html/LICENSE",
+          "url": "https://github.com/alchaincyf/huashu-md-html/blob/5826f83f3050c19aa45acdd7f9405af48011736f/LICENSE",
+          "sha256": "d0952e801d7484cc5344f41cc0378567d20a3c996b784eb97460287adde9ab37"
+        }
+      ]
+    },
+    {
+      "id": "kami",
+      "name": "Kami",
+      "repository_url": "https://github.com/tw93/Kami",
+      "commit": "6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6",
+      "license_spdx": "MIT",
+      "permitted_scope": {
+        "paths": [
+          "skills/kami/references/design.md",
+          "skills/kami/references/brand.example.md",
+          "skills/kami/assets/templates/slides-en.py",
+          "skills/kami/SKILL.md",
+          "skills/kami/references/deck-preflight.md",
+          "skills/kami/references/production.md"
+        ],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "Full applicable licence text verified at the pinned commit.",
+      "known_exclusions": [
+        {
+          "paths": [
+            "assets/fonts/**",
+            "skills/kami/assets/fonts/**",
+            "plugins/kami/skills/kami/assets/fonts/**",
+            "site/assets/fonts/**",
+            "skills/kami/scripts/ensure-fonts.sh",
+            "plugins/kami/skills/kami/scripts/ensure-fonts.sh"
+          ],
+          "reason": "Exclude all font binaries and automatic font recovery/download workflows. TsangerJinKai02 is personal-use-only without a commercial licence; Source Han and JetBrains Mono have OFL terms; Charter/YuMincho are system fonts with separate rights. Use the MIT design guidance with a user-approved or independently licensed font.",
+          "evidence_paths": [
+            "README.md",
+            "skills/kami/assets/fonts/LICENSE-JetBrainsMono.txt",
+            "skills/kami/assets/fonts/LICENSE-SourceHanSerifK.txt"
+          ],
+          "evidence_urls": [
+            "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/README.md",
+            "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/skills/kami/assets/fonts/LICENSE-JetBrainsMono.txt",
+            "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/skills/kami/assets/fonts/LICENSE-SourceHanSerifK.txt"
+          ]
+        },
+        {
+          "paths": ["site/assets/demos/**", "examples / screenshots / published PDFs", "external render/export packages"],
+          "reason": "No demo document, screenshot, proprietary font requirement or dependency code is incorporated. Allowlisted native-slide template is source evidence only, not copied as an executable dependency.",
+          "evidence_urls": []
+        }
+      ],
+      "source_files": [
+        {
+          "path": "skills/kami/references/design.md",
+          "url": "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/skills/kami/references/design.md",
+          "sha256": "61b5b7f996cc88a911e3fc9856e90b08117da4acf17ac426689c704eb39d5ffc"
+        },
+        {
+          "path": "skills/kami/references/brand.example.md",
+          "url": "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/skills/kami/references/brand.example.md",
+          "sha256": "845f85bab4e5d430677ae0126de0b1942f34d072d1a69efdb7262da027ac1c04"
+        },
+        {
+          "path": "skills/kami/assets/templates/slides-en.py",
+          "url": "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/skills/kami/assets/templates/slides-en.py",
+          "sha256": "d380a87b3da5a0303b3acb2268e58b39f383066ba5779193e7dfff0964cb7233"
+        },
+        {
+          "path": "skills/kami/SKILL.md",
+          "url": "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/skills/kami/SKILL.md",
+          "sha256": "a0f5b0bf8991f985aea7b8d9e50e883add97510454d66fd196ab9aa4e116af0f"
+        },
+        {
+          "path": "skills/kami/references/deck-preflight.md",
+          "url": "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/skills/kami/references/deck-preflight.md",
+          "sha256": "fe700728e66f8c03f14c2cb5d11adcf5e8c5ef6196c2c96bac36e7a168b06f56"
+        },
+        {
+          "path": "skills/kami/references/production.md",
+          "url": "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/skills/kami/references/production.md",
+          "sha256": "fe7f114fb9b1be8e8f3b753f13bd687dd5cd2175a73f172ede77400a3e1819fe"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/kami/LICENSE",
+          "url": "https://github.com/tw93/Kami/blob/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6/LICENSE",
+          "sha256": "83ef2e3caa22ff257740df8684627ef8c4e21102986cf943e3fdd31ca7b430d5"
+        }
+      ]
+    },
+    {
+      "id": "luobo-ppt",
+      "name": "Luobo PPT",
+      "repository_url": "https://github.com/zhouwei713/luobo-ppt",
+      "commit": "0437696197cef91fceccb618c7928e1c220b41b9",
+      "license_spdx": "MIT",
+      "permitted_scope": {
+        "paths": ["references/styles/lavender-soft.json", "README.md", "references/brand.md", "scripts/build_deck.py"],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "assets/LICENSE-lucide.txt covers icon assets, which are not included. The selected JSON palette has no separate licence or copyright override. Additional retained prose/code files are approved individually in source_files; their file-level scope statements control the narrower approval. No third-party binaries, fonts, logos, screenshots or templates are bundled.",
+      "known_exclusions": [
+        "Upstream implementations, fonts, logos, icons, screenshots, slide templates, sample Office documents and external dependencies are not bundled."
+      ],
+      "source_files": [
+        {
+          "path": "references/styles/lavender-soft.json",
+          "url": "https://github.com/zhouwei713/luobo-ppt/blob/0437696197cef91fceccb618c7928e1c220b41b9/references/styles/lavender-soft.json",
+          "sha256": "37b404c1334d5b965b84d384532fd5093d97583c675c9d1f2ac8a11896aa0bea"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/zhouwei713/luobo-ppt/blob/0437696197cef91fceccb618c7928e1c220b41b9/README.md",
+          "sha256": "77c321929228aee002f7a817f98abc0d1d4ddcdf9add82b31a0c8b451858229e"
+        },
+        {
+          "path": "references/brand.md",
+          "url": "https://github.com/zhouwei713/luobo-ppt/blob/0437696197cef91fceccb618c7928e1c220b41b9/references/brand.md",
+          "sha256": "dec935b0088fd41b365c05b2ac4620d71b1958cc72d629d65fe56b8d3c878fd3"
+        },
+        {
+          "path": "scripts/build_deck.py",
+          "url": "https://github.com/zhouwei713/luobo-ppt/blob/0437696197cef91fceccb618c7928e1c220b41b9/scripts/build_deck.py",
+          "sha256": "1878a91c71dd4bc24bb412ae1f9653af03f7fc97788cbaf498e743a2e8cf6039"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/luobo-ppt/LICENSE",
+          "url": "https://github.com/zhouwei713/luobo-ppt/blob/0437696197cef91fceccb618c7928e1c220b41b9/LICENSE",
+          "sha256": "39f501dd58369525e03284ef93f0d4ddb1ea297af4ad8f28f144ef0a0e789e74"
+        }
+      ]
+    },
+    {
+      "id": "microsoft_powerbi_report",
+      "name": "Microsoft Power BI Report skill / Skills for Fabric",
+      "repository_url": "https://github.com/microsoft/skills-for-fabric",
+      "commit": "bc42aaf734771bf752c1d7082dd91e5a6ca72b9f",
+      "license_spdx": "MIT",
+      "permitted_scope": {
+        "paths": [
+          "skills/powerbi-report-cli/SKILL.md",
+          "skills/powerbi-report-cli/references/design/color.md",
+          "skills/powerbi-report-cli/references/design/tone-catalog.md",
+          "skills/powerbi-report-cli/references/design/brownfield.md",
+          "skills/powerbi-report-cli/references/design/typography.md",
+          "skills/powerbi-report-cli/references/design/accessibility.md",
+          "skills/powerbi-report-cli/references/design/assets/base.json",
+          "skills/powerbi-report-cli/references/authoring/theming.md",
+          "skills/powerbi-report-cli/references/authoring/re-theming-part-02.md",
+          "skills/powerbi-report-cli/references/authoring/preview.md"
+        ],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "Full applicable licence text verified at the pinned commit.",
+      "known_exclusions": [
+        {
+          "paths": [
+            "Microsoft Power BI / Fabric binaries and service terms",
+            "learn.microsoft.com/**",
+            "support.microsoft.com/**",
+            "external npm CLI and agent-host packages",
+            "third-party brand assets/fonts"
+          ],
+          "reason": "The MIT grant applies to repository material. It does not grant product entitlements or rights in separately distributed services, fonts, packages or brand assets; retained sources are repository design/authoring files only.",
+          "evidence_urls": []
+        }
+      ],
+      "source_files": [
+        {
+          "path": "skills/powerbi-report-cli/SKILL.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/SKILL.md",
+          "sha256": "d3aae58f2952cd8d9fbe117af8c78666837edc618f0f37b8efb4428d51f78e3e"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/design/color.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/design/color.md",
+          "sha256": "6702d0aeeebf13efd74d411ab9dc2d3f9817dcc160ee7c68b63840bc3a565265"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/design/tone-catalog.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/design/tone-catalog.md",
+          "sha256": "1bb4e08bc664796a3198694525c9c30696ee884d97590aec8f6f8231939bffa6"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/design/brownfield.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/design/brownfield.md",
+          "sha256": "654c9542faf8ca47905236329377f9e674e2544c94b0c12bd36c3111b6f869cb"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/design/typography.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/design/typography.md",
+          "sha256": "b8e56b86d0aed22e0aebd2a375214f68a6e8ef1aa9b92d2fd9905c55710a2999"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/design/accessibility.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/design/accessibility.md",
+          "sha256": "f5179686341b6612ccf170ba0b65471c330a5258b6abfd9caa67d46bd167d5f4"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/design/assets/base.json",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/design/assets/base.json",
+          "sha256": "fd2408d47741419157d699b819a049f692398174bbd9ab95173cb765c2076c0a"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/authoring/theming.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/authoring/theming.md",
+          "sha256": "7987ba33256607a413aaaeadfe8541f698c071555de9241730bffd2085f7c76f"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/authoring/re-theming-part-02.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/authoring/re-theming-part-02.md",
+          "sha256": "f3ee46803f6bd4e9fe6fb0fc67f590d466b6ab0f0582bf78395d83a1073c25a0"
+        },
+        {
+          "path": "skills/powerbi-report-cli/references/authoring/preview.md",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/skills/powerbi-report-cli/references/authoring/preview.md",
+          "sha256": "8f3b54a4a3499f9c72c6ed85937ea3036b6b3dc8b06326448654c17ec22b645c"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/microsoft_powerbi_report/LICENSE",
+          "url": "https://github.com/microsoft/skills-for-fabric/blob/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f/LICENSE",
+          "sha256": "dd25ee079e44499d4cf55b7ce5f4b41d68fc236a40f872a13881bbf1dd73244f"
+        }
+      ]
+    },
+    {
+      "id": "minimax_office",
+      "name": "MiniMax DOCX and XLSX guidance",
+      "repository_url": "https://github.com/MiniMax-AI/skills",
+      "commit": "60aaae52bb2af8162732751a4332f62a5fef518b",
+      "license_spdx": "MIT",
+      "permitted_scope": {
+        "paths": [
+          "skills/minimax-docx/scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples.cs",
+          "skills/minimax-docx/SKILL.md",
+          "skills/minimax-xlsx/references/format.md"
+        ],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "The nearest applicable licence is skills/minimax-docx/LICENSE (MiniMaxAI), rather than relying only on the repository root licence. No override occurs in AestheticRecipeSamples.cs. Additional retained prose/code files are approved individually in source_files; their file-level scope statements control the narrower approval. No third-party binaries, fonts, logos, screenshots or templates are bundled.",
+      "known_exclusions": [
+        "Upstream implementations, fonts, logos, icons, screenshots, slide templates, sample Office documents and external dependencies are not bundled."
+      ],
+      "source_files": [
+        {
+          "path": "skills/minimax-docx/scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples.cs",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-docx/scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples.cs",
+          "sha256": "12e6921d53b8e4b7f71f499c7d06a9c169e16a80b9666bd6a17e27503bc9c651"
+        },
+        {
+          "path": "skills/minimax-docx/SKILL.md",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-docx/SKILL.md",
+          "sha256": "45c169630f30b8f034bc7d53edf73d592fbd82e82188beec7da3ca1996a97fb5"
+        },
+        {
+          "path": "skills/minimax-xlsx/references/format.md",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-xlsx/references/format.md",
+          "sha256": "60ad868439aaf7b0a255f55ea92eaa629ae1238abf10503faf43727fc47b569c"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/minimax_office/LICENSE",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-docx/LICENSE",
+          "sha256": "8288840186d6d3d6a0b74395e17448c06160b38e796963c7745f579631b47b01"
+        },
+        {
+          "local_path": "licenses/minimax_office/REPOSITORY-LICENSE",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/LICENSE",
+          "sha256": "eed4ccce37c2d24822da3bd9d5bee7bc12d494741de56ada513d0b97f537fcd0"
+        }
+      ]
+    },
+    {
+      "id": "officecli",
+      "name": "OfficeCLI and its document skills",
+      "repository_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
+      "license_spdx": "Apache-2.0",
+      "permitted_scope": {
+        "paths": [
+          "skills/officecli-pptx/SKILL.md",
+          "skills/officecli-docx/SKILL.md",
+          "skills/officecli-data-dashboard/SKILL.md",
+          "src/officecli/Core/ThemeHandler.cs",
+          "src/officecli/Core/DrawingColorBuilder.cs",
+          "src/officecli/Handlers/Pptx/PowerPointHandler.Add.Media.cs",
+          "src/officecli/Core/Chart/ChartEmbeddedDataSync.cs"
+        ],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "The repository Apache-2.0 licence and explicit OfficeCLI NOTICE apply. THIRD-PARTY-NOTICES.txt concerns Open XML SDK, System.CommandLine and .NET runtime components; those components are not bundled. The selected SKILL.md palette row has no overriding terms. Additional retained prose/code files are approved individually in source_files; their file-level scope statements control the narrower approval. No third-party binaries, fonts, logos, screenshots or templates are bundled.",
+      "known_exclusions": [
+        "Upstream implementations, fonts, logos, icons, screenshots, slide templates, sample Office documents and external dependencies are not bundled."
+      ],
+      "source_files": [
+        {
+          "path": "skills/officecli-pptx/SKILL.md",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/skills/officecli-pptx/SKILL.md",
+          "sha256": "0d53192751d5770984f16f3c34f9923377651555c667150d7f96e16e8c9757b3"
+        },
+        {
+          "path": "skills/officecli-docx/SKILL.md",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/skills/officecli-docx/SKILL.md",
+          "sha256": "a5a294fc04ec9983d766cec70887d563f3337e13a8a25db37d5a522bd37fc298"
+        },
+        {
+          "path": "skills/officecli-data-dashboard/SKILL.md",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/skills/officecli-data-dashboard/SKILL.md",
+          "sha256": "e05a3718e4d4f93c9df4d699006e5294158a91c40e1ee087d848d50d1b4d0af0"
+        },
+        {
+          "path": "src/officecli/Core/ThemeHandler.cs",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/src/officecli/Core/ThemeHandler.cs",
+          "sha256": "40e35c135e1c1a489cdfad09ab3d4def6a3be5ba97b68aa980117d4a384fc01d"
+        },
+        {
+          "path": "src/officecli/Core/DrawingColorBuilder.cs",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/src/officecli/Core/DrawingColorBuilder.cs",
+          "sha256": "c0fe619f8864dd282c1e5c129b1f883f3ae0e6709899d0831808f39a7d5b7491"
+        },
+        {
+          "path": "src/officecli/Handlers/Pptx/PowerPointHandler.Add.Media.cs",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/src/officecli/Handlers/Pptx/PowerPointHandler.Add.Media.cs",
+          "sha256": "c78420aae9c5ed7057067683a95ae43515edbde0026f968a0e1f0e5dedf7b0ad"
+        },
+        {
+          "path": "src/officecli/Core/Chart/ChartEmbeddedDataSync.cs",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/src/officecli/Core/Chart/ChartEmbeddedDataSync.cs",
+          "sha256": "d16f27585d85873d5adf6b5faa41d0e55b1975f371f9876fabcf030bba53b7e5"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/officecli/LICENSE",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/LICENSE",
+          "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1"
+        },
+        {
+          "local_path": "licenses/officecli/NOTICE",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/NOTICE",
+          "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        }
+      ]
+    },
+    {
+      "id": "theme-factory",
+      "name": "Anthropic Theme Factory \u2014 Ocean Depths",
+      "repository_url": "https://github.com/anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license_spdx": "Apache-2.0",
+      "permitted_scope": {
+        "paths": ["skills/theme-factory/themes/ocean-depths.md"],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "The skill-specific Apache-2.0 licence applies to ocean-depths.md. Root THIRD_PARTY_NOTICES.md lists unrelated software and font components; none is bundled or used to supply these four tokens. No skill-local NOTICE or file-level override was found.",
+      "known_exclusions": [
+        "Upstream implementations, fonts, logos, icons, screenshots, slide templates, sample Office documents and external dependencies are not bundled."
+      ],
+      "source_files": [
+        {
+          "path": "skills/theme-factory/themes/ocean-depths.md",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/theme-factory/themes/ocean-depths.md",
+          "sha256": "a7ad8eec85341dbfcb2665da827a4b6a4baee08ab3335ac02421f18e6b46b2e2"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/theme-factory/LICENSE.txt",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/theme-factory/LICENSE.txt",
+          "sha256": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+        }
+      ]
+    }
+  ],
+  "adapted_guides": [
+    "ooxml/hyperlinks_and_fields.md",
+    "tasks/clean_tracked_changes.md",
+    "tasks/equations.md",
+    "tasks/forms_content_controls.md",
+    "tasks/multi_doc_merge.md",
+    "tasks/navigation_internal_links.md",
+    "tasks/sections_layout.md",
+    "tasks/watermarks_background.md"
+  ],
+  "replacement_helpers": [
+    "scripts/a11y_audit.py",
+    "scripts/apply_template_styles.py",
+    "scripts/comments_apply_patch.py",
+    "scripts/comments_extract.py",
+    "scripts/content_controls.py",
+    "scripts/google_docs_title_sanitize.py",
+    "scripts/insert_note.py",
+    "scripts/insert_toc.py",
+    "scripts/merge_docx_append.py",
+    "scripts/render_and_diff.py",
+    "scripts/table_geometry.py",
+    "scripts/watermark_add.py",
+    "scripts/watermark_audit_remove.py"
+  ]
+}

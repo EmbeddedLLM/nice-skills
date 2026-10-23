@@ -1,0 +1,64 @@
+SIX PRESENTATION TEMPLATES
+20 October 2026
+
+CONTENTS
+PPTX/   Six editable example decks, containing 87 slides in total.
+POTX/   The same six decks saved in the PowerPoint Template file format.
+Fonts/  Unmodified DejaVu Sans and DejaVu Serif fonts with their licence notices.
+Preview_All_Templates.pdf   A bookmarked visual preview of every slide.
+Template_Overview.png       A visual comparison of the six template covers.
+Template_Reuse_Permission.txt   Reuse terms for the new template material.
+
+TEMPLATES
+Academic_05                  15 slides
+Brand_Design_05              15 slides
+Consulting_Proposal_05       14 slides
+Market_Research_02           15 slides
+Pitch_Deck_02                14 slides
+Project_Kick-off_03          14 slides
+
+STARTING A PRESENTATION
+1. Install the included DejaVu fonts if they are not already available. The
+   Fonts folder contains regular, bold, italic and bold-italic styles.
+2. Open the appropriate PPTX to edit the example deck, or use its POTX file
+   when starting a new presentation from a reusable template.
+3. Save your working presentation under a new project filename.
+4. Replace all bracketed fields. Sample charts, schedules and responsibility
+   assignments are illustrative and must be replaced with project data.
+5. Duplicate a sample slide when you need its detailed arrangement. The
+   PowerPoint New Slide / Layout menus also expose the included custom layouts.
+6. Read the notes pane for the short instructions that accompany each slide.
+7. Keep the style guide while drafting. Hide or remove it from the presentation
+   you share with your audience.
+
+EDITING THE CONTENT
+Text and shapes remain editable. Tables are native PowerPoint tables.
+Charts are native PowerPoint charts with embedded example workbooks; use
+Edit Data to update their categories and values. Update units and explanatory
+text at the same time. Empty picture areas are intentional placeholders for
+your own assets. Use images and logos you have permission to include.
+
+The PowerPoint files use a 16:9 canvas (13 1/3 by 7 1/2 inches). Layouts,
+theme colours, title/body placeholders and speaker notes are included.
+Detailed sample slides can contain additional editable objects beyond the
+generic New Slide layouts. Duplicating the sample is the easiest way to retain
+those richer arrangements.
+
+FONT AND APPLICATION NOTES
+The fonts are supplied separately, not embedded in the editable PPTX/POTX.
+Install them before editing to reproduce the intended typography. PowerPoint,
+Keynote, Google Slides and LibreOffice may differ slightly in their treatment
+of charts, font metrics and theme colours. The PDF is a visual reference.
+
+DESIGN AND REUSE
+These are newly authored template designs created for this request. The
+uploaded decks informed the six categories and their general presentation
+needs. Their photos, logos, artwork, prose, masters and example business claims
+were not copied into these files. The source archive is not part of this pack.
+No stock-media purchase, attribution link or third-party template subscription
+is needed for the newly authored slide material.
+
+You may modify and redistribute the new templates and your edited versions,
+including for commercial work. No credit to ChatGPT is required for the newly
+generated template content. Keep the separate DejaVu licence notices if you
+redistribute the font files. See Template_Reuse_Permission.txt for scope.

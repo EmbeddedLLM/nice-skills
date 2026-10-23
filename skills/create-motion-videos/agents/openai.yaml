@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motion Video Studio"
+  short_description: "Code-rendered videos in Lemo and twoclipping styles"
+  default_prompt: "Use $create-motion-videos to make an explainer video about my topic, select a suitable style, and render it locally with source files."

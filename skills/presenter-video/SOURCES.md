@@ -1,0 +1,9 @@
+# Sources and modifications
+
+Adapted at the repository owner's request from [the presenter archive](https://github.com/jiahuei/agent-skills/tree/235e920a4e494b74b46af67f813167699257c039/archive/presenter-video), revision `235e920a4e494b74b46af67f813167699257c039`. The source checkout's unrelated files and uncommitted material were not imported.
+
+The archive attributes its job template, initializer, preflight, evidence checker, segmentation helper, finalizer, and production guidance to [Lanshu](https://github.com/cclank/lanshu-create-ai-presenter-video/tree/762d3ee42623b75a4ec63ad6aa61ace69d78ce6e), revision `762d3ee42623b75a4ec63ad6aa61ace69d78ce6e`, under the retained [MIT notice](LICENSE-lanshu.txt). The repository owner's provider ledger and mock tests are retained under the [repository MIT license](LICENSE.repository.txt) with this authorized adaptation. This does not assert a blanket license over unrelated material in the source repository.
+
+Changes here make existing presenter footage the default complete local route, preserve its original voice, and scope generated-presenter tooling to explicit optional use. The finalizer now uses exclusive publication to preserve dangling links and files created during encoding. Segmentation validates finite timing inputs and finds a feasible sequence of pauses; unavailable styled-route branches were removed from the optional image-job tools. Entry-point and local-production guidance are new; retained editing, QA, and interchange guidance is adjusted to remove sibling-runtime assumptions. No model, live provider adapter, portrait, voice, external font, or paid media is bundled. Generated-presenter tests use synthetic media and mock providers, never paid calls.
+
+FFmpeg, installed editors, local models, and optional hosted providers retain their own licenses, setup requirements, and terms. Supplied media requires its own permissions. The skill's licenses do not grant likeness or voice rights.

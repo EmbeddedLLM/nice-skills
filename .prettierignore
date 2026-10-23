@@ -28,3 +28,15 @@
 **/pnpm-lock.yaml
 **/yarn.lock
 **/uv.lock
+
+# Pinned upstream motion source: byte-for-byte hashes are verified by verify_bundle.py.
+/skills/create-motion-videos/assets/lemo/
+
+# Vendored upstream skill source, byte-identical to the pinned commit in its SOURCES.md.
+/skills/design-taste/
+
+# Byte-identical vendored kits, stills and licence texts; hashes are pinned in each skill's vendored-assets.json.
+/skills/create-motion-videos/assets/hand-painted-cartoon/
+/skills/create-motion-videos/assets/mg-styles15/
+/skills/create-motion-videos/assets/lyric-alignment/
+/skills/design-taste/examples/

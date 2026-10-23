@@ -1,0 +1,8 @@
+@font-face{ font-family: 'Titan'; src:url('/core/fonts/bundled/titanone/TitanOne-Regular.ttf') format('truetype'); font-display: block; }
+@font-face{ font-family: 'Lilita'; src:url('/core/fonts/bundled/lilitaone/LilitaOne-Regular.ttf') format('truetype'); font-display: block; }
+@font-face{ font-family: 'VT'; src:url('/core/fonts/bundled/vt323/VT323-Regular.ttf') format('truetype'); font-display: block; }
+@font-face{ font-family: 'Arch'; src:url('/core/fonts/bundled/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('truetype'); font-display: block; }
+@font-face{ font-family: 'Gochi'; src:url('/core/fonts/bundled/gochihand/GochiHand-Regular.ttf') format('truetype'); font-display: block; }
+@font-face{ font-family: 'Silk'; src:url('/core/fonts/bundled/silkscreen/Silkscreen-Regular.ttf') format('truetype'); font-weight: 400; font-display: block; }
+@font-face{ font-family: 'Silk'; src:url('/core/fonts/bundled/silkscreen/Silkscreen-Bold.ttf') format('truetype'); font-weight: 700; font-display: block; }
+@font-face{ font-family: 'Inter'; src:url('/core/fonts/bundled/inter/Inter[opsz,wght].ttf') format('truetype'); font-weight: 100 900; font-display: block; }
