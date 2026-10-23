@@ -1,0 +1,44 @@
+# Normalize text while preserving binary skill assets.
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sh text eol=lf
+*.md text
+*.py text
+*.js text
+*.ts text
+*.json text
+*.toml text
+*.yaml text
+*.yml text
+*.lock text
+*.svg text
+
+*.7z binary
+*.bin binary
+*.db binary
+*.doc binary
+*.docx binary
+*.gif binary
+*.gz binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.mov binary
+*.mp3 binary
+*.mp4 binary
+*.npy binary
+*.npz binary
+*.parquet binary
+*.pdf binary
+*.png binary
+*.ppt binary
+*.pptx binary
+*.sqlite binary
+*.sqlite3 binary
+*.wav binary
+*.webp binary
+*.xls binary
+*.xlsx binary
+*.zip binary

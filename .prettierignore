@@ -1,0 +1,30 @@
+# Local agent configuration and working files
+/.agents/
+/.aws/
+/.codex/
+/.claude/
+/tasks/
+/agent-notes/
+/workspaces/
+**/__ref__/
+.env
+.env.*
+
+# Dependencies and generated output
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.cache/
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+/build/
+/dist/
+/coverage/
+
+# Generated dependency lockfiles
+**/package-lock.json
+**/pnpm-lock.yaml
+**/yarn.lock
+**/uv.lock
