@@ -1,2 +1,4 @@
 kokoro-onnx==0.4.9
 faster-whisper==1.2.0
+# faster-whisper imports requests without declaring it as a direct dependency.
+requests==2.34.2

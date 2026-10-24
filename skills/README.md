@@ -1,6 +1,6 @@
 # Skill catalog
 
-Each directory is independently installable, including its bundled resources. No skill requires a paid model-provider API, hosted artifact platform, or paid image-generation service. Install only the local dependencies for the selected task; offline production can still require initial package/browser/model downloads.
+Each directory is independently installable, including its bundled resources. No skill requires a paid model-provider API, hosted artifact platform, or paid image-generation service. Install only the local dependencies for the selected task; offline production can still require initial package/browser/model downloads. The [dependency reference](../DEPENDENCIES.md) lists every required and optional tool, the tested versions, and install commands.
 
 Research guidance draws on the permitted Adaptive Deep Research reference; the office workflows use Design Office Artifacts. `security-audit` is a vendored MIT skill from Cloudflare, and `design-taste` is a vendored MIT skill from taste-skill. Each affected skill carries its own source record, pinned revision, and retained licence notice in a `SOURCES.md`. The source records describe the scope of each adaptation; they do not certify every retained asset's provenance.
 

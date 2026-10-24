@@ -8,7 +8,7 @@ The [skill catalog](skills/README.md) contains 22 focused, independently usable 
 
 Browse the [skill catalog](skills/README.md), then read the selected skill's `SKILL.md` for its purpose, requirements, and workflow. Follow your agent's instructions for installing a local skill directory, including any bundled resources. Supported tools and environments are documented by each skill.
 
-Copy the whole selected skill directory. Python requirements and optional Node lockfiles belong to that skill; install only the dependencies needed for the task in a writable project environment. Browser binaries, Office-compatible renderers, and media tools may need separate setup. Network access may be needed for initial downloads, but no OpenAI, Anthropic, Minimax, or other paid production API is a prerequisite.
+Copy the whole selected skill directory. Python requirements and optional Node lockfiles belong to that skill; install only the dependencies needed for the task in a writable project environment. The [software and dependency reference](DEPENDENCIES.md) lists each skill's required and optional tools, the tested versions, and install commands. Browser binaries, Office-compatible renderers, and media tools may need separate setup. Network access may be needed for initial downloads, but no OpenAI, Anthropic, Minimax, or other paid production API is a prerequisite.
 
 ## Repository layout
 
@@ -21,6 +21,8 @@ skills/                  Published skills and their catalog
     assets/              Optional templates and other resources
 tests/                   Helper contracts, coverage inventory, and media integration tests
 tools/                   Optional reference-corpus audit and maintenance scripts
+DEPENDENCIES.md          Required and optional software per skill
+Dockerfile              Sample Ubuntu 24.04 environment with every dependency
 CONTRIBUTING.md          Authoring, review, and verification guidance
 AGENTS.md                Instructions for agents working on this repository
 CLAUDE.md                Pointer to the shared agent instructions
@@ -41,7 +43,7 @@ npx --yes prettier@3.8.3 --check '**/*.{md,yml,yaml,json}' .prettierrc
 
 The first invocation needs registry access unless that version is cached. CI also runs helper contracts, provenance checks, synthetic audit-tool tests, and browser/media integration described in [tests/README.md](tests/README.md). Agent behavior still needs separate verification as described in the contribution guide.
 
-The skills and supporting tests are adapted from [Agentic Skills](https://github.com/jiahuei/agentic-skills/tree/8a17f762679feb9df58a26a3fca58468ff157367). Bundled source records and third-party notices retain their upstream attribution.
+The skills and supporting tests are adapted from [Agentic Skills](https://github.com/jiahuei/agentic-skills/tree/8934585901d6ee46ff8d2de212ddee61f1b2397c). Bundled source records and third-party notices retain their upstream attribution.
 
 ## License
 

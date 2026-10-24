@@ -51,6 +51,7 @@ Repository conventions:
 - Keep each skill usable when copied on its own. Bundle required resources, and identify external dependencies explicitly.
 - Use portable paths and synthetic data. Never commit credentials or private user material.
 - Make side effects clear and respect the host agent's authorization model.
+- Record every added or changed external dependency, optional tier, and minimum version in [DEPENDENCIES.md](DEPENDENCIES.md).
 - Preserve third-party notices. Original contributions use the repository's [MIT license](LICENSE); identify any separately licensed bundled materials.
 
 ## Verification

@@ -1,0 +1,17 @@
+# Keep the build context to the files the image needs.
+.git
+__ref__
+.agents
+.aws
+.env
+.env.*
+.codex
+.claude
+tasks
+agent-notes
+workspaces
+.venv
+**/__pycache__
+**/node_modules
+**/.cache
+**/.pytest_cache
