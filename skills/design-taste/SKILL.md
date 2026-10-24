@@ -42,6 +42,25 @@ In the commands below `<skill>` is this skill's folder. Run them from the projec
 working files land in `.taste-skill/` there. The scripts need Node 22+ and an installed Chrome, Edge
 or Chromium, and install nothing. `assets.mjs` also needs network access; it uses no API keys.
 
+## Implementation scope
+
+For implementation work, separate the requested experience and art direction from the proposed code.
+Apply YAGNI: reuse project components, then standard-library or native HTML/CSS/browser capabilities,
+then installed dependencies before adding a library. Preserve the existing stack and required behavior;
+new product features, backends, or generic design engines need a current use case. Resolve uncertain
+behavior with a small browser experiment or authoritative documentation before adding complexity.
+
+After the look-and-fix loop, simplify duplicated layout logic, unused state, and speculative options,
+then recheck the affected interactions and viewports. Fix root causes, keep unrelated refactors out,
+and preserve accessibility, full content, and the chosen visual richness. Simpler implementation does
+not mean a thinner page or weaker visual review.
+
+Before adding complexity for a speculative or vanishingly unlikely race or security edge case,
+explain the concrete failure mode, evidence for its likelihood (or uncertainty), implementation and
+maintenance cost, and simpler alternative. Get user buy-in for that scope expansion unless existing
+approval already covers the trade-off. Do not silently add theoretical robustness, weaken required
+controls, or delay an already-authorized fix for a demonstrated defect.
+
 ## Page or app screen
 
 Decide first which of two kinds of work this is.

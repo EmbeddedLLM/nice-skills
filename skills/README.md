@@ -25,7 +25,7 @@ Research guidance draws on the permitted Adaptive Deep Research reference; the o
 | [theme-factory](theme-factory/SKILL.md) | Theme selection/application, contrast checks, and offline exports | Python standard library; browser for previews |
 | [mcp-builder](mcp-builder/SKILL.md) | MCP server design, contracts, implementation, and protocol checks | Project's Python/TypeScript SDK and local test client |
 | [resolve-recipients](resolve-recipients/SKILL.md) | Identity disambiguation and bounded audiences without sending | Supplied roster/history or authorized integrations |
-| [review-agent](review-agent/SKILL.md) | Read-only, evidence-based code-change review | Git, source access, applicable local tests |
+| [review-agent](review-agent/SKILL.md) | Read-only code-change review of outcomes, contracts, defects, and concrete simplifications; optional authorized subagents | Git, source access, applicable local tests |
 | [security-audit](security-audit/SKILL.md) | Source-first vulnerability audit in six phases, including guidance-only answers to narrower security questions | Node.js 18+ for the two validators; source access and a local sandbox for any target execution |
 | [skill-creator](skill-creator/SKILL.md) | Portable skill authoring and validation | Python; PyYAML for structural checks |
 
@@ -34,6 +34,8 @@ Choose by deliverable: use canvas-design for a composed static graphic, vector-a
 Motion, slides, canvas-design, frontend-design, and gif-creator include optional Openverse asset acquisition guidance. Each keeps its own instructions, uses verified local assets and accompanying credits, and retains a supplied/procedural fallback. Network access is needed only when acquiring external media; no Openverse account or paid provider is required for the documented anonymous searches.
 
 The motion package contains 51 Lemo style packages, 98 cinematic references, two twoclipping variants, and two attributed prompt libraries (703 community briefs and 15 motion-design style prompts) that name techniques without replacing the package's own workflow. It also bundles a hand-painted cartoon starter kit, one still per MG style with a 4K paper texture and a 2K studio HDRI (CC0), and a lyric-alignment pipeline; each bundle is hash-pinned in its `references/vendored-assets.json` or `examples/vendored-assets.json` and named from `SKILL.md`. Some upstream demos reference absent optional production media; the bundle is not a promise that every demo renders without preparation. The theme package supplies 51 themes across ten moods including Lavender. Original asset and source notices remain inside each package.
+
+Software and code-based creative workflows apply YAGNI, reuse existing capabilities before adding infrastructure, validate uncertain approaches, and simplify after verification. Extra complexity for speculative race or security edge cases requires an explained trade-off and user buy-in. These instructions are bundled within each relevant skill so a standalone copy does not depend on this repository's agent instructions.
 
 See [CONTRIBUTING.md](../CONTRIBUTING.md) for the format, authoring conventions, and verification steps.
 

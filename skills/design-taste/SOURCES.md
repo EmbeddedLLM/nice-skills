@@ -16,6 +16,7 @@ The `SKILL.md` run, the eleven `references/` guides, the five `scripts/` program
 
 ## Local changes
 
+- Added implementation guidance for YAGNI, reuse, approach validation, user buy-in for speculative robustness, and simplification while preserving the requested visual quality and existing stack.
 - Renamed the skill to `design-taste` in the frontmatter so the name matches its directory.
 - Added the `license` frontmatter field, [SOURCES.md](SOURCES.md), and this notice placement.
 - Corrected three statements that described a scene library and `assets/scenes/demo/<id>.html` pages this snapshot does not contain. The shared stage is bundled; the draw deals no scroll scenes, and `references/scenes.md` §8 is the documented route when it deals none. Upstream already describes `library/scenes.json` as unreleased.

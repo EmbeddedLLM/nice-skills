@@ -23,6 +23,14 @@ Use the directory containing this file as `SKILL_DIR`. Keep bundled source read-
 
 Keep current user requirements and the host's tool and permission rules authoritative. Apply this skill's operational defaults when upstream guides assume a different host, fixed home-directory paths, automatic updates or mandatory consultation. Preserve style constraints unless the user requests an adaptation. Never modify policy or permissions to make a workflow run.
 
+## Keep production code focused
+
+Separate the film's required story, timing, style, and delivery contract from the proposed engine or workflow. Apply YAGNI to infrastructure: reuse project and bundled runtime capabilities, then standard-library and native browser/media tools, then installed dependencies before adding a renderer, orchestration layer, or package. Use a short representative render to resolve uncertain behavior before building a larger mechanism. Install only the dependency tiers needed for the film; do not prepare every optional pipeline by default.
+
+After the sample works, remove unused scene machinery, duplicated timing logic, and speculative controls while preserving the chosen art direction, determinism, audio synchronization, and output contract. Fix root causes and retest affected frames and delivery properties. Simplifying code is not permission to replace a requested visual technique with an easier style or weaken verification.
+
+Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, evidence for its likelihood (or uncertainty), implementation and maintenance cost, and simpler alternative. Get user buy-in for that scope expansion unless existing approval already covers the trade-off. Do not silently add theoretical robustness, weaken required controls, or delay an already-authorized fix for a demonstrated defect.
+
 ## Choose a style without blocking production
 
 Use an explicitly requested style. If the brief is sufficient but no style is named, select a fit, state the choice briefly, and continue. Offer alternatives when their tradeoff matters; wait only when the user requests selection or a missing fact prevents useful work.

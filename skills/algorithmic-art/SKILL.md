@@ -8,6 +8,14 @@ license: Apache-2.0; see LICENSE.txt and SOURCES.md
 
 Translate the brief into a computational idea such as growth, interference, repetition, or constrained motion. Deliver working source and the requested interactive page or image. Native Canvas/SVG needs only a browser; no paid generation service is required.
 
+## Choose a sufficient implementation
+
+Separate the requested composition and interactions from the proposed algorithm or framework. Apply YAGNI to the implementation: reuse project or bundled drawing helpers, then standard-library and native Canvas/SVG/browser capabilities, then installed dependencies before adding machinery. Start with a small visual experiment when feasibility is uncertain. A one-off composition rarely needs a generic scene engine or plugin architecture; use them only when the brief requires capabilities the simpler route cannot supply.
+
+After representative renders, remove unused controls, duplicate drawing paths, and unnecessary state while preserving the requested detail, seed behavior, and export. Fix rendering defects at their cause, and derive checks from the visual and interaction contract rather than the code's structure.
+
+Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, evidence for its likelihood (or uncertainty), implementation and maintenance cost, and simpler alternative. Get user buy-in for that scope expansion unless existing approval already covers the trade-off. Do not silently add theoretical robustness, weaken required controls, or delay an already-authorized fix for a demonstrated defect.
+
 ## Build a reproducible composition
 
 1. Choose the algorithm, canvas, palette, and meaningful parameters from the subject. Keep iteration counts bounded and begin with a still or small simulation.

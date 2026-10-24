@@ -16,7 +16,8 @@ The upstream `skills/security-audit/` package is redistributed here with its MIT
 
 ## Local changes
 
-- Moved the fourteen companion guides into `references/` and the schema plus two validators into `scripts/`, so the package follows this repository's layout. Every cross-document link and every validator invocation was rewritten for the new paths; the wording is otherwise unchanged.
+- Expanded remediation guidance with YAGNI, reuse, preservation requirements, user buy-in for speculative hardening, and root-cause regression checks; the evidence bar and full-audit verification requirements remain intact.
+- Moved the fourteen companion guides into `references/` and the schema plus two validators into `scripts/`, so the package follows this repository's layout. Every cross-document link and every validator invocation was rewritten for the new paths.
 - Moved the two validator test files into `tests/` and repointed their `require` targets at `scripts/`.
 - Added the `license` frontmatter field, a Node.js prerequisite note, and this notice.
 - Omitted the upstream repository `README.md`. It duplicates the entry point's purpose statement and documents a copy-into-a-config-directory installation that does not apply to this catalog.

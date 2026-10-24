@@ -8,6 +8,14 @@ license: Apache-2.0; see LICENSE.txt and SOURCES.md
 
 Build the requested interface in the project's existing stack, or use plain HTML/CSS/JavaScript for a small standalone artifact. Source editing and a local browser suffice; paid design tools, generation APIs, hosting, and external fonts are optional.
 
+## Keep implementation proportional
+
+Before a substantial change, separate the required user experience from the proposed implementation and identify existing behavior, content, and state to preserve. Apply YAGNI: add only features and infrastructure needed for this interface. Reuse project components first, then standard-library or native HTML/CSS/browser capabilities, then installed dependencies before adding a library. Resolve uncertain browser behavior with a focused experiment or matching documentation; a new framework, backend, state layer, or generic component system needs evidence that the simpler route is insufficient.
+
+Keep edits focused and fix root causes. Derive checks from the user flow and preservation requirements. After the interface works, remove unused state, duplicated logic, speculative options, and abstractions that only move complexity. Preserve accessibility and the requested visual richness; discuss trade-offs before simplifying away required behavior.
+
+Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, evidence for its likelihood (or uncertainty), implementation and maintenance cost, and simpler alternative. Get user buy-in for that scope expansion unless existing approval already covers the trade-off. Do not silently add theoretical robustness, weaken required controls, or delay an already-authorized fix for a demonstrated defect.
+
 ## Establish direction and build
 
 1. Inspect the project, content, audience, primary action, and supplied design system. Preserve established components during narrow edits. Ask only about missing choices that change the product.

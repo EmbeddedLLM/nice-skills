@@ -8,6 +8,14 @@ license: Apache-2.0; see LICENSE.txt and SOURCES.md
 
 Use the project's existing browser test setup or local Python Playwright with Chromium. The optional helpers use [requirements.txt](requirements.txt). Browser binaries are a separate installation; no hosted browser or paid model API is required.
 
+## Scope the verification
+
+Identify the requested behavior and existing state that must be preserved before choosing assertions or proposing a fix. Apply YAGNI to test tooling: reuse the project's runner, fixtures, and helpers, then standard-library or native browser capabilities and installed dependencies before adding a framework or abstraction. A focused regression should exercise the observable failure, not mirror implementation details. Investigate the root cause instead of masking failures with arbitrary waits, blanket retries, or weaker assertions.
+
+If a fix is authorized, make the smallest change that preserves the required behavior, add regression coverage, and remove temporary diagnostics or redundant setup after it passes. Keep unrelated application refactors out of a testing task. Run the relevant repository checks and distinguish environment failures from product defects.
+
+Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, evidence for its likelihood (or uncertainty), implementation and maintenance cost, and simpler alternative. Get user buy-in for that scope expansion unless existing approval already covers the trade-off. Do not silently add theoretical robustness, weaken required controls, or delay an already-authorized fix for a demonstrated defect.
+
 ## Start and inspect
 
 Identify the documented startup command, URL, and target flow. Reuse an appropriate existing server. On Linux/macOS, `scripts/with_server.py` manages only server process groups it starts:

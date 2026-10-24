@@ -166,7 +166,11 @@ The high/medium discriminator: does the demonstrated result fully defeat an expl
 
 ### Recommend the smallest effective source fix
 
-For each confirmed finding, identify the invariant the code must enforce and the narrowest source change that enforces it at the last trusted decision point. Prefer specific repository-relative changes and regression tests over generic hardening advice. The audit describes fixes; it does not modify target source.
+For each confirmed finding, identify the invariant the code must enforce and the narrowest source change that enforces it at the last trusted decision point. Apply YAGNI to remediation: reuse existing policy checks, then standard-library facilities, native platform controls, and installed dependencies before proposing a new security framework or layer. Establish why a simpler fix is insufficient before recommending a redesign. Preserve required trust boundaries, data integrity, and compatibility; simplification does not justify weaker controls or lower evidence standards.
+
+Prefer specific repository-relative changes and regression tests over generic hardening advice. Derive the tests from the demonstrated boundary violation and legitimate behavior that must remain allowed. Check that the proposed correction removes the root cause without duplicating policy or adding speculative hardening. The audit describes fixes; it does not modify target source or relax the full audit's verification requirements.
+
+Keep speculative hardening separate from evidenced vulnerabilities. For added complexity aimed at a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, likelihood evidence or uncertainty, implementation and maintenance cost, and simpler alternative. Implementation that expands scope needs user buy-in unless existing approval covers the trade-off; this audit remains read-only. Unknown likelihood does not establish negligible risk, and this rule does not weaken required controls, evidence standards, or already-authorized fixes for demonstrated defects.
 
 ## Full audit workflow
 
