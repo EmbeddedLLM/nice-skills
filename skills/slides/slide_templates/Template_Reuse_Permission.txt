@@ -1,0 +1,20 @@
+REUSE PERMISSION FOR THE NEW TEMPLATE MATERIAL
+
+Scope: Academic_05, Brand_Design_05, Consulting_Proposal_05, Market_Research_02,
+Pitch_Deck_02 and Project_Kick-off_03, in their supplied PPTX and POTX forms,
+and the newly written guidance in this pack.
+
+You may use, copy, modify, combine and redistribute this newly generated
+template material and your edited versions, for personal, educational,
+internal-business and commercial purposes. No royalty or credit to ChatGPT
+is required for that newly generated template content.
+
+This permission does not relicense the uploaded reference decks. Their
+underlying artwork, source text, masters and media were not included.
+
+The included unmodified DejaVu font binaries retain their own licence.
+Keep Fonts/LICENSE_DEJAVU.txt with the fonts when redistributing them.
+The font licence is separate from this template-content reuse permission.
+
+Any photos, logos, data or other material you add remain subject to the
+rights and permissions that apply to those additions.

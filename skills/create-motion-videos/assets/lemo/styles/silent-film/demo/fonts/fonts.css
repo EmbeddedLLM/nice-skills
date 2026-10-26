@@ -1,0 +1,7 @@
+@font-face{ font-family: 'Old Standard TT'; font-style: normal; font-weight: 400; font-display: block; src:url('/core/fonts/bundled/oldstandardtt/OldStandard-Regular.ttf') format('truetype'); }
+@font-face{ font-family: 'Old Standard TT'; font-style: italic; font-weight: 400; font-display: block; src:url('/core/fonts/bundled/oldstandardtt/OldStandard-Italic.ttf') format('truetype'); }
+@font-face{ font-family: 'Old Standard TT'; font-style: normal; font-weight: 700; font-display: block; src:url('/core/fonts/bundled/oldstandardtt/OldStandard-Bold.ttf') format('truetype'); }
+@font-face{ font-family: 'Playfair Display'; font-style: normal; font-weight: 400 900; font-display: block; src:url('/core/fonts/bundled/playfairdisplay/PlayfairDisplay[wght].ttf') format('truetype'); }
+@font-face{ font-family: 'Playfair Display'; font-style: italic; font-weight: 400 900; font-display: block; src:url('/core/fonts/bundled/playfairdisplay/PlayfairDisplay-Italic[wght].ttf') format('truetype'); }
+@font-face{ font-family: 'Playfair Display SC'; font-style: normal; font-weight: 900; font-display: block; src:url('/core/fonts/bundled/playfairdisplaysc/PlayfairDisplaySC-Black.ttf') format('truetype'); }
+@font-face{ font-family: 'Playfair Display SC'; font-style: normal; font-weight: 700; font-display: block; src:url('/core/fonts/bundled/playfairdisplaysc/PlayfairDisplaySC-Bold.ttf') format('truetype'); }

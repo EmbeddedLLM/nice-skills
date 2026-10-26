@@ -1,0 +1,6 @@
+@font-face{font-family:'Cormorant';src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond[wght].ttf') format('truetype');font-weight:300 700;font-style:normal}
+@font-face{font-family:'Cormorant';src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond-Italic[wght].ttf') format('truetype');font-weight:300 700;font-style:italic}
+@font-face{font-family:'CormorantSC';src:url('/core/fonts/bundled/cormorantsc/CormorantSC-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'CormorantSC';src:url('/core/fonts/bundled/cormorantsc/CormorantSC-SemiBold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'MaShanZheng';src:url('/core/fonts/bundled/mashanzheng/MaShanZheng-Regular.ttf') format('truetype')}
+@font-face{font-family:'ZhiMangXing';src:url('/core/fonts/bundled/zhimangxing/ZhiMangXing-Regular.ttf') format('truetype')}

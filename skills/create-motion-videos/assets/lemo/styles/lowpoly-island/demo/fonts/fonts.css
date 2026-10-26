@@ -1,0 +1,54 @@
+/* latin */
+@font-face{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src:url('/core/fonts/bundled/josefinsans/JosefinSans[wght].ttf') format('truetype');
+  
+}
+/* latin */
+@font-face{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src:url('/core/fonts/bundled/josefinsans/JosefinSans[wght].ttf') format('truetype');
+  
+}
+/* latin */
+@font-face{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src:url('/core/fonts/bundled/josefinsans/JosefinSans[wght].ttf') format('truetype');
+  
+}
+/* latin */
+@font-face{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src:url('/core/fonts/bundled/quicksand/Quicksand[wght].ttf') format('truetype');
+  
+}
+/* latin */
+@font-face{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src:url('/core/fonts/bundled/quicksand/Quicksand[wght].ttf') format('truetype');
+  
+}
+/* latin */
+@font-face{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src:url('/core/fonts/bundled/quicksand/Quicksand[wght].ttf') format('truetype');
+  
+}

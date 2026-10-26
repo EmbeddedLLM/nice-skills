@@ -1,0 +1,34 @@
+Design Office Artifacts — permissive-source revision
+Compiled and reviewed on 21 October 2026 UTC.
+
+The root LICENSE applies to this package's original helper code, original
+instructional prose and original compilation material. It does not replace
+the licences on upstream material.
+
+The adapted guidance and selected palette tokens are drawn only from the
+specific MIT- or Apache-2.0-licensed source files recorded in
+references/source-manifest.json. That manifest identifies pinned revisions,
+inspected paths, file hashes, applicable licence/notice files, excluded assets,
+and the changes made for this package. Each reference guide identifies its
+sources. Palette records retain their source roles and attribution.
+
+Full upstream licences and applicable notices are retained under licenses/.
+Keep this NOTICE, the root LICENSE, and the relevant upstream licence and
+notice files with redistributed copies. Changes to upstream-derived material
+are described in the manifest and palette licensing records; each adapted
+reference guide carries a prominent adaptation notice.
+
+Source changes made for this revision: selected and reorganized guidance for
+office workflows; wrote independent explanations, decision rules and checks;
+selected palette tokens, normalized their notation and added office-use roles
+and contrast checks. No upstream implementation, font binary, logo, screenshot,
+slide template or sample Office document is bundled. Licence texts and
+upstream NOTICE files are retained unchanged.
+
+Original X posts were discovery leads. The catalogue retains links and basic
+post metadata, without reproducing post text, screenshots or attached assets.
+An X link is not the permission basis for any reused material.
+
+The licence review is limited to the recorded files at the pinned revisions.
+It does not license separate dependencies, fonts, logos, templates, hosted
+services, or later versions. See references/sources-and-reuse.md.

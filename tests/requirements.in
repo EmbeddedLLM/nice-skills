@@ -1,0 +1,9 @@
+# Versions match the skill manifests; this file is the test environment only.
+-r ../skills/documents/requirements.txt
+-r ../skills/slides/requirements.txt
+-r ../skills/pdf/requirements.txt
+-r ../skills/pdf/requirements-redaction.txt
+-r ../skills/gif-creator/requirements.txt
+-r ../skills/skill-creator/requirements.txt
+fonttools==4.60.1
+brotli==1.1.0

@@ -1,0 +1,79 @@
+@font-face{
+  font-family: 'ZCOOL KuaiLe';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:url('/core/fonts/bundled/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf') format('truetype');
+  
+}
+/* hebrew */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: block;
+  src:url('/core/fonts/bundled/fredoka/Fredoka[wdth,wght].ttf') format('truetype');
+  
+}
+/* hebrew */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: block;
+  src:url('/core/fonts/bundled/fredoka/Fredoka[wdth,wght].ttf') format('truetype');
+  
+}
+/* hebrew */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: block;
+  src:url('/core/fonts/bundled/fredoka/Fredoka[wdth,wght].ttf') format('truetype');
+  
+}
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Lilita One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:url('/core/fonts/bundled/lilitaone/LilitaOne-Regular.ttf') format('truetype');
+  
+}
+/* latin */
+@font-face{
+  font-family: 'IM Fell English';
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src:url('/core/fonts/bundled/imfellenglish/IMFeENit28P.ttf') format('truetype');
+  
+}
+/* latin */
+@font-face{
+  font-family: 'IM Fell English';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:url('/core/fonts/bundled/imfellenglish/IMFeENrm28P.ttf') format('truetype');
+  
+}

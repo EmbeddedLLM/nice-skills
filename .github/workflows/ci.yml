@@ -1,0 +1,117 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  skill-contracts:
+    name: Skill script tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    concurrency:
+      group: ${{ github.workflow }}-skills-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+      - name: Install local conversion tools
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-calc libreoffice-writer libreoffice-impress poppler-utils fonts-dejavu-core ffmpeg jq
+      - name: Assert minimum media tool versions
+        run: |
+          set -euo pipefail
+          ffmpeg_version="$(ffmpeg -version | sed -n 's/^ffmpeg version \([0-9][0-9.]*\).*/\1/p')"
+          jq_version="$(jq --version | sed -n 's/^jq-\([0-9][0-9.]*\).*/\1/p')"
+          at_least() {
+            if [ -z "$1" ] || [ "$(printf '%s\n%s\n' "$2" "$1" | sort -V | head -n1)" != "$2" ]; then
+              echo "ERROR: $3 ${1:-unknown} is older than the required minimum $2" >&2
+              exit 1
+            fi
+          }
+          # Minimums follow the tested distribution generation (Ubuntu 24.04 ships FFmpeg 6.1 and jq 1.7);
+          # raise them deliberately together with the runtime checks that depend on them.
+          at_least "$ffmpeg_version" "6.1" "ffmpeg"
+          at_least "$jq_version" "1.7" "jq"
+          echo "ffmpeg $ffmpeg_version, jq $jq_version"
+      - name: Install pinned test dependencies
+        run: |
+          python -m pip install -r tests/requirements.txt
+          npm ci --prefix skills/pdf/js --no-audit --no-fund
+          npm ci --prefix skills/slides/pptxgenjs_helpers --no-audit --no-fund
+      - name: Run contract suites
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Test audit tooling
+        run: python -m unittest discover -s tools -p 'test_*.py' -v
+      - name: Run skill-local regressions
+        run: |
+          python skills/skill-creator/scripts/test_quick_validate.py
+          python skills/pdf/scripts/test_interpreter.py
+          python skills/create-motion-videos/scripts/test_prepare_runtime.py
+          python skills/presenter-video/tests/test_provider_job.py
+      - name: Test security-audit validators
+        run: node --test skills/security-audit/tests/*.test.cjs
+      - name: Verify tests preserved tracked skill files
+        run: git diff --exit-code -- skills/
+
+  media-render:
+    name: Local motion rendering
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    concurrency:
+      group: ${{ github.workflow }}-media-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+      - name: Install FFmpeg and locked browser runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ffmpeg
+          ffmpeg_version="$(ffmpeg -version | sed -n 's/^ffmpeg version \([0-9][0-9.]*\).*/\1/p')"
+          if [ -z "$ffmpeg_version" ] || [ "$(printf '%s\n%s\n' "6.1" "$ffmpeg_version" | sort -V | head -n1)" != "6.1" ]; then
+            echo "ERROR: ffmpeg ${ffmpeg_version:-unknown} is older than the required minimum 6.1" >&2
+            exit 1
+          fi
+          echo "ffmpeg $ffmpeg_version"
+          npm ci --prefix tests/media --no-audit --no-fund
+          node tests/media/node_modules/playwright-core/cli.js install --with-deps chromium
+      - name: Exercise actual capture, encoding, and failure cleanup
+        run: python -m unittest discover -s tests/media -p 'test_*.py' -v
+      - name: Exercise the design-taste inspector against the locked Chromium
+        run: |
+          # The vendored DevTools client launches Chrome without --no-sandbox, and Ubuntu 24.04 blocks
+          # the unprivileged user namespaces its sandbox needs. Wrap the pinned Chromium instead of
+          # editing the hash-pinned client.
+          chrome="$(node -e "const { chromium } = require('./tests/media/node_modules/playwright-core'); process.stdout.write(chromium.executablePath())")"
+          printf '#!/bin/sh\nexec "%s" --no-sandbox "$@"\n' "$chrome" > /tmp/chrome-no-sandbox
+          chmod +x /tmp/chrome-no-sandbox
+          CHROME_PATH=/tmp/chrome-no-sandbox PYTHONPATH=tests python -m unittest test_design_taste_scripts.BrowserGateTests -v
+      - name: Verify rendering preserved tracked skill files
+        run: git diff --exit-code -- skills/

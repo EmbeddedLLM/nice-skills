@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "reference_package": "design-office-artifacts",
+  "reference_review_date": "2026-10-21",
+  "scope": "Selected guidance from the user-supplied permissive-source revision. Its recorded license review is the basis for these adaptations; no new audit of upstream ownership is claimed. This manifest does not grant rights to unrelated retained files or future retrieved content.",
+  "adaptation": "Reorganized format-preservation, calculation, layout, and verification guidance for the existing local tools. Reimplemented the issue 6 flagged helpers from behavior contracts; no upstream engine, palette, font, template, or sample artifact was imported.",
+  "reference_files": [
+    {
+      "path": "references/spreadsheets.md",
+      "sha256": "94a34cb46be0d35d61cbbbe141b90933400438ea7822ea0c7c938914837c2a1d"
+    }
+  ],
+  "package_notices": [
+    {
+      "local_path": "LICENSE.design-office-artifacts.txt",
+      "sha256": "87ccb57080a836f19396fb9018b93254a8f375b293b3ea057aa4c710a055ffa3"
+    },
+    {
+      "local_path": "NOTICE.design-office-artifacts.txt",
+      "sha256": "182471cea65ae3a06bc9982b8bacb62dcbcf33ee14383d5dd49aa88cf107c8f8"
+    }
+  ],
+  "sources": [
+    {
+      "id": "huashu_excel",
+      "name": "Huashu-Excel",
+      "repository_url": "https://github.com/alchaincyf/huashu-excel",
+      "commit": "5b8831257eeac8ce84d3c63c3c969dadaab15981",
+      "license_spdx": "MIT",
+      "permitted_scope": {
+        "paths": ["scripts/make_chart.py", "references/xlsx-craft.md"],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "The selected SAFE_PALETTE array in make_chart.py has no separate file-level licence or notice. Additional retained prose/code files are approved individually in source_files; their file-level scope statements control the narrower approval. No third-party binaries, fonts, logos, screenshots or templates are bundled.",
+      "known_exclusions": [
+        "Upstream implementations, fonts, logos, icons, screenshots, slide templates, sample Office documents and external dependencies are not bundled."
+      ],
+      "source_files": [
+        {
+          "path": "scripts/make_chart.py",
+          "url": "https://github.com/alchaincyf/huashu-excel/blob/5b8831257eeac8ce84d3c63c3c969dadaab15981/scripts/make_chart.py",
+          "sha256": "ecfb480c209a43ccfa033c39eb2e67aec2c4d88467ce8e0ff423c84f035e3dc7"
+        },
+        {
+          "path": "references/xlsx-craft.md",
+          "url": "https://github.com/alchaincyf/huashu-excel/blob/5b8831257eeac8ce84d3c63c3c969dadaab15981/references/xlsx-craft.md",
+          "sha256": "5279b91c55a8b210271ae41c60a089048a621d8f51e1d216932c2fcd61c1ea2a"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/huashu_excel/LICENSE",
+          "url": "https://github.com/alchaincyf/huashu-excel/blob/5b8831257eeac8ce84d3c63c3c969dadaab15981/LICENSE",
+          "sha256": "97f9cdcf88dc1e4d59db8b93066f5dfa142fddeabef911dbe10909eb1eeeade5"
+        }
+      ]
+    },
+    {
+      "id": "minimax_office",
+      "name": "MiniMax DOCX and XLSX guidance",
+      "repository_url": "https://github.com/MiniMax-AI/skills",
+      "commit": "60aaae52bb2af8162732751a4332f62a5fef518b",
+      "license_spdx": "MIT",
+      "permitted_scope": {
+        "paths": [
+          "skills/minimax-docx/scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples.cs",
+          "skills/minimax-docx/SKILL.md",
+          "skills/minimax-xlsx/references/format.md"
+        ],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "The nearest applicable licence is skills/minimax-docx/LICENSE (MiniMaxAI), rather than relying only on the repository root licence. No override occurs in AestheticRecipeSamples.cs. Additional retained prose/code files are approved individually in source_files; their file-level scope statements control the narrower approval. No third-party binaries, fonts, logos, screenshots or templates are bundled.",
+      "known_exclusions": [
+        "Upstream implementations, fonts, logos, icons, screenshots, slide templates, sample Office documents and external dependencies are not bundled."
+      ],
+      "source_files": [
+        {
+          "path": "skills/minimax-docx/scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples.cs",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-docx/scripts/dotnet/MiniMaxAIDocx.Core/Samples/AestheticRecipeSamples.cs",
+          "sha256": "12e6921d53b8e4b7f71f499c7d06a9c169e16a80b9666bd6a17e27503bc9c651"
+        },
+        {
+          "path": "skills/minimax-docx/SKILL.md",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-docx/SKILL.md",
+          "sha256": "45c169630f30b8f034bc7d53edf73d592fbd82e82188beec7da3ca1996a97fb5"
+        },
+        {
+          "path": "skills/minimax-xlsx/references/format.md",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-xlsx/references/format.md",
+          "sha256": "60ad868439aaf7b0a255f55ea92eaa629ae1238abf10503faf43727fc47b569c"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/minimax_office/LICENSE",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-docx/LICENSE",
+          "sha256": "8288840186d6d3d6a0b74395e17448c06160b38e796963c7745f579631b47b01"
+        },
+        {
+          "local_path": "licenses/minimax_office/REPOSITORY-LICENSE",
+          "url": "https://github.com/MiniMax-AI/skills/blob/60aaae52bb2af8162732751a4332f62a5fef518b/LICENSE",
+          "sha256": "eed4ccce37c2d24822da3bd9d5bee7bc12d494741de56ada513d0b97f537fcd0"
+        }
+      ]
+    },
+    {
+      "id": "officecli",
+      "name": "OfficeCLI and its document skills",
+      "repository_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
+      "license_spdx": "Apache-2.0",
+      "permitted_scope": {
+        "paths": [
+          "skills/officecli-pptx/SKILL.md",
+          "skills/officecli-docx/SKILL.md",
+          "skills/officecli-data-dashboard/SKILL.md",
+          "src/officecli/Core/ThemeHandler.cs",
+          "src/officecli/Core/DrawingColorBuilder.cs",
+          "src/officecli/Handlers/Pptx/PowerPointHandler.Add.Media.cs",
+          "src/officecli/Core/Chart/ChartEmbeddedDataSync.cs"
+        ],
+        "prefixes": [],
+        "purpose": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      },
+      "scope_review": "The repository Apache-2.0 licence and explicit OfficeCLI NOTICE apply. THIRD-PARTY-NOTICES.txt concerns Open XML SDK, System.CommandLine and .NET runtime components; those components are not bundled. The selected SKILL.md palette row has no overriding terms. Additional retained prose/code files are approved individually in source_files; their file-level scope statements control the narrower approval. No third-party binaries, fonts, logos, screenshots or templates are bundled.",
+      "known_exclusions": [
+        "Upstream implementations, fonts, logos, icons, screenshots, slide templates, sample Office documents and external dependencies are not bundled."
+      ],
+      "source_files": [
+        {
+          "path": "skills/officecli-pptx/SKILL.md",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/skills/officecli-pptx/SKILL.md",
+          "sha256": "0d53192751d5770984f16f3c34f9923377651555c667150d7f96e16e8c9757b3"
+        },
+        {
+          "path": "skills/officecli-docx/SKILL.md",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/skills/officecli-docx/SKILL.md",
+          "sha256": "a5a294fc04ec9983d766cec70887d563f3337e13a8a25db37d5a522bd37fc298"
+        },
+        {
+          "path": "skills/officecli-data-dashboard/SKILL.md",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/skills/officecli-data-dashboard/SKILL.md",
+          "sha256": "e05a3718e4d4f93c9df4d699006e5294158a91c40e1ee087d848d50d1b4d0af0"
+        },
+        {
+          "path": "src/officecli/Core/ThemeHandler.cs",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/src/officecli/Core/ThemeHandler.cs",
+          "sha256": "40e35c135e1c1a489cdfad09ab3d4def6a3be5ba97b68aa980117d4a384fc01d"
+        },
+        {
+          "path": "src/officecli/Core/DrawingColorBuilder.cs",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/src/officecli/Core/DrawingColorBuilder.cs",
+          "sha256": "c0fe619f8864dd282c1e5c129b1f883f3ae0e6709899d0831808f39a7d5b7491"
+        },
+        {
+          "path": "src/officecli/Handlers/Pptx/PowerPointHandler.Add.Media.cs",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/src/officecli/Handlers/Pptx/PowerPointHandler.Add.Media.cs",
+          "sha256": "c78420aae9c5ed7057067683a95ae43515edbde0026f968a0e1f0e5dedf7b0ad"
+        },
+        {
+          "path": "src/officecli/Core/Chart/ChartEmbeddedDataSync.cs",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/src/officecli/Core/Chart/ChartEmbeddedDataSync.cs",
+          "sha256": "d16f27585d85873d5adf6b5faa41d0e55b1975f371f9876fabcf030bba53b7e5"
+        }
+      ],
+      "retained_notices": [
+        {
+          "local_path": "licenses/officecli/LICENSE",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/LICENSE",
+          "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1"
+        },
+        {
+          "local_path": "licenses/officecli/NOTICE",
+          "url": "https://github.com/iOfficeAI/OfficeCLI/blob/06ab520135a5289d0556d3e47fc2d42523f86547/NOTICE",
+          "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        }
+      ]
+    }
+  ],
+  "adapted_guides": [
+    "domain_guidance/financial_models.md",
+    "domain_guidance/healthcare.md",
+    "domain_guidance/marketing_advertising.md",
+    "domain_guidance/scientific_research.md",
+    "features/charts.md",
+    "references/read_only_qna.md",
+    "templates/financial_models.md",
+    "workflows/edit_workflows.md"
+  ],
+  "replacement_helpers": []
+}

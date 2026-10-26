@@ -1,0 +1,5 @@
+/* Google Fonts, SIL Open Font License 1.1 — latin subsets */
+@font-face{ font-family: 'Baloo 2'; font-weight: 400 800; font-display: block; src:url('/core/fonts/bundled/baloo2/Baloo2[wght].ttf') format('truetype'); }
+@font-face{ font-family: 'Titan One'; font-weight: 400; font-display: block; src:url('/core/fonts/bundled/titanone/TitanOne-Regular.ttf') format('truetype'); }
+@font-face{ font-family: 'VT323'; font-weight: 400; font-display: block; src:url('/core/fonts/bundled/vt323/VT323-Regular.ttf') format('truetype'); }
+@font-face{ font-family: 'Bungee'; font-weight: 400; font-display: block; src:url('/core/fonts/bundled/bungee/Bungee-Regular.ttf') format('truetype'); }

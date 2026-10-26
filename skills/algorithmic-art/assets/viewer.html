@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Seeded art explorer</title>
+<style>body{font:16px system-ui;max-width:760px;margin:24px auto;padding:16px;background:#faf9f6;color:#243746}form{display:flex;gap:12px;flex-wrap:wrap;align-items:end}label{display:grid;gap:6px}input,button{font:inherit;padding:8px}canvas{width:100%;height:auto;margin-top:20px;border:1px solid #243746}#status{min-height:1.5em}</style>
+<h1>Seeded art explorer</h1><form id="controls">
+<label>Seed<input id="seed" type="number" step="1" value="12345" required></label>
+<label>Shapes<input id="count" type="number" min="1" max="2000" step="1" value="160" required></label>
+<button>Regenerate</button><button type="button" id="reset">Reset</button><button type="button" id="export">Export PNG</button>
+</form><p id="status" role="status"></p><canvas id="art" width="720" height="480" aria-label="Generative artwork"></canvas>
+<script src="generator_template.js"></script><script>
+const canvas=document.querySelector('#art'), seed=document.querySelector('#seed'), count=document.querySelector('#count');
+function render(){try{SeededArt.drawArt(canvas,{seed:Number(seed.value),count:Number(count.value)});document.querySelector('#status').textContent=`Seed ${seed.value}, ${count.value} shapes`;}catch(e){document.querySelector('#status').textContent=e.message;}}
+document.querySelector('#controls').onsubmit=e=>{e.preventDefault();render();};
+document.querySelector('#reset').onclick=()=>{seed.value='12345';count.value='160';render();};
+document.querySelector('#export').onclick=()=>{const a=document.createElement('a');a.download=`art-${seed.value}-${count.value}.png`;a.href=canvas.toDataURL('image/png');a.click();};render();
+</script></html>

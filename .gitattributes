@@ -42,3 +42,25 @@
 *.xls binary
 *.xlsx binary
 *.zip binary
+
+# Preserve the hash-verified upstream motion snapshot, including original whitespace.
+/skills/create-motion-videos/assets/lemo/** -text -whitespace
+
+# Preserve third-party schema and template license bytes.
+/skills/documents/scripts/office/schemas/w3c/xml.xsd -text -whitespace
+/skills/slides/slide_templates/Fonts/LICENSE_DEJAVU.txt -text -whitespace
+
+# Preserve reference-package notices verbatim, including upstream EOF whitespace.
+# The per-skill provenance tests verify their exact hashes.
+/skills/deep-research/licenses/** -text -whitespace
+/skills/documents/licenses/** -text -whitespace
+/skills/pdf/licenses/** -text -whitespace
+/skills/slides/licenses/** -text -whitespace
+/skills/spreadsheets/licenses/** -text -whitespace
+/skills/deep-research/LICENSE.txt -text -whitespace
+/skills/deep-research/THIRD_PARTY_NOTICES.md -text -whitespace
+/skills/*/LICENSE.design-office-artifacts.txt -text -whitespace
+/skills/*/NOTICE.design-office-artifacts.txt -text -whitespace
+
+# Preserve the hash-pinned example license, including its upstream EOF whitespace.
+/skills/design-taste/examples/v2/LICENSE-CC-BY-SA-4.0.txt -text -whitespace

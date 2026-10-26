@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Source: Microsoft Open Specifications [MS-DOCX] Appendix A, section 5.4,
+  retrieved from learn.microsoft.com.  Local adaptations:
+  - schemaLocation values remapped to this package's schema layout
+  - published schema used verbatim otherwise
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:w12="http://schemas.openxmlformats.org/wordprocessingml/2006/main" elementFormDefault="qualified" attributeFormDefault="qualified" blockDefault="#all" xmlns="http://schemas.microsoft.com/office/word/2016/wordml/cid" targetNamespace="http://schemas.microsoft.com/office/word/2016/wordml/cid">
+  <xsd:import id="w12" namespace="http://schemas.openxmlformats.org/wordprocessingml/2006/main" schemaLocation="../ecma376-transitional/wml.xsd"/>
+  <xsd:attributeGroup name="decimaldurableId">
+    <xsd:attribute name="durableId" type="w12:ST_DecimalNumber" use="optional"/>
+  </xsd:attributeGroup>
+  <xsd:attribute name="durableId" type="w12:ST_LongHexNumber"/>
+  <xsd:complexType name="CT_CommentsIds">
+    <xsd:sequence>
+      <xsd:element name="commentId" type="CT_CommentId" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CT_CommentId">
+    <xsd:attribute name="paraId" type="w12:ST_LongHexNumber" use="required"/>
+    <xsd:attribute name="durableId" type="w12:ST_LongHexNumber" use="required"/>
+  </xsd:complexType>
+  <xsd:element name="commentsIds" type="CT_CommentsIds"/>
+</xsd:schema>

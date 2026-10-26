@@ -1,0 +1,106 @@
+@font-face{
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:url('/core/fonts/bundled/notoserifsc/NotoSerifSC[wght].ttf') format('truetype');
+  
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond-Italic[wght].ttf') format('truetype');
+  
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: block;
+  src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond-Italic[wght].ttf') format('truetype');
+  
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond[wght].ttf') format('truetype');
+  
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src:url('/core/fonts/bundled/caveat/Caveat[wght].ttf') format('truetype');
+  
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src:url('/core/fonts/bundled/caveat/Caveat[wght].ttf') format('truetype');
+  
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:url('/core/fonts/bundled/ibmplexmono/IBMPlexMono-Regular.ttf') format('truetype');
+  
+}

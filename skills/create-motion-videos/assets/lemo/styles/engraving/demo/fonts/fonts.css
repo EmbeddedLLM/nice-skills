@@ -1,0 +1,3 @@
+@font-face{ font-family: "Bodoni Moda"; src:url('/core/fonts/bundled/bodonimoda/BodoniModa[opsz,wght].ttf') format('truetype'); font-weight: 400 900; font-style: normal; }
+@font-face{ font-family: "Bodoni Moda"; src:url('/core/fonts/bundled/bodonimoda/BodoniModa-Italic[opsz,wght].ttf') format('truetype'); font-weight: 400 900; font-style: italic; }
+@font-face{ font-family: "Pinyon Script"; src:url('/core/fonts/bundled/pinyonscript/PinyonScript-Regular.ttf') format('truetype'); font-weight: 400; }

@@ -1,0 +1,852 @@
+{
+  "retrieved": "2026-10-21",
+  "google_fonts_commit": "47d54ca1ebb14fd864695f1d39dc734f39017c33",
+  "policy": "Replace missing subset and local font URLs with bundled original OFL full font files, preserving CSS family aliases and declared weight/style. No host system font dependency for these faces. Fonts remain unmodified.",
+  "fonts": [
+    {
+      "path": "core/fonts/bundled/alfaslabone/AlfaSlabOne-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/alfaslabone/AlfaSlabOne-Regular.ttf",
+      "sha256": "28664afa698a3393bd5a29eec750230a0645c5301d62200e5f2d3a027fb2299d",
+      "bytes": 97376,
+      "license_path": "core/fonts/bundled/alfaslabone/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/allura/Allura-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/allura/Allura-Regular.ttf",
+      "sha256": "9c142b2e515832c0dfc4ff8b8ea18f40314943bf937b72e2b23c4661bac14cc6",
+      "bytes": 246632,
+      "license_path": "core/fonts/bundled/allura/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/architectsdaughter/ArchitectsDaughter-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/architectsdaughter/ArchitectsDaughter-Regular.ttf",
+      "sha256": "6159718a08898e34bc1cb7354086141a5f9a70b73e54dbec27ead0d59a697359",
+      "bytes": 43352,
+      "license_path": "core/fonts/bundled/architectsdaughter/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/archivo/Archivo[wdth,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+      "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+      "bytes": 658596,
+      "license_path": "core/fonts/bundled/archivo/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/b612/B612-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/b612/B612-Bold.ttf",
+      "sha256": "91749541ac7b2c328b58832b7e2c4df809d7e2ba38d62a3a5aa3f8e38b271814",
+      "bytes": 100932,
+      "license_path": "core/fonts/bundled/b612/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/b612/B612-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/b612/B612-Regular.ttf",
+      "sha256": "139dce659100a83bf95b48474696e448bee95631ef84fd3d0437ced2bf33cf73",
+      "bytes": 153192,
+      "license_path": "core/fonts/bundled/b612/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/b612mono/B612Mono-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/b612mono/B612Mono-Regular.ttf",
+      "sha256": "b98cb96cc8a6206dae08c063d60902df7e6d40f86139ebdb97256704253c9c69",
+      "bytes": 140292,
+      "license_path": "core/fonts/bundled/b612mono/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/bagelfatone/BagelFatOne-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/bagelfatone/BagelFatOne-Regular.ttf",
+      "sha256": "9286944032c5a9b20ad70940105417beae14013e0b4f5fc292425afdc4330245",
+      "bytes": 1585984,
+      "license_path": "core/fonts/bundled/bagelfatone/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/baloo2/Baloo2[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/baloo2/Baloo2%5Bwght%5D.ttf",
+      "sha256": "d47a6852548059b1db49a1319d06d499d546c3fa2237cf9eee9c43c8abb025c2",
+      "bytes": 683200,
+      "license_path": "core/fonts/bundled/baloo2/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/barlowcondensed/BarlowCondensed-Light.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/barlowcondensed/BarlowCondensed-Light.ttf",
+      "sha256": "2c37e1e6b5feb71d38a42e6180d2e2f4ca1aad22cfecbd017430f3863deba67d",
+      "bytes": 101996,
+      "license_path": "core/fonts/bundled/barlowcondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/barlowcondensed/BarlowCondensed-Medium.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/barlowcondensed/BarlowCondensed-Medium.ttf",
+      "sha256": "262bd143292ce479ee0cd09a42b47ab173fca8e9c6eb5ed0b5c8a845bc371d17",
+      "bytes": 103360,
+      "license_path": "core/fonts/bundled/barlowcondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/barlowcondensed/BarlowCondensed-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/barlowcondensed/BarlowCondensed-Regular.ttf",
+      "sha256": "583cec5da3b84bc4dc7c9c72e2a565c94d34e431518b19d7e250b7830ad5f996",
+      "bytes": 102480,
+      "license_path": "core/fonts/bundled/barlowcondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/barlowcondensed/BarlowCondensed-SemiBold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/barlowcondensed/BarlowCondensed-SemiBold.ttf",
+      "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
+      "bytes": 109428,
+      "license_path": "core/fonts/bundled/barlowcondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/barlowsemicondensed/BarlowSemiCondensed-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/barlowsemicondensed/BarlowSemiCondensed-Bold.ttf",
+      "sha256": "5bd6757e459a110da81b44532f0f43058e2dab2401688abca84f2fdbde193cbb",
+      "bytes": 111772,
+      "license_path": "core/fonts/bundled/barlowsemicondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/barlowsemicondensed/BarlowSemiCondensed-Medium.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/barlowsemicondensed/BarlowSemiCondensed-Medium.ttf",
+      "sha256": "4998b693a190b76f2b11315844345a8546c1e2e6a320905507a9eed04edf8b48",
+      "bytes": 105560,
+      "license_path": "core/fonts/bundled/barlowsemicondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/barlowsemicondensed/BarlowSemiCondensed-SemiBold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/barlowsemicondensed/BarlowSemiCondensed-SemiBold.ttf",
+      "sha256": "bd299f4bc5b44d30be8d42e9bad3a5df7d66af1cd55d0ed72a8b8916360a1424",
+      "bytes": 109772,
+      "license_path": "core/fonts/bundled/barlowsemicondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/bigshoulders/BigShoulders[opsz,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/bigshoulders/BigShoulders%5Bopsz%2Cwght%5D.ttf",
+      "sha256": "4b4b24aa6f799aa73cdcd5b6fa840cbcbbb38b81fa9fa82c25126a4530c1ba44",
+      "bytes": 320800,
+      "license_path": "core/fonts/bundled/bigshoulders/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/bodonimoda/BodoniModa-Italic[opsz,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/bodonimoda/BodoniModa-Italic%5Bopsz%2Cwght%5D.ttf",
+      "sha256": "dfff1619f8f6871c6372f8855b67211f9a73b4e93d45aca868cd8f46a48622de",
+      "bytes": 176300,
+      "license_path": "core/fonts/bundled/bodonimoda/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/bodonimoda/BodoniModa[opsz,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/bodonimoda/BodoniModa%5Bopsz%2Cwght%5D.ttf",
+      "sha256": "550f5e34ee0a828d7941b1fe9bc58b34e5260d3f33a61532e6d0a0114e79a5cf",
+      "bytes": 162104,
+      "license_path": "core/fonts/bundled/bodonimoda/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/bricolagegrotesque/BricolageGrotesque[opsz,wdth,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/bricolagegrotesque/BricolageGrotesque%5Bopsz%2Cwdth%2Cwght%5D.ttf",
+      "sha256": "413e7357809ddd12fd80a96a8a396de0e401638d4acd3cb3e37532f0472ac682",
+      "bytes": 408496,
+      "license_path": "core/fonts/bundled/bricolagegrotesque/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/bungee/Bungee-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/bungee/Bungee-Regular.ttf",
+      "sha256": "c4f5361ce120af3e6b9156d0bf379fa19cda2ea0cd18ac01fd99596c6bf66e3f",
+      "bytes": 118996,
+      "license_path": "core/fonts/bundled/bungee/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/caveat/Caveat[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/caveat/Caveat%5Bwght%5D.ttf",
+      "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+      "bytes": 403648,
+      "license_path": "core/fonts/bundled/caveat/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/caveatbrush/CaveatBrush-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/caveatbrush/CaveatBrush-Regular.ttf",
+      "sha256": "e565bd7bffd895ca64f8d1cb77c816b9b38d9c010246386a07c9648592f6f282",
+      "bytes": 295568,
+      "license_path": "core/fonts/bundled/caveatbrush/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/cinzel/Cinzel[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/cinzel/Cinzel%5Bwght%5D.ttf",
+      "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+      "bytes": 125468,
+      "license_path": "core/fonts/bundled/cinzel/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/cormorantgaramond/CormorantGaramond-Italic[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/cormorantgaramond/CormorantGaramond-Italic%5Bwght%5D.ttf",
+      "sha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+      "bytes": 715644,
+      "license_path": "core/fonts/bundled/cormorantgaramond/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/cormorantgaramond/CormorantGaramond[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/cormorantgaramond/CormorantGaramond%5Bwght%5D.ttf",
+      "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+      "bytes": 1195560,
+      "license_path": "core/fonts/bundled/cormorantgaramond/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/cormorantsc/CormorantSC-Medium.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/cormorantsc/CormorantSC-Medium.ttf",
+      "sha256": "7ec02e6b6c20697fd8d5038349452b6f3c628c16440a04156650d42e3fef89bf",
+      "bytes": 762320,
+      "license_path": "core/fonts/bundled/cormorantsc/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/cormorantsc/CormorantSC-SemiBold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/cormorantsc/CormorantSC-SemiBold.ttf",
+      "sha256": "648cd1c932871e4e8e1d147b593315409e8ea82282f88e9397e2cceae83d065b",
+      "bytes": 762872,
+      "license_path": "core/fonts/bundled/cormorantsc/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/delagothicone/DelaGothicOne-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/delagothicone/DelaGothicOne-Regular.ttf",
+      "sha256": "4ff87a0965f1b0505e5a2c58424bc6ad3cff27e56a82f21c2fc9d6b0e3857ee2",
+      "bytes": 2508848,
+      "license_path": "core/fonts/bundled/delagothicone/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/dmmono/DMMono-Medium.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/dmmono/DMMono-Medium.ttf",
+      "sha256": "fd327daf461db87b44a87def475d251bf03b997f7c07d9680592d75dbbfaad0b",
+      "bytes": 50360,
+      "license_path": "core/fonts/bundled/dmmono/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/dmserifdisplay/DMSerifDisplay-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/dmserifdisplay/DMSerifDisplay-Regular.ttf",
+      "sha256": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616",
+      "bytes": 76580,
+      "license_path": "core/fonts/bundled/dmserifdisplay/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/fraunces/Fraunces[SOFT,WONK,opsz,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf",
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+      "bytes": 360440,
+      "license_path": "core/fonts/bundled/fraunces/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/fredoka/Fredoka[wdth,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/fredoka/Fredoka%5Bwdth%2Cwght%5D.ttf",
+      "sha256": "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8",
+      "bytes": 159184,
+      "license_path": "core/fonts/bundled/fredoka/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/gaegu/Gaegu-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/gaegu/Gaegu-Bold.ttf",
+      "sha256": "cc38a4af9506a45254d1ce07c589ec473d9e5f0be319e5a77b17c214903f8c1c",
+      "bytes": 2962664,
+      "license_path": "core/fonts/bundled/gaegu/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/gaegu/Gaegu-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/gaegu/Gaegu-Regular.ttf",
+      "sha256": "aa52c98336f7c62e2896fc8b12b56a75d5b476d88a2f104b0980f4f7ce0adfc3",
+      "bytes": 3165816,
+      "license_path": "core/fonts/bundled/gaegu/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/gochihand/GochiHand-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/gochihand/GochiHand-Regular.ttf",
+      "sha256": "c46b029ab4846b2935e301af0b2cf85a1d74d2858e6a33636a3e64cf3cc4696b",
+      "bytes": 37352,
+      "license_path": "core/fonts/bundled/gochihand/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/ibmplexmono/IBMPlexMono-Medium.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ibmplexmono/IBMPlexMono-Medium.ttf",
+      "sha256": "a9b4c49bb299e05b5f6c481e7fb5e78943d2793249a0c8874ab574a2d1ea6755",
+      "bytes": 136704,
+      "license_path": "core/fonts/bundled/ibmplexmono/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/ibmplexmono/IBMPlexMono-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "bytes": 135580,
+      "license_path": "core/fonts/bundled/ibmplexmono/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/ibmplexmono/IBMPlexMono-SemiBold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ibmplexmono/IBMPlexMono-SemiBold.ttf",
+      "sha256": "d3c38e55c78f5b0f28009fddba4834ec503278936a5986032424c9bd2d23aa46",
+      "bytes": 140216,
+      "license_path": "core/fonts/bundled/ibmplexmono/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ibmplexsans/IBMPlexSans%5Bwdth%2Cwght%5D.ttf",
+      "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
+      "bytes": 537244,
+      "license_path": "core/fonts/bundled/ibmplexsans/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/ibmplexsanscondensed/IBMPlexSansCondensed-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-Bold.ttf",
+      "sha256": "b65492d86cdd5cd9d43d2671b55d5d36fec36859fc8b08bc6aba78e441d6c849",
+      "bytes": 112228,
+      "license_path": "core/fonts/bundled/ibmplexsanscondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/ibmplexsanscondensed/IBMPlexSansCondensed-SemiBold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/ibmplexsanscondensed/IBMPlexSansCondensed-SemiBold.ttf",
+      "sha256": "a081ca60548aea14100757a2d6fe71ca60fd90ebce779c9a8ae5a0c8fb4526d4",
+      "bytes": 111476,
+      "license_path": "core/fonts/bundled/ibmplexsanscondensed/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/imfellenglish/IMFeENit28P.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/imfellenglish/IMFeENit28P.ttf",
+      "sha256": "47cd75dce54b1f2e0831359d22d5e688f519d68ae45706b664fd310fd0e3ccf7",
+      "bytes": 202368,
+      "license_path": "core/fonts/bundled/imfellenglish/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/imfellenglishsc/IMFeENsc28P.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/imfellenglishsc/IMFeENsc28P.ttf",
+      "sha256": "102324fb5434bb5da7963533426b0ad44c85bbc9e7755067535c9d11464a176b",
+      "bytes": 183932,
+      "license_path": "core/fonts/bundled/imfellenglishsc/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/inter/Inter[opsz,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "bytes": 876576,
+      "license_path": "core/fonts/bundled/inter/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/intertight/InterTight[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/intertight/InterTight%5Bwght%5D.ttf",
+      "sha256": "b81b73dcb64df3c230cabade7df6c5773bf863233f24c9ee51087519f1f88b6f",
+      "bytes": 581588,
+      "license_path": "core/fonts/bundled/intertight/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/italiana/Italiana-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/italiana/Italiana-Regular.ttf",
+      "sha256": "0ad271d9cd42a57cd5c5fa483ae2406a8138b95acb2a43eb73a8d37b7291fee9",
+      "bytes": 31828,
+      "license_path": "core/fonts/bundled/italiana/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/jetbrainsmono/JetBrainsMono[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf",
+      "sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda",
+      "bytes": 187208,
+      "license_path": "core/fonts/bundled/jetbrainsmono/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/josefinsans/JosefinSans[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/josefinsans/JosefinSans%5Bwght%5D.ttf",
+      "sha256": "9255abdb5f393bc51e101abbd07a716a977fd3e15472b1b84b260f426a342bfd",
+      "bytes": 118588,
+      "license_path": "core/fonts/bundled/josefinsans/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/jost/Jost[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/jost/Jost%5Bwght%5D.ttf",
+      "sha256": "6343b70971000b04c5d401c96ae08ce371086135e999d5e1e1413039c0213076",
+      "bytes": 134996,
+      "license_path": "core/fonts/bundled/jost/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/kanit/Kanit-BlackItalic.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/kanit/Kanit-BlackItalic.ttf",
+      "sha256": "7fe3f1d87e33e165eae2d664e42a31faf542d24e431a2e7da36f4e4eee5f8529",
+      "bytes": 185464,
+      "license_path": "core/fonts/bundled/kanit/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/kanit/Kanit-ExtraBoldItalic.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/kanit/Kanit-ExtraBoldItalic.ttf",
+      "sha256": "e874a96de66b5340174ddf9c621593280a21e9adb8e07bb1587112de274acad5",
+      "bytes": 188372,
+      "license_path": "core/fonts/bundled/kanit/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/kanit/Kanit-SemiBoldItalic.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/kanit/Kanit-SemiBoldItalic.ttf",
+      "sha256": "df1f635f3022306a7f61ed03cdc1a90364f31e19454bd287cffe45f98ca805d0",
+      "bytes": 175508,
+      "license_path": "core/fonts/bundled/kanit/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/leaguegothic/LeagueGothic[wdth].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/leaguegothic/LeagueGothic%5Bwdth%5D.ttf",
+      "sha256": "3b0e998c9a0034222394ffecdd383e6948259ad037b95555b139a217629ce1d0",
+      "bytes": 65972,
+      "license_path": "core/fonts/bundled/leaguegothic/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/leaguespartan/LeagueSpartan[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/leaguespartan/LeagueSpartan%5Bwght%5D.ttf",
+      "sha256": "2dbb6290b39ab7c48a40b18f74ca59ef48a69a015c3ea0542703f0c6ce51d617",
+      "bytes": 95116,
+      "license_path": "core/fonts/bundled/leaguespartan/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/librefranklin/LibreFranklin[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/librefranklin/LibreFranklin%5Bwght%5D.ttf",
+      "sha256": "2329f394b10ed1c71107df20fddc11e2bb1b68c1ecbb385f975b36fd64a971f8",
+      "bytes": 187436,
+      "license_path": "core/fonts/bundled/librefranklin/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/lilitaone/LilitaOne-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/lilitaone/LilitaOne-Regular.ttf",
+      "sha256": "f5b641c45c69d772ee4eda687bc9fda411d5cad6b0b45371491da4580cbc8d59",
+      "bytes": 28092,
+      "license_path": "core/fonts/bundled/lilitaone/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/limelight/Limelight-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/limelight/Limelight-Regular.ttf",
+      "sha256": "f5bf8a9159adfc5b9c756c85d812a4fd1299b8916fefdf39ad4b24ade6d8d0cf",
+      "bytes": 132292,
+      "license_path": "core/fonts/bundled/limelight/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/longcang/LongCang-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/longcang/LongCang-Regular.ttf",
+      "sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+      "bytes": 5162508,
+      "license_path": "core/fonts/bundled/longcang/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/lxgwmarkergothic/LXGWMarkerGothic-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/lxgwmarkergothic/LXGWMarkerGothic-Regular.ttf",
+      "sha256": "e6a55cfd5f18dc393f92670a164397a69242cb4eabe1d3feb5dc22fc4947a8ba",
+      "bytes": 3187360,
+      "license_path": "core/fonts/bundled/lxgwmarkergothic/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/mashanzheng/MaShanZheng-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/mashanzheng/MaShanZheng-Regular.ttf",
+      "sha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "bytes": 5857936,
+      "license_path": "core/fonts/bundled/mashanzheng/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/newsreader/Newsreader-Italic[opsz,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/newsreader/Newsreader-Italic%5Bopsz%2Cwght%5D.ttf",
+      "sha256": "796668611f80b64d5adf182fde3b6f29ed83b4e7cbec7b96937e84ac01364792",
+      "bytes": 495684,
+      "license_path": "core/fonts/bundled/newsreader/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/newsreader/Newsreader[opsz,wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/newsreader/Newsreader%5Bopsz%2Cwght%5D.ttf",
+      "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1",
+      "bytes": 451664,
+      "license_path": "core/fonts/bundled/newsreader/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/notosansjp/NotoSansJP[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/notosansjp/NotoSansJP%5Bwght%5D.ttf",
+      "sha256": "c2f3b4d463500a2ddcd3849cded1fceeb9fd6d1c32e6cbecd568453ba50fc68f",
+      "bytes": 9589900,
+      "license_path": "core/fonts/bundled/notosansjp/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/notosanssc/NotoSansSC[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "bytes": 17772300,
+      "license_path": "core/fonts/bundled/notosanssc/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/notoserifsc/NotoSerifSC[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf",
+      "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+      "bytes": 25125512,
+      "license_path": "core/fonts/bundled/notoserifsc/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/oldstandardtt/OldStandard-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/oldstandardtt/OldStandard-Bold.ttf",
+      "sha256": "7d831e9d799ad23ee98e889381a9db2a283b2dac7f228dd5c06071decb9c54db",
+      "bytes": 267128,
+      "license_path": "core/fonts/bundled/oldstandardtt/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/oldstandardtt/OldStandard-Italic.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/oldstandardtt/OldStandard-Italic.ttf",
+      "sha256": "4b9522f4711317fc06e2413a58b4662c249cb707df193d682b9d640e365ef564",
+      "bytes": 272692,
+      "license_path": "core/fonts/bundled/oldstandardtt/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/oldstandardtt/OldStandard-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/oldstandardtt/OldStandard-Regular.ttf",
+      "sha256": "42717a1280b523a506ca2b0285cca380e77fe214b1f6e3d75a8b925005f19eac",
+      "bytes": 249668,
+      "license_path": "core/fonts/bundled/oldstandardtt/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/oleoscript/OleoScript-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/oleoscript/OleoScript-Bold.ttf",
+      "sha256": "7e4843c9d74233f00a2815954177e33758c1c42a08d218b11c131cf7d818f1d5",
+      "bytes": 34628,
+      "license_path": "core/fonts/bundled/oleoscript/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/oleoscript/OleoScript-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/oleoscript/OleoScript-Regular.ttf",
+      "sha256": "1aa003ac938adf9bea644c406ce90eeb1913138aa1d7492242c0ca948c0f48ac",
+      "bytes": 34980,
+      "license_path": "core/fonts/bundled/oleoscript/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/outfit/Outfit[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/outfit/Outfit%5Bwght%5D.ttf",
+      "sha256": "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade",
+      "bytes": 110884,
+      "license_path": "core/fonts/bundled/outfit/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/overpass/Overpass[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/overpass/Overpass%5Bwght%5D.ttf",
+      "sha256": "970717df17a7f9911dee45f60695d05bfa9d745fa0a11fc5c348371fa21f0073",
+      "bytes": 318700,
+      "license_path": "core/fonts/bundled/overpass/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/overpassmono/OverpassMono[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/overpassmono/OverpassMono%5Bwght%5D.ttf",
+      "sha256": "49f230e10251608f0ae1a2ce46be768d7b9ddcbe5cdca2e9f6b762fcbce1ae4f",
+      "bytes": 258800,
+      "license_path": "core/fonts/bundled/overpassmono/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/patrickhand/PatrickHand-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/patrickhand/PatrickHand-Regular.ttf",
+      "sha256": "0f173b3e6cb6d1af25babf7f0057c5ac4ee11f9992b0469bb817e967ef4ad0fc",
+      "bytes": 214772,
+      "license_path": "core/fonts/bundled/patrickhand/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/pinyonscript/PinyonScript-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/pinyonscript/PinyonScript-Regular.ttf",
+      "sha256": "4aab130a6ed27f8b8117738c84a5602edf9300cdcc0651a9a65bf96f451ac29a",
+      "bytes": 151412,
+      "license_path": "core/fonts/bundled/pinyonscript/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/playfairdisplay/PlayfairDisplay-Italic[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/playfairdisplay/PlayfairDisplay-Italic%5Bwght%5D.ttf",
+      "sha256": "a5e26dc5e2e77fb2803a0bf02fd4f81ee136ec8dea863ccdb0c59a263b21378b",
+      "bytes": 278688,
+      "license_path": "core/fonts/bundled/playfairdisplay/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/playfairdisplay/PlayfairDisplay[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf",
+      "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
+      "bytes": 300724,
+      "license_path": "core/fonts/bundled/playfairdisplay/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/playfairdisplaysc/PlayfairDisplaySC-Black.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/playfairdisplaysc/PlayfairDisplaySC-Black.ttf",
+      "sha256": "9a508229401e2a5deb52ff9c11f00446a482bd25029836a54027716310cfe0b0",
+      "bytes": 202412,
+      "license_path": "core/fonts/bundled/playfairdisplaysc/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/playfairdisplaysc/PlayfairDisplaySC-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/playfairdisplaysc/PlayfairDisplaySC-Bold.ttf",
+      "sha256": "b58a968cfc9b4e96e6857a206e1b042dc3fdbe5dc31cd75825d864f80ac7e915",
+      "bytes": 204568,
+      "license_path": "core/fonts/bundled/playfairdisplaysc/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/poiretone/PoiretOne-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/poiretone/PoiretOne-Regular.ttf",
+      "sha256": "457f2d03263f58e5a6dbcc1b607b10dff6581e7cf9c4ebdf330ec3e6772a3558",
+      "bytes": 130176,
+      "license_path": "core/fonts/bundled/poiretone/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/quicksand/Quicksand[wght].ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/quicksand/Quicksand%5Bwght%5D.ttf",
+      "sha256": "39c9b64223561f56aaff6062a6f04063c4fc86809ad6768722c06614d977e1cc",
+      "bytes": 124824,
+      "license_path": "core/fonts/bundled/quicksand/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/rajdhani/Rajdhani-Light.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/rajdhani/Rajdhani-Light.ttf",
+      "sha256": "140e9f13af69538161c5780fcf7f81594c069aea887e7bffd417ae1c641213c3",
+      "bytes": 383928,
+      "license_path": "core/fonts/bundled/rajdhani/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/rajdhani/Rajdhani-Medium.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/rajdhani/Rajdhani-Medium.ttf",
+      "sha256": "12ff7dcfe4c206e3875ac53b1762eab57de6a2fa7f5a86c26b97b88d6591eac2",
+      "bytes": 384348,
+      "license_path": "core/fonts/bundled/rajdhani/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/rajdhani/Rajdhani-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/rajdhani/Rajdhani-Regular.ttf",
+      "sha256": "6e1fc228a8318251a6e569502ec57bac1e4656c582f92f59ccecc4688e039b98",
+      "bytes": 377860,
+      "license_path": "core/fonts/bundled/rajdhani/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/rajdhani/Rajdhani-SemiBold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/rajdhani/Rajdhani-SemiBold.ttf",
+      "sha256": "94bbd25a18ca665999feb05a537de9fd2b860dcfb78bbe9ca00270825bf235da",
+      "bytes": 390340,
+      "license_path": "core/fonts/bundled/rajdhani/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/reeniebeanie/ReenieBeanie.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/reeniebeanie/ReenieBeanie.ttf",
+      "sha256": "0ea608aa325bf9e11c9590cc0b63dcf7cd215e270784f1ebbe6fad4927b31ff8",
+      "bytes": 147036,
+      "license_path": "core/fonts/bundled/reeniebeanie/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/sacramento/Sacramento-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/sacramento/Sacramento-Regular.ttf",
+      "sha256": "9341fda10adbfeb7efc94302b34507a3e227d7e7f5c432df3f5ac8753ff73d24",
+      "bytes": 79696,
+      "license_path": "core/fonts/bundled/sacramento/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/sharetechmono/ShareTechMono-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/sharetechmono/ShareTechMono-Regular.ttf",
+      "sha256": "9ceab1f87414829af259c0f537573ae03ef7dd3147c0b27a36a1a0beb6732677",
+      "bytes": 43272,
+      "license_path": "core/fonts/bundled/sharetechmono/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/shipporimincho/ShipporiMincho-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/shipporimincho/ShipporiMincho-Bold.ttf",
+      "sha256": "63bc4eddc74793f671c3ab827c5175e773ffbe569d0bf50ee65375ea9e3bc286",
+      "bytes": 8563788,
+      "license_path": "core/fonts/bundled/shipporimincho/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/shipporimincho/ShipporiMincho-Medium.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/shipporimincho/ShipporiMincho-Medium.ttf",
+      "sha256": "700e505afc4cded2338eba29478a041e04c1c2ea5114fbb3e0b04e76c302c5d8",
+      "bytes": 8678848,
+      "license_path": "core/fonts/bundled/shipporimincho/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/shipporimincho/ShipporiMincho-SemiBold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/shipporimincho/ShipporiMincho-SemiBold.ttf",
+      "sha256": "bc7925544894a91466449adb73c6d943f50c3e53eb1c74d0673fe2dbafcd4d2d",
+      "bytes": 8650032,
+      "license_path": "core/fonts/bundled/shipporimincho/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/shortstack/ShortStack-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/shortstack/ShortStack-Regular.ttf",
+      "sha256": "9f0e16e8683b2dce66edd7c3340362b554326739fbac594cabc1e9442cf5e8cc",
+      "bytes": 68152,
+      "license_path": "core/fonts/bundled/shortstack/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/shrikhand/Shrikhand-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/shrikhand/Shrikhand-Regular.ttf",
+      "sha256": "8ba32f6d6a96fb8dbc92fc1acfbc4d2123d5348063d89b2c3dd784e7afcb81af",
+      "bytes": 220804,
+      "license_path": "core/fonts/bundled/shrikhand/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/silkscreen/Silkscreen-Bold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/silkscreen/Silkscreen-Bold.ttf",
+      "sha256": "768476aa712d4f5c3e18d3bce80f980a8bd3f72b7094d22ec5e768df3acfed61",
+      "bytes": 30632,
+      "license_path": "core/fonts/bundled/silkscreen/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/silkscreen/Silkscreen-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/silkscreen/Silkscreen-Regular.ttf",
+      "sha256": "c845473330b94c2079ce9af01c51ac8ba2d99c24f4d14c039843bbb8e642ebd8",
+      "bytes": 32220,
+      "license_path": "core/fonts/bundled/silkscreen/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/sniglet/Sniglet-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/sniglet/Sniglet-Regular.ttf",
+      "sha256": "2856a975b9c0ac0402e8402ac4bd126cd97d6c90490435b6198d77e6384ae4f0",
+      "bytes": 75212,
+      "license_path": "core/fonts/bundled/sniglet/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/titanone/TitanOne-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/titanone/TitanOne-Regular.ttf",
+      "sha256": "563ff6de179bbd44bcd7d2a6c448d6dc3bf935834237cf1250e506e65cd86ff1",
+      "bytes": 55712,
+      "license_path": "core/fonts/bundled/titanone/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/uncialantiqua/UncialAntiqua-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/uncialantiqua/UncialAntiqua-Regular.ttf",
+      "sha256": "33a5128b59d1c95d4f3788164f4ab3a1196f0a982263cb2cd278c47418366766",
+      "bytes": 63404,
+      "license_path": "core/fonts/bundled/uncialantiqua/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf",
+      "sha256": "d64afc0547059dd2e4a78da48bda0aba0a9901be58c7f8c201a8b2b6b4492cc8",
+      "bytes": 88508,
+      "license_path": "core/fonts/bundled/unifrakturmaguntia/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/vt323/VT323-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/vt323/VT323-Regular.ttf",
+      "sha256": "cf4de751ada78ceac033dbe16a687742939995b77bc2a052ae17a4957958594d",
+      "bytes": 153116,
+      "license_path": "core/fonts/bundled/vt323/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/yujisyuku/YujiSyuku-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/yujisyuku/YujiSyuku-Regular.ttf",
+      "sha256": "82728ebafc8c97391e2dab633414a806f344b8e4e2227d307179f07b548fca61",
+      "bytes": 8430348,
+      "license_path": "core/fonts/bundled/yujisyuku/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf",
+      "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+      "bytes": 1514968,
+      "license_path": "core/fonts/bundled/zcoolkuaile/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/zhimangxing/ZhiMangXing-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/zhimangxing/ZhiMangXing-Regular.ttf",
+      "sha256": "644e0cae9b40f0b10ab729a01bd32032e3973bac22be3dccae01bf6ae7fde969",
+      "bytes": 4063532,
+      "license_path": "core/fonts/bundled/zhimangxing/OFL.txt"
+    },
+    {
+      "path": "core/fonts/bundled/imfellenglish/IMFeENrm28P.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/imfellenglish/IMFeENrm28P.ttf",
+      "sha256": "fe9705bbde51af802719246d4608d08d37bde956ab99d9a590da996a5221a24c",
+      "bytes": 194992,
+      "license_path": "core/fonts/bundled/imfellenglish/OFL.txt"
+    }
+  ],
+  "changed_files": [
+    "core/fonts/fonts.css",
+    "styles/archive-lighttable/demo/index.html",
+    "styles/art-deco/demo/fonts/fonts.css",
+    "styles/ascii-crt/demo/fonts/fonts.css",
+    "styles/backrooms/demo/fonts/fonts.css",
+    "styles/blueprint/demo/fonts/fonts.css",
+    "styles/briefing-board/demo/index.html",
+    "styles/cel-anime-80s/demo/fonts/fonts.css",
+    "styles/crayon-book/demo/fonts/fonts.css",
+    "styles/dark-keynote/demo/fonts/fonts.css",
+    "styles/data-physical/demo/fonts.css",
+    "styles/dataviz/demo/fonts/fonts.css",
+    "styles/engraving/demo/fonts/fonts.css",
+    "styles/game-show/demo/fonts.css",
+    "styles/glass-product/demo/fonts/fonts.css",
+    "styles/halftone-dossier/demo/fonts.css",
+    "styles/hd-2d/demo/fonts/fonts.css",
+    "styles/hd-2d/demo/fonts/g.css",
+    "styles/hologram-hud/demo/fonts/fonts.css",
+    "styles/impasto/demo/fonts/fonts.css",
+    "styles/ink-wash/demo/fonts/fonts.css",
+    "styles/iso-infographic/demo/index.html",
+    "styles/lidar-survey/demo/index.html",
+    "styles/living-screencast/demo/index.html",
+    "styles/lowpoly-island/demo/fonts/fonts.css",
+    "styles/microgame/demo/fonts/fonts.css",
+    "styles/microscope/demo/index.html",
+    "styles/midcentury-toon/demo/fonts/fonts.css",
+    "styles/one-line/demo/index.html",
+    "styles/paper-lantern/demo/index.html",
+    "styles/paper-popup/demo/fonts.css",
+    "styles/papercut-red/demo/fonts/fonts.css",
+    "styles/pictogram-motion/demo/cover.html",
+    "styles/pictogram-motion/demo/cover34.html",
+    "styles/pictogram-motion/demo/index.html",
+    "styles/pictogram-motion/demo/lab.html",
+    "styles/risograph/demo/fonts/fonts.css",
+    "styles/rubber-hose/demo/fonts/fonts.css",
+    "styles/satellite-briefing/demo/index.html",
+    "styles/scifi-toon/demo/fonts/fonts.css",
+    "styles/shadow-puppet/demo/fonts/fonts.css",
+    "styles/silent-film/demo/fonts/fonts.css",
+    "styles/silkscreen-poster/demo/fonts/fonts.css",
+    "styles/spy-titles/demo/fonts/fonts.css",
+    "styles/spy-titles/demo/glyph.js",
+    "styles/stained-glass/demo/fonts/fonts.css",
+    "styles/swiss-motion/demo/fonts/fonts.css",
+    "styles/teardown/demo/index.html",
+    "styles/tilt-shift/demo/fonts/fonts.css",
+    "styles/ukiyoe/demo/fonts/fonts.css",
+    "styles/urban-sketch/demo/index.html",
+    "styles/watercolor/demo/fonts.css",
+    "styles/watercolor/demo/music/lib.html",
+    "styles/white-model/demo/fonts/fonts.css",
+    "styles/whiteboard/demo/index.html",
+    "styles/woodcut/demo/fonts/fonts.css"
+  ],
+  "aliases": {
+    "InterTight": "Inter Tight",
+    "JBMono": "JetBrains Mono",
+    "ShareTechMono": "Share Tech Mono",
+    "Architects": "Architects Daughter",
+    "B612Mono": "B612 Mono",
+    "NotoSC": "Noto Sans SC",
+    "SC": "Noto Sans SC",
+    "NotoSerifSC": "Noto Serif SC",
+    "SS": "Noto Serif SC",
+    "News": "Newsreader",
+    "Mono": "JetBrains Mono",
+    "LGothic": "League Gothic",
+    "LeagueGothic": "League Gothic",
+    "LSpartan": "League Spartan",
+    "Bricolage": "Bricolage Grotesque",
+    "PM": "IBM Plex Mono",
+    "Plex Mono": "IBM Plex Mono",
+    "PS": "IBM Plex Sans",
+    "BigShoulders": "Big Shoulders",
+    "Barlow SC": "Barlow Semi Condensed",
+    "Shippori": "Shippori Mincho",
+    "ShipporiK": "Shippori Mincho",
+    "Yuji": "Yuji Syuku",
+    "BC": "Barlow Condensed",
+    "Poiret": "Poiret One",
+    "Josefin": "Josefin Sans",
+    "Italiana": "Italiana",
+    "Titan": "Titan One",
+    "Lilita": "Lilita One",
+    "VT": "VT323",
+    "Arch": "Architects Daughter",
+    "AD": "Architects Daughter",
+    "Gochi": "Gochi Hand",
+    "Silk": "Silkscreen",
+    "IT": "Inter Tight",
+    "MaShanZheng": "Ma Shan Zheng",
+    "ZhiMangXing": "Zhi Mang Xing",
+    "LongCang": "Long Cang",
+    "Oleo": "Oleo Script",
+    "Slab": "Alfa Slab One",
+    "Libre Franklin Extra Bold": "Libre Franklin",
+    "Fraktur": "UnifrakturMaguntia",
+    "DMSerif": "DM Serif Display",
+    "Cormorant": "Cormorant Garamond",
+    "CormorantSC": "Cormorant SC"
+  },
+  "validation": {
+    "font_face_urls": 251,
+    "missing_font_face_targets": [],
+    "font_binaries_parsed": 105
+  }
+}

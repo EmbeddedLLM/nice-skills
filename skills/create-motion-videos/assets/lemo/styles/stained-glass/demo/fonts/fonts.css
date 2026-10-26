@@ -1,0 +1,4 @@
+@font-face{ font-family: 'Cinzel'; src:url('/core/fonts/bundled/cinzel/Cinzel[wght].ttf') format('truetype'); font-weight: 400 900; }
+@font-face{ font-family: 'IM Fell English'; src:url('/core/fonts/bundled/imfellenglish/IMFeENrm28P.ttf') format('truetype'); }
+@font-face{ font-family: 'Uncial Antiqua'; src:url('/core/fonts/bundled/uncialantiqua/UncialAntiqua-Regular.ttf') format('truetype'); }
+@font-face{ font-family: 'Cormorant Garamond'; src:url('/core/fonts/bundled/cormorantgaramond/CormorantGaramond[wght].ttf') format('truetype'); font-weight: 300 700; }
