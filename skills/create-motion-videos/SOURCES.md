@@ -113,3 +113,19 @@ No endorsement by any upstream author is implied.
 ### Verification note
 
 `tests/test_portable_skill_scripts.py` checks that both libraries parse, that every record keeps the fields the reader prints, that ids are unique, that filters and full-record reads work, and that a standalone copy of the skill resolves the libraries from any working directory. `tests/test_media_skill_packaging.py` verifies that every bundled file in the three asset bundles matches its pinned hash, that no unlisted file was added, that each bundle names its source and licence, and that the vendored Python and JavaScript parse. No film was made with these references or the starter kit during the import, so the guidance and the kit are unverified in production.
+
+## lemo: adaptation retrieved 2026-10-26
+
+Source: [https://github.com/lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar/tree/413a6bd6d78ebd3bdd5abaec9538a26867f890df), revision `413a6bd6d78ebd3bdd5abaec9538a26867f890df`. License: MIT; retained in [LICENSE-lemo.txt](LICENSE-lemo.txt).
+
+Added eight edit/documentary style guides and their metadata. The original runtime, 51 existing style packages, local font repairs, and renderer remain unchanged. Supplement files carry their own source_commit in upstream-manifest.json. No new demo films, posters, external datasets, footage, generated narration, or provider adapters are redistributed. New production guidance is adapted in references/evidence-and-editing.md.
+
+## shotcraft: adaptation retrieved 2026-10-26
+
+Source: [https://github.com/Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft/tree/43bd349a136651865ecfa6ea1cf012f6e957d304), revision `43bd349a136651865ecfa6ea1cf012f6e957d304`. License: Apache-2.0; retained in [LICENSE-shotcraft.txt](LICENSE-shotcraft.txt).
+
+Adapted real-product capture, shot purpose, energy arcs, beat-phase fitting, floating-point timing, and final encoded-frame verification. No source films, branded shot reconstructions, assets, Remotion runtime, publishing adapters, or Jianying automation are redistributed.
+
+## Additional production workflows
+
+Adapted component-duration budgeting and content-first scene selection from [Snapcn](https://github.com/shadcn-labs/snapcn/tree/d83a98ed00c520fd672535a4bb1d5e81580d4694), revision `d83a98ed00c520fd672535a4bb1d5e81580d4694` (MIT; [LICENSE-snapcn.txt](LICENSE-snapcn.txt)). Adapted beat/cut/phone-scale review and actionable timing notes from [HyperFrames](https://github.com/heygen-com/hyperframes/tree/c9e86a3b01199e78b4907667e63b330e9d742004), revision `c9e86a3b01199e78b4907667e63b330e9d742004` (Apache-2.0; [LICENSE-hyperframes.txt](LICENSE-hyperframes.txt)). Retrieved 2026-10-26. Local changes translate the workflow into the existing renderer and preserve host permission boundaries. No component code, Pro content, fonts, stock sounds, hosted tools, or alternate rendering runtime is copied.

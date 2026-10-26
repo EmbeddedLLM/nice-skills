@@ -151,3 +151,18 @@ docker run --rm -it -v "$PWD:/work" -w /work nice-skills:local
 ## Repository verification tooling
 
 Running the repository's checks needs the versions in this table plus the pinned Python and Node test dependencies. See [tests/README.md](tests/README.md) for the commands, coverage, and optional skips; CI uses Python 3.12 and Node.js 24. The sample container can run the same suites against a bind-mounted checkout; suites that inspect Git metadata need that checkout rather than the baked copy.
+
+## Source-adapted workflow additions (2026-10-26)
+
+| Skill or helper | Required | Optional and limits |
+| --- | --- | --- |
+| software-workflow | Source access and the destination project's own tools | No new runtime or hooks |
+| procedural-3d | The user's existing Blender or Three.js environment | Version follows the destination project; no model weights, MCP server, generator, or third-party assets bundled |
+| game-development | Destination engine/SDK; Python 3.10+ for the nine helpers | Raster tools use Pillow 11.3.0. Engine execution is separate from static checks. The Ebitengine generator defaults to Ebitengine 2.10.5 and Go 1.25.0; generated dependencies need the destination project's lock/build verification. Other engine versions follow the selected guide and existing project. No engines, signing identities, or publishing accounts are installed |
+| design-research | Python 3.10+ standard library | Offline catalog retrieval; external asset acquisition and version checks need separately authorized network access |
+| sound-design | NumPy 2.2.6, SciPy 1.15.3, Numba 0.61.2 from `skills/sound-design/requirements.txt` | Numba resolves llvmlite 0.44.0 in the test lock. No models or recorded samples. FFmpeg/ffprobe 6.1+ for optional final media mixing/inspection |
+| theme-factory Hallmark exporter | Python standard library | Fonts are fallback names, not bundled binaries; browser review checks actual contrast and font availability |
+| slides image composer | Existing Pillow 11.3.0 and python-pptx 1.0.2 | Existing LibreOffice/Poppler tier for visual review; content within images is not editable |
+| gif-creator browser encoder | Python 3.10+, FFmpeg/ffprobe 6.1+ | Existing browser tooling only when capture is requested; no capture or upload inside the encoder |
+
+Install the sound tier with `python -m pip install -r skills/sound-design/requirements.txt`; the repository test lock includes the same pins. Install game raster helpers with `python -m pip install -r skills/game-development/library/disciplines/create-game-assets/scripts/requirements.txt`. These are local dependencies; initial downloads need network access. The existing container's test lock installs the sound and raster dependencies, but it does not bundle game engines or Blender. Its broad dependency description covers the packaged Python/Node tools, not destination-project engines/SDKs.

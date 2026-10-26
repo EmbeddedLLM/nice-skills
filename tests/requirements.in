@@ -7,3 +7,4 @@
 -r ../skills/skill-creator/requirements.txt
 fonttools==4.60.1
 brotli==1.1.0
+-r ../skills/sound-design/requirements.txt

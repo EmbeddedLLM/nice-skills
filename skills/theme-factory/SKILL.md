@@ -7,6 +7,8 @@ description: Select, preview, customise and apply cohesive colour themes to webs
 
 Create a coherent applied theme, with special attention to the primary button. The bundled guide and Python standard-library CLI work offline without a paid palette service, provider API, or sibling skill.
 
+Optional web material direction: browse 48 attributed [Hallmark recipes](references/hallmark/cobalt.md) with `python scripts/hallmark.py list --query "technical"`, inspect one with `show cobalt`, or export its tokens with `css cobalt --output new-tokens.css`. Export refuses an existing CSS file and writes the retained license beside it. These recipes are separate from the 51 existing cross-format palettes; fonts are names/fallbacks, not downloaded assets. Inspect actual text/background pairs in the destination browser. See [SOURCES.md](SOURCES.md).
+
 ## Choose and apply
 
 1. Identify the destination, visual mood and any locked brand colours from the request. Proceed with a reasonable choice when context suffices; do not require a questionnaire.
@@ -37,7 +39,7 @@ python3 ROOT/scripts/themes.py verify
 
 - Use `source_colors` for the exact observed reference swatches. Use `colors` and `web.tokens` for the curated application. Added neutrals and shades are adaptations, not source values.
 - Preserve all nine Lavender values and original roles. Its primary **accent** is lavender, while its primary **button** is ink. Respect `action` and `on-action` overrides in web exports and use their hover overrides. Do not silently replace Lavender with Coolors' Soft Lavender.
-- Use the bundled guide as the single data source. The CLI extracts both JSON script blocks from it; do not create a second manifest that can drift. Read only selected records, not the full HTML or all tokens, into model context.
+- For the original cross-format palettes, use the bundled guide as the single data source. The CLI extracts both JSON script blocks from it; do not create a second manifest that can drift. Read only selected records, not the full HTML or all tokens, into model context.
 - Do not assume a good-looking swatch set guarantees usable interface colours. Give the page a quiet canvas, a readable ink colour, one clear primary action and softer supporting accents.
 - Read [application.md](references/application.md) for CSS wiring, Office slots, custom themes and validation limits.
 

@@ -2,7 +2,7 @@
 
 Open source agent skills: reusable instructions and supporting resources for focused tasks.
 
-The [skill catalog](skills/README.md) contains 22 focused, independently usable skills for research, documents, design, media, security, and development. They use local tools and supplied assets without requiring paid model-provider services. Narrated explainers and presenter edits have complete local routes; paid generation is optional and must be explicitly selected.
+The [skill catalog](skills/README.md) contains 27 focused, independently usable skills for research, documents, design, media, security, and development. They use local tools and supplied assets without requiring paid model-provider services. Narrated explainers and presenter edits have complete local routes; paid generation is optional and must be explicitly selected.
 
 ## Using a skill
 
@@ -48,3 +48,5 @@ The skills and supporting tests are adapted from [Agentic Skills](https://github
 ## License
 
 [MIT](LICENSE). Preserve any bundled third-party license notices and attribution.
+
+The [source adaptation review](SOURCE_REVIEW.md) documents the additional design, motion, game, sound, and engineering sources reviewed on 2026-10-26, including material excluded from redistribution.

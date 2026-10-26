@@ -28,6 +28,8 @@ Python dependencies are in [requirements.txt](requirements.txt). Rendering needs
 
 Use [package tools](references/package-tools.md) for adding slides, cleanup, validation, and thumbnail generation. Cleanup and structural edits operate on copies and are not implicit permission to remove unrelated content.
 
+For an explicitly requested image-based presentation, use [raster-deck mode](references/image-decks.md) and `scripts/images_to_pptx.py`. State the editability limitation; native editable decks remain the default.
+
 ## Optional Openverse imagery
 
 When a slide needs external imagery, use the free anonymous [Openverse image API](https://api.openverse.org/v1/) with an available HTTP tool and permitted network access. Example request:
