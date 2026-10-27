@@ -1,5 +1,7 @@
 # Sources and notices
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 ## addy: adaptation retrieved 2026-10-26
 
 Source: [https://github.com/addyosmani/agent-skills](https://github.com/addyosmani/agent-skills/tree/aeac41d4d005999432bb7312f7ff06383a91d59d), revision `aeac41d4d005999432bb7312f7ff06383a91d59d`. License: MIT; retained in [LICENSE-addy.txt](LICENSE-addy.txt).

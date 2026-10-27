@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "skill": "security-audit",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 1,
+    "unknown_sources": 0,
+    "collections": {
+      "cloudflare": 1
+    }
+  },
+  "entries": [
+    {
+      "id": "cloudflare:audit",
+      "collection": "cloudflare",
+      "title": "Cloudflare security audit workflow and validators",
+      "category": "workflow",
+      "uses": ["Source-first vulnerability audit phases and report validators."],
+      "description": "Source-first vulnerability audit phases and report validators.",
+      "paths": ["SKILL.md", "references", "scripts"],
+      "source_url": "https://github.com/cloudflare/security-audit-skill/tree/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "source_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "license": "MIT",
+      "notice_paths": ["LICENSE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    }
+  ]
+}

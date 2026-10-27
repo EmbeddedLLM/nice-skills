@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "skill": "deep-research",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 7,
+    "unknown_sources": 1,
+    "collections": {
+      "reference-package": 1,
+      "reference-source": 6
+    }
+  },
+  "entries": [
+    {
+      "id": "reference-package:adaptive-deep-research",
+      "collection": "reference-package",
+      "title": "Adaptive Deep Research supplied reference",
+      "category": "workflow",
+      "uses": [
+        "Integrated user-owned questions, partial-answer handling, resumable research, observed source locators, forum coverage limits, source-unit deduplication, and time-budget accounting into the existing portable workflow. Optional evidence auditor and templates were not imported."
+      ],
+      "description": "Integrated user-owned questions, partial-answer handling, resumable research, observed source locators, forum coverage limits, source-unit deduplication, and time-budget accounting into the existing portable workflow. Optional evidence auditor and templates were not imported.",
+      "paths": ["SKILL.md", "references"],
+      "source_url": "Unknown",
+      "source_commit": "Unknown",
+      "license": "MIT",
+      "notice_paths": ["LICENSE.txt", "THIRD_PARTY_NOTICES.md"],
+      "provenance_path": "references/provenance.json",
+      "notes": "The immediate supplied reference package has no recorded public URL or revision. Its contributing upstream sources are listed individually below; original replacement helpers are not imported source implementations."
+    },
+    {
+      "id": "reference-source:bggg",
+      "collection": "reference-source",
+      "title": "Bggg",
+      "category": "guidance-source",
+      "uses": ["Selected guidance contributing to the supplied reference package."],
+      "description": "Selected guidance contributing to the supplied reference package.",
+      "paths": ["references/provenance.json"],
+      "source_url": "https://github.com/binggandata/bggg-skills/tree/1034ee5805f3fd5b010a4f57affa4aa796ab75d5",
+      "source_commit": "1034ee5805f3fd5b010a4f57affa4aa796ab75d5",
+      "license": "MIT",
+      "notice_paths": ["licenses/bggg-MIT.txt"],
+      "provenance_path": "references/provenance.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "bggg"
+    },
+    {
+      "id": "reference-source:ecc",
+      "collection": "reference-source",
+      "title": "Ecc",
+      "category": "guidance-source",
+      "uses": ["Selected guidance contributing to the supplied reference package."],
+      "description": "Selected guidance contributing to the supplied reference package.",
+      "paths": ["references/provenance.json"],
+      "source_url": "https://github.com/affaan-m/ECC/tree/90606c8315ee09cafc303515c5f33024db6b9882",
+      "source_commit": "90606c8315ee09cafc303515c5f33024db6b9882",
+      "license": "MIT",
+      "notice_paths": ["licenses/ecc-MIT.txt"],
+      "provenance_path": "references/provenance.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "ecc"
+    },
+    {
+      "id": "reference-source:last30days",
+      "collection": "reference-source",
+      "title": "Last30Days",
+      "category": "guidance-source",
+      "uses": ["Selected guidance contributing to the supplied reference package."],
+      "description": "Selected guidance contributing to the supplied reference package.",
+      "paths": ["references/provenance.json"],
+      "source_url": "https://github.com/mvanhorn/last30days-skill/tree/832d09591568e37dd990ccb9d5c51fb4a403f5ed",
+      "source_commit": "832d09591568e37dd990ccb9d5c51fb4a403f5ed",
+      "license": "MIT",
+      "notice_paths": ["licenses/last30days-MIT.txt"],
+      "provenance_path": "references/provenance.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "last30days"
+    },
+    {
+      "id": "reference-source:makerskills",
+      "collection": "reference-source",
+      "title": "Makerskills",
+      "category": "guidance-source",
+      "uses": ["Selected guidance contributing to the supplied reference package."],
+      "description": "Selected guidance contributing to the supplied reference package.",
+      "paths": ["references/provenance.json"],
+      "source_url": "https://github.com/coreyhaines31/makerskills/tree/cc31579798ec98b89c6b0d18439c13a795d8d5fb",
+      "source_commit": "cc31579798ec98b89c6b0d18439c13a795d8d5fb",
+      "license": "MIT",
+      "notice_paths": ["licenses/makerskills-MIT.txt"],
+      "provenance_path": "references/provenance.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "makerskills"
+    },
+    {
+      "id": "reference-source:mattpocock",
+      "collection": "reference-source",
+      "title": "Mattpocock",
+      "category": "guidance-source",
+      "uses": ["Selected guidance contributing to the supplied reference package."],
+      "description": "Selected guidance contributing to the supplied reference package.",
+      "paths": ["references/provenance.json"],
+      "source_url": "https://github.com/mattpocock/skills/tree/5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "source_commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "license": "MIT",
+      "notice_paths": ["licenses/mattpocock-MIT.txt"],
+      "provenance_path": "references/provenance.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "mattpocock"
+    },
+    {
+      "id": "reference-source:omnara",
+      "collection": "reference-source",
+      "title": "Omnara",
+      "category": "guidance-source",
+      "uses": ["Selected guidance contributing to the supplied reference package."],
+      "description": "Selected guidance contributing to the supplied reference package.",
+      "paths": ["references/provenance.json"],
+      "source_url": "https://github.com/Stunspot/omnara-deep-research/tree/33759527bf75258df9fac43afd2f87fdae255ac5",
+      "source_commit": "33759527bf75258df9fac43afd2f87fdae255ac5",
+      "license": "MIT",
+      "notice_paths": ["licenses/omnara-MIT.txt"],
+      "provenance_path": "references/provenance.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "omnara"
+    }
+  ]
+}

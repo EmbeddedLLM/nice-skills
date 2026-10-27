@@ -1,5 +1,7 @@
 # Sources and notices
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 Adapted from [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/28b3b8dee8c976df4fa3e94aed4e092ad43fcb03), revision `28b3b8dee8c976df4fa3e94aed4e092ad43fcb03`, retrieved 2026-10-26. MIT, copyright 2024 Next Level Builder; full notice in [LICENSE.txt](LICENSE.txt).
 
 Bundled the source `data/` and five Python scripts for offline BM25 retrieval, stack guidance, provenance validation, and design-system suggestions. The entry point is rewritten for portable, optional research that preserves an existing design system. Installer, plugin metadata, screenshots, generated projects, and duplicated CLI assets are excluded.

@@ -1,5 +1,7 @@
 # Sources and notices
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 ## img2threejs: adaptation retrieved 2026-10-26
 
 Source: [https://github.com/img2threejs/img2threejs](https://github.com/img2threejs/img2threejs/tree/954cd5845e90efd045694bab725d68a9863c20e0), revision `954cd5845e90efd045694bab725d68a9863c20e0`. License: Apache-2.0; retained in [LICENSE-img2threejs.txt](LICENSE-img2threejs.txt).

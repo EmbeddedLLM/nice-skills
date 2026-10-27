@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "skill": "documents",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 9,
+    "unknown_sources": 1,
+    "collections": {
+      "reference-package": 1,
+      "reference-source": 8
+    }
+  },
+  "entries": [
+    {
+      "id": "reference-package:design-office-artifacts",
+      "collection": "reference-package",
+      "title": "Design Office Artifacts supplied reference",
+      "category": "workflow",
+      "uses": [
+        "Reorganized format-preservation, calculation, layout, and verification guidance for the existing local tools. Reimplemented the issue 6 flagged helpers from behavior contracts; no upstream engine, palette, font, template, or sample artifact was imported."
+      ],
+      "description": "Reorganized format-preservation, calculation, layout, and verification guidance for the existing local tools. Reimplemented the issue 6 flagged helpers from behavior contracts; no upstream engine, palette, font, template, or sample artifact was imported.",
+      "paths": [
+        "ooxml/hyperlinks_and_fields.md",
+        "tasks/clean_tracked_changes.md",
+        "tasks/equations.md",
+        "tasks/forms_content_controls.md",
+        "tasks/multi_doc_merge.md",
+        "tasks/navigation_internal_links.md",
+        "tasks/sections_layout.md",
+        "tasks/watermarks_background.md"
+      ],
+      "source_url": "Unknown",
+      "source_commit": "Unknown",
+      "license": "MIT",
+      "notice_paths": ["LICENSE.design-office-artifacts.txt", "NOTICE.design-office-artifacts.txt"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "The immediate supplied reference package has no recorded public URL or revision. Its contributing upstream sources are listed individually below; original replacement helpers are not imported source implementations."
+    },
+    {
+      "id": "reference-source:docx-report-skill",
+      "collection": "reference-source",
+      "title": "DOCX Report Skill",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/drharunyuksel/docx-report-skill/tree/efbd76eecad7e1aa070a8ca17dffc51a685833d7",
+      "source_commit": "efbd76eecad7e1aa070a8ca17dffc51a685833d7",
+      "license": "MIT",
+      "notice_paths": ["licenses/docx-report-skill/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "docx-report-skill"
+    },
+    {
+      "id": "reference-source:huashu_md_html",
+      "collection": "reference-source",
+      "title": "Huashu Markdown / HTML / DOCX",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/alchaincyf/huashu-md-html/tree/5826f83f3050c19aa45acdd7f9405af48011736f",
+      "source_commit": "5826f83f3050c19aa45acdd7f9405af48011736f",
+      "license": "MIT",
+      "notice_paths": ["licenses/huashu_md_html/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "huashu_md_html"
+    },
+    {
+      "id": "reference-source:kami",
+      "collection": "reference-source",
+      "title": "Kami",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/tw93/Kami/tree/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6",
+      "source_commit": "6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6",
+      "license": "MIT",
+      "notice_paths": ["licenses/kami/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "kami"
+    },
+    {
+      "id": "reference-source:luobo-ppt",
+      "collection": "reference-source",
+      "title": "Luobo PPT",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/zhouwei713/luobo-ppt/tree/0437696197cef91fceccb618c7928e1c220b41b9",
+      "source_commit": "0437696197cef91fceccb618c7928e1c220b41b9",
+      "license": "MIT",
+      "notice_paths": ["licenses/luobo-ppt/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "luobo-ppt"
+    },
+    {
+      "id": "reference-source:microsoft_powerbi_report",
+      "collection": "reference-source",
+      "title": "Microsoft Power BI Report skill / Skills for Fabric",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/microsoft/skills-for-fabric/tree/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f",
+      "source_commit": "bc42aaf734771bf752c1d7082dd91e5a6ca72b9f",
+      "license": "MIT",
+      "notice_paths": ["licenses/microsoft_powerbi_report/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "microsoft_powerbi_report"
+    },
+    {
+      "id": "reference-source:minimax_office",
+      "collection": "reference-source",
+      "title": "MiniMax DOCX and XLSX guidance",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b",
+      "source_commit": "60aaae52bb2af8162732751a4332f62a5fef518b",
+      "license": "MIT",
+      "notice_paths": ["licenses/minimax_office/LICENSE", "licenses/minimax_office/REPOSITORY-LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "minimax_office"
+    },
+    {
+      "id": "reference-source:officecli",
+      "collection": "reference-source",
+      "title": "OfficeCLI and its document skills",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/iOfficeAI/OfficeCLI/tree/06ab520135a5289d0556d3e47fc2d42523f86547",
+      "source_commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
+      "license": "Apache-2.0",
+      "notice_paths": ["licenses/officecli/LICENSE", "licenses/officecli/NOTICE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "officecli"
+    },
+    {
+      "id": "reference-source:theme-factory",
+      "collection": "reference-source",
+      "title": "Anthropic Theme Factory — Ocean Depths",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "source_commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "notice_paths": ["licenses/theme-factory/LICENSE.txt"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "theme-factory"
+    }
+  ]
+}

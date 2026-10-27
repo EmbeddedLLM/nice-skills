@@ -1,0 +1,1324 @@
+{
+  "schema_version": 1,
+  "skill": "game-development",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 77,
+    "unknown_sources": 0,
+    "collections": {
+      "gamedev": 76,
+      "go-fonts": 1
+    }
+  },
+  "entries": [
+    {
+      "id": "gamedev:disciplines/ai-behavior-trees-utility-ai",
+      "collection": "gamedev",
+      "title": "ai-behavior-trees-utility-ai",
+      "category": "game-guide",
+      "uses": [
+        "Build a production behavior-tree runtime (Blackboard, action/condition leaves, sequence/selector/parallel composites, decorators) and a Utility AI system (response curves — linear, exponential, sigmoid, quadratic — considerations, and action evaluators), plus hybrid BT-drives-Utility agents. Use when implementing a reusable behavior-tree or utility-based decision system, or tuning enemy/NPC decisions beyond a simple FSM, or when the user mentions behavior tree, blackboard, decorator, selector, sequence, tick status, utility AI, response/scoring curve, or consideration. For choosing between FSM/BT/steering or for pathfinding, use game-ai; for Unreal's BehaviorTree/Blackboard assets, use unreal-behavior-trees.\n"
+      ],
+      "description": "Build a production behavior-tree runtime (Blackboard, action/condition leaves, sequence/selector/parallel composites, decorators) and a Utility AI system (response curves — linear, exponential, sigmoid, quadratic — considerations, and action evaluators), plus hybrid BT-drives-Utility agents. Use when implementing a reusable behavior-tree or utility-based decision system, or tuning enemy/NPC decisions beyond a simple FSM, or when the user mentions behavior tree, blackboard, decorator, selector, sequence, tick status, utility AI, response/scoring curve, or consideration. For choosing between FSM/BT/steering or for pathfinding, use game-ai; for Unreal's BehaviorTree/Blackboard assets, use unreal-behavior-trees.\n",
+      "paths": ["library/disciplines/ai-behavior-trees-utility-ai/SKILL.md", "library/disciplines/ai-behavior-trees-utility-ai"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/ai-behavior-trees-utility-ai/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/audio-design",
+      "collection": "gamedev",
+      "title": "audio-design",
+      "category": "game-guide",
+      "uses": [
+        "Implement game audio practice — bus/mixer architecture and gain in decibels, ducking (sidechain), adaptive/dynamic music via layering and re-sequencing, SFX variation, and beat synchronization. Engine-neutral. Use when the user mentions audio mixing, audio buses, adaptive/dynamic music, ducking, SFX variation, music layers, or syncing gameplay to the beat.\n"
+      ],
+      "description": "Implement game audio practice — bus/mixer architecture and gain in decibels, ducking (sidechain), adaptive/dynamic music via layering and re-sequencing, SFX variation, and beat synchronization. Engine-neutral. Use when the user mentions audio mixing, audio buses, adaptive/dynamic music, ducking, SFX variation, music layers, or syncing gameplay to the beat.\n",
+      "paths": ["library/disciplines/audio-design/SKILL.md", "library/disciplines/audio-design"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/audio-design/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/camera-systems",
+      "collection": "gamedev",
+      "title": "camera-systems",
+      "category": "game-guide",
+      "uses": [
+        "Build game cameras that feel good — 2D follow with a deadzone, look-ahead, smoothing, and level-bounds clamping; 3D third-person orbit with collision and first-person look; plus multi-target framing and a shake hook. Engine-neutral techniques that pair with the engine's camera node and rigs like Unity Cinemachine or Godot Camera2D/PhantomCamera. Use when the user mentions camera follow, follow camera, deadzone, look-ahead, camera smoothing, camera bounds/ limits, third-person camera, orbit camera, first-person look, Cinemachine, or camera jitter.\n"
+      ],
+      "description": "Build game cameras that feel good — 2D follow with a deadzone, look-ahead, smoothing, and level-bounds clamping; 3D third-person orbit with collision and first-person look; plus multi-target framing and a shake hook. Engine-neutral techniques that pair with the engine's camera node and rigs like Unity Cinemachine or Godot Camera2D/PhantomCamera. Use when the user mentions camera follow, follow camera, deadzone, look-ahead, camera smoothing, camera bounds/ limits, third-person camera, orbit camera, first-person look, Cinemachine, or camera jitter.\n",
+      "paths": ["library/disciplines/camera-systems/SKILL.md", "library/disciplines/camera-systems"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/camera-systems/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/create-game-assets",
+      "collection": "gamedev",
+      "title": "create-game-assets",
+      "category": "game-guide",
+      "uses": [
+        "Plan, generate, source, normalize, and validate cohesive visual game assets. Use for art direction, style bibles, sprites, tilesets, backgrounds, UI art, icons, textures, concept art, or 3D asset briefs."
+      ],
+      "description": "Plan, generate, source, normalize, and validate cohesive visual game assets. Use for art direction, style bibles, sprites, tilesets, backgrounds, UI art, icons, textures, concept art, or 3D asset briefs.",
+      "paths": ["library/disciplines/create-game-assets/SKILL.md", "library/disciplines/create-game-assets"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/create-game-assets/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/dialogue-systems",
+      "collection": "gamedev",
+      "title": "dialogue-systems",
+      "category": "game-guide",
+      "uses": [
+        "Build branching dialogue and narrative — a node/choice graph with conditions, variables, and localization hooks — and choose between authoring tools Ink and Yarn Spinner or a custom data-driven runner. Engine-neutral. Use when the user mentions dialogue system, branching dialogue, conversation tree, choices, Ink (.ink), Yarn Spinner (.yarn), or NPC dialogue.\n"
+      ],
+      "description": "Build branching dialogue and narrative — a node/choice graph with conditions, variables, and localization hooks — and choose between authoring tools Ink and Yarn Spinner or a custom data-driven runner. Engine-neutral. Use when the user mentions dialogue system, branching dialogue, conversation tree, choices, Ink (.ink), Yarn Spinner (.yarn), or NPC dialogue.\n",
+      "paths": ["library/disciplines/dialogue-systems/SKILL.md", "library/disciplines/dialogue-systems"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/dialogue-systems/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/game-ai",
+      "collection": "gamedev",
+      "title": "game-ai",
+      "category": "game-guide",
+      "uses": [
+        "Design NPC and enemy decision-making with finite state machines, behavior trees, steering behaviors, and A* pathfinding — engine-neutral algorithms that pair with the detected engine's navigation API. Use when building enemy AI, an FSM or behavior tree, steering/flocking, or pathfinding, or when the user mentions state machine, behavior tree, blackboard, A*, navmesh, seek, or patrol/chase.\n"
+      ],
+      "description": "Design NPC and enemy decision-making with finite state machines, behavior trees, steering behaviors, and A* pathfinding — engine-neutral algorithms that pair with the detected engine's navigation API. Use when building enemy AI, an FSM or behavior tree, steering/flocking, or pathfinding, or when the user mentions state machine, behavior tree, blackboard, A*, navmesh, seek, or patrol/chase.\n",
+      "paths": ["library/disciplines/game-ai/SKILL.md", "library/disciplines/game-ai"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/game-ai/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/game-feel",
+      "collection": "gamedev",
+      "title": "game-feel",
+      "category": "game-guide",
+      "uses": [
+        "Add \"juice\" and game feel that makes actions satisfying — screen shake, hit-stop/freeze frames, tweened/eased motion, squash & stretch, knockback, and layered audio-visual feedback — as engine-neutral techniques that pair with the detected engine's tween, particle, and camera APIs. Use when the user mentions game feel, juice, \"make it feel good/punchy\", screen shake, hit stop, screen freeze, easing, squash and stretch, impact frames, or feedback/polish on hits, jumps, pickups, and deaths.\n"
+      ],
+      "description": "Add \"juice\" and game feel that makes actions satisfying — screen shake, hit-stop/freeze frames, tweened/eased motion, squash & stretch, knockback, and layered audio-visual feedback — as engine-neutral techniques that pair with the detected engine's tween, particle, and camera APIs. Use when the user mentions game feel, juice, \"make it feel good/punchy\", screen shake, hit stop, screen freeze, easing, squash and stretch, impact frames, or feedback/polish on hits, jumps, pickups, and deaths.\n",
+      "paths": ["library/disciplines/game-feel/SKILL.md", "library/disciplines/game-feel"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/game-feel/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/game-ui-ux",
+      "collection": "gamedev",
+      "title": "game-ui-ux",
+      "category": "game-guide",
+      "uses": [
+        "Design and build game UI/UX — HUDs, menus, and overlays — that survive every screen: anchor- based responsive layout, resolution/aspect scaling and safe areas, keyboard/gamepad focus navigation, a screen/menu state stack, and event-driven (not polled) HUD updates. Engine- neutral patterns that pair with the detected engine's UI skill. Use when the user mentions HUD, health bar, main menu, pause menu, settings screen, UI layout, anchors, UI scaling, aspect ratio, safe area, controller/keyboard menu navigation, or wiring UI to game state.\n"
+      ],
+      "description": "Design and build game UI/UX — HUDs, menus, and overlays — that survive every screen: anchor- based responsive layout, resolution/aspect scaling and safe areas, keyboard/gamepad focus navigation, a screen/menu state stack, and event-driven (not polled) HUD updates. Engine- neutral patterns that pair with the detected engine's UI skill. Use when the user mentions HUD, health bar, main menu, pause menu, settings screen, UI layout, anchors, UI scaling, aspect ratio, safe area, controller/keyboard menu navigation, or wiring UI to game state.\n",
+      "paths": ["library/disciplines/game-ui-ux/SKILL.md", "library/disciplines/game-ui-ux"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/game-ui-ux/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/input-systems",
+      "collection": "gamedev",
+      "title": "input-systems",
+      "category": "game-guide",
+      "uses": [
+        "Architect game input — action mapping (abstracting keys into named actions), rebinding with conflict detection and persistence, multi-device support (keyboard, gamepad, touch), analog deadzones, and feel features like input buffering and coyote time, plus accessibility. Engine-neutral. Use when the user mentions input mapping, rebind controls, gamepad support, deadzone, input buffering, coyote time, or accessible controls.\n"
+      ],
+      "description": "Architect game input — action mapping (abstracting keys into named actions), rebinding with conflict detection and persistence, multi-device support (keyboard, gamepad, touch), analog deadzones, and feel features like input buffering and coyote time, plus accessibility. Engine-neutral. Use when the user mentions input mapping, rebind controls, gamepad support, deadzone, input buffering, coyote time, or accessible controls.\n",
+      "paths": ["library/disciplines/input-systems/SKILL.md", "library/disciplines/input-systems"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/input-systems/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/level-design",
+      "collection": "gamedev",
+      "title": "level-design",
+      "category": "game-guide",
+      "uses": [
+        "Design and build playable levels — the blockout/whitebox-to-playable workflow, player metrics and grid layout, pacing and flow (tension/rest curve), gating and the critical path, and encounter design. Engine-neutral practice. Use when the user mentions level design, blockout/whitebox/greybox, level layout, level pacing, encounter design, or the critical path through a level.\n"
+      ],
+      "description": "Design and build playable levels — the blockout/whitebox-to-playable workflow, player metrics and grid layout, pacing and flow (tension/rest curve), gating and the critical path, and encounter design. Engine-neutral practice. Use when the user mentions level design, blockout/whitebox/greybox, level layout, level pacing, encounter design, or the critical path through a level.\n",
+      "paths": ["library/disciplines/level-design/SKILL.md", "library/disciplines/level-design"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/level-design/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/performance-optimization",
+      "collection": "gamedev",
+      "title": "performance-optimization",
+      "category": "game-guide",
+      "uses": [
+        "Find and fix game performance problems methodically — measure with the engine profiler first, reason about the frame-time budget, locate the CPU-vs-GPU bottleneck, then apply the right fix: object pooling, draw-call batching, fewer allocations/GC spikes, and asset budgets. Engine- neutral method that pairs with each engine's profiler. Use when the user mentions performance, optimize, low/dropping FPS, frame drops, stutter, lag, profiler, frame budget, draw calls, batching, garbage collection/GC spikes, object pooling, or \"the game runs slow\".\n"
+      ],
+      "description": "Find and fix game performance problems methodically — measure with the engine profiler first, reason about the frame-time budget, locate the CPU-vs-GPU bottleneck, then apply the right fix: object pooling, draw-call batching, fewer allocations/GC spikes, and asset budgets. Engine- neutral method that pairs with each engine's profiler. Use when the user mentions performance, optimize, low/dropping FPS, frame drops, stutter, lag, profiler, frame budget, draw calls, batching, garbage collection/GC spikes, object pooling, or \"the game runs slow\".\n",
+      "paths": ["library/disciplines/performance-optimization/SKILL.md", "library/disciplines/performance-optimization"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/performance-optimization/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/physics-tuning",
+      "collection": "gamedev",
+      "title": "physics-tuning",
+      "category": "game-guide",
+      "uses": [
+        "Tune game physics for stable, good-feeling motion — fixed vs variable timestep, render interpolation, mass/gravity/drag, continuous collision detection (CCD) to stop tunneling, fixing jitter, and collision layers/masks. Engine-neutral. Use when the user mentions physics feel, jitter, tunneling, fixed timestep, FixedUpdate, CCD, bouncing/unstable physics, or collision layers.\n"
+      ],
+      "description": "Tune game physics for stable, good-feeling motion — fixed vs variable timestep, render interpolation, mass/gravity/drag, continuous collision detection (CCD) to stop tunneling, fixing jitter, and collision layers/masks. Engine-neutral. Use when the user mentions physics feel, jitter, tunneling, fixed timestep, FixedUpdate, CCD, bouncing/unstable physics, or collision layers.\n",
+      "paths": ["library/disciplines/physics-tuning/SKILL.md", "library/disciplines/physics-tuning"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/physics-tuning/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/procedural-gen",
+      "collection": "gamedev",
+      "title": "procedural-gen",
+      "category": "game-guide",
+      "uses": [
+        "Generate game content procedurally — seeded deterministic RNG, value/Perlin/ Simplex noise for terrain and heightmaps, grid dungeon generation (rooms + corridors, BSP, random walk, wave function collapse), and weighted loot/drop tables. Engine-neutral algorithms. Use when the user mentions procedural generation, perlin/simplex noise, random seed, dungeon generator, WFC, heightmap/terrain, or loot tables.\n"
+      ],
+      "description": "Generate game content procedurally — seeded deterministic RNG, value/Perlin/ Simplex noise for terrain and heightmaps, grid dungeon generation (rooms + corridors, BSP, random walk, wave function collapse), and weighted loot/drop tables. Engine-neutral algorithms. Use when the user mentions procedural generation, perlin/simplex noise, random seed, dungeon generator, WFC, heightmap/terrain, or loot tables.\n",
+      "paths": ["library/disciplines/procedural-gen/SKILL.md", "library/disciplines/procedural-gen"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/procedural-gen/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/save-systems",
+      "collection": "gamedev",
+      "title": "save-systems",
+      "category": "game-guide",
+      "uses": [
+        "Design save/load for game state — choosing what to serialize, file formats, save slots, atomic crash-safe writes, schema versioning and migration, and autosave. Engine-neutral. Use when the user mentions save system, save/load, game state persistence, save slots, autosave, save file corruption, or migrating old saves to a new version.\n"
+      ],
+      "description": "Design save/load for game state — choosing what to serialize, file formats, save slots, atomic crash-safe writes, schema versioning and migration, and autosave. Engine-neutral. Use when the user mentions save system, save/load, game state persistence, save slots, autosave, save file corruption, or migrating old saves to a new version.\n",
+      "paths": ["library/disciplines/save-systems/SKILL.md", "library/disciplines/save-systems"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/save-systems/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:disciplines/shader-programming",
+      "collection": "gamedev",
+      "title": "shader-programming",
+      "category": "game-guide",
+      "uses": [
+        "Write game shaders from cross-engine fundamentals — the vertex→fragment pipeline, coordinate spaces, UV math, and common 2D/3D effects (tint, UV scroll, dissolve, outline, fresnel rim, vignette) in GLSL with HLSL equivalents. Use when the user mentions shaders, fragment/pixel shader, vertex shader, UV, GLSL, HLSL, or effects like dissolve, outline, or rim light.\n"
+      ],
+      "description": "Write game shaders from cross-engine fundamentals — the vertex→fragment pipeline, coordinate spaces, UV math, and common 2D/3D effects (tint, UV scroll, dissolve, outline, fresnel rim, vignette) in GLSL with HLSL equivalents. Use when the user mentions shaders, fragment/pixel shader, vertex shader, UV, GLSL, HLSL, or effects like dissolve, outline, or rim light.\n",
+      "paths": ["library/disciplines/shader-programming/SKILL.md", "library/disciplines/shader-programming"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/disciplines/shader-programming/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:ebitengine/ebitengine-game",
+      "collection": "gamedev",
+      "title": "ebitengine-game",
+      "category": "game-guide",
+      "uses": [
+        "Create, improve, debug and package playable 2D games in Go with Ebitengine (github.com/hajimehoshi/ebiten/v2). Use for Ebitengine game requests: game design translated into a complete loop, input, rendering, text, audio, scenes, gameplay tests and desktop, browser or mobile builds. Also use when fixing these systems in an existing Ebitengine game. Do not apply to unrelated Go software or engine-internal patches merely because they depend on Ebitengine.\n"
+      ],
+      "description": "Create, improve, debug and package playable 2D games in Go with Ebitengine (github.com/hajimehoshi/ebiten/v2). Use for Ebitengine game requests: game design translated into a complete loop, input, rendering, text, audio, scenes, gameplay tests and desktop, browser or mobile builds. Also use when fixing these systems in an existing Ebitengine game. Do not apply to unrelated Go software or engine-internal patches merely because they depend on Ebitengine.\n",
+      "paths": ["library/ebitengine/ebitengine-game/SKILL.md", "library/ebitengine/ebitengine-game"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/ebitengine/ebitengine-game/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/card-game",
+      "collection": "gamedev",
+      "title": "card-game",
+      "category": "game-guide",
+      "uses": [
+        "Build a card game: card data, deck/hand/discard zones, draw/shuffle/reshuffle, a turn structure, costs, and effect resolution. Use for a deckbuilder, TCG/CCG, or roguelike deckbuilder.\n"
+      ],
+      "description": "Build a card game: card data, deck/hand/discard zones, draw/shuffle/reshuffle, a turn structure, costs, and effect resolution. Use for a deckbuilder, TCG/CCG, or roguelike deckbuilder.\n",
+      "paths": ["library/genres/card-game/SKILL.md", "library/genres/card-game"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/card-game/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/fps-shooter",
+      "collection": "gamedev",
+      "title": "fps-shooter",
+      "category": "game-guide",
+      "uses": [
+        "Build a first-person shooter: move+mouse-look controller, hitscan or projectile shooting, weapons, health, and enemy AI. Use for an FPS, or tuning aim feel, time-to-kill, recoil, or spread.\n"
+      ],
+      "description": "Build a first-person shooter: move+mouse-look controller, hitscan or projectile shooting, weapons, health, and enemy AI. Use for an FPS, or tuning aim feel, time-to-kill, recoil, or spread.\n",
+      "paths": ["library/genres/fps-shooter/SKILL.md", "library/genres/fps-shooter"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/fps-shooter/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/platformer",
+      "collection": "gamedev",
+      "title": "platformer",
+      "category": "game-guide",
+      "uses": [
+        "Build a 2D platformer: run/jump control with coyote time, jump buffering, and variable jump height, plus tiled levels and hazards. Use for a platformer or Mario/Celeste-like, or tuning jump feel.\n"
+      ],
+      "description": "Build a 2D platformer: run/jump control with coyote time, jump buffering, and variable jump height, plus tiled levels and hazards. Use for a platformer or Mario/Celeste-like, or tuning jump feel.\n",
+      "paths": ["library/genres/platformer/SKILL.md", "library/genres/platformer"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/platformer/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/puzzle",
+      "collection": "gamedev",
+      "title": "puzzle",
+      "category": "game-guide",
+      "uses": [
+        "Build a puzzle game: grid/board state, move input, rule-based resolution (match-3 cascades, sokoban pushes, tile logic), scoring, and undo. Use for a match-3, sokoban, or grid-logic puzzle.\n"
+      ],
+      "description": "Build a puzzle game: grid/board state, move input, rule-based resolution (match-3 cascades, sokoban pushes, tile logic), scoring, and undo. Use for a match-3, sokoban, or grid-logic puzzle.\n",
+      "paths": ["library/genres/puzzle/SKILL.md", "library/genres/puzzle"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/puzzle/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/roguelike",
+      "collection": "gamedev",
+      "title": "roguelike",
+      "category": "game-guide",
+      "uses": [
+        "Build a roguelike: turn-based grid movement, procedural dungeons, permadeath, field-of-view, and loot tables. Use for a roguelike/roguelite or turn-based grid dungeon crawler with procedural levels.\n"
+      ],
+      "description": "Build a roguelike: turn-based grid movement, procedural dungeons, permadeath, field-of-view, and loot tables. Use for a roguelike/roguelite or turn-based grid dungeon crawler with procedural levels.\n",
+      "paths": ["library/genres/roguelike/SKILL.md", "library/genres/roguelike"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/roguelike/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/rpg",
+      "collection": "gamedev",
+      "title": "rpg",
+      "category": "game-guide",
+      "uses": [
+        "Build an RPG: stats and leveling, inventory and equipment, quests, branching dialogue, save/load, and combat. Use for an RPG/JRPG, or designing stat, inventory, quest, or combat systems.\n"
+      ],
+      "description": "Build an RPG: stats and leveling, inventory and equipment, quests, branching dialogue, save/load, and combat. Use for an RPG/JRPG, or designing stat, inventory, quest, or combat systems.\n",
+      "paths": ["library/genres/rpg/SKILL.md", "library/genres/rpg"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/rpg/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/survival-crafting",
+      "collection": "gamedev",
+      "title": "survival-crafting",
+      "category": "game-guide",
+      "uses": [
+        "Build a survival-crafting game: resource gathering, inventory, crafting and a tech tree, needs (hunger/thirst/temperature), and base building. Use for a survival or crafting/base-building game.\n"
+      ],
+      "description": "Build a survival-crafting game: resource gathering, inventory, crafting and a tech tree, needs (hunger/thirst/temperature), and base building. Use for a survival or crafting/base-building game.\n",
+      "paths": ["library/genres/survival-crafting/SKILL.md", "library/genres/survival-crafting"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/survival-crafting/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/tower-defense",
+      "collection": "gamedev",
+      "title": "tower-defense",
+      "category": "game-guide",
+      "uses": [
+        "Build a tower defense: enemies pathing along lanes, wave spawning, towers that auto-target and fire, an economy, and lives. Use for a tower-defense/wave-defense game, or balancing waves and economy.\n"
+      ],
+      "description": "Build a tower defense: enemies pathing along lanes, wave spawning, towers that auto-target and fire, an economy, and lives. Use for a tower-defense/wave-defense game, or balancing waves and economy.\n",
+      "paths": ["library/genres/tower-defense/SKILL.md", "library/genres/tower-defense"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/tower-defense/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:genres/visual-novel",
+      "collection": "gamedev",
+      "title": "visual-novel",
+      "category": "game-guide",
+      "uses": [
+        "Build a visual novel: a branching script, character and background display, a text box with choices, save/load, backlog, and skip/auto. Use for a VN, dating sim, or branching story game.\n"
+      ],
+      "description": "Build a visual novel: a branching script, character and background display, a text box with choices, save/load, backlog, and skip/auto. Use for a VN, dating sim, or branching story game.\n",
+      "paths": ["library/genres/visual-novel/SKILL.md", "library/genres/visual-novel"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/genres/visual-novel/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-2d-movement",
+      "collection": "gamedev",
+      "title": "godot-2d-movement",
+      "category": "game-guide",
+      "uses": [
+        "Implement 2D kinematic character movement in Godot 4.7 with CharacterBody2D and move_and_slide(): platformer run/jump with gravity, top-down 8-direction motion, slope handling, and reading collisions. Use when coding a 2D player or enemy controller, a platformer or top-down character, or fixing move_and_slide()/ is_on_floor() behavior in a .tscn with a CharacterBody2D.\n"
+      ],
+      "description": "Implement 2D kinematic character movement in Godot 4.7 with CharacterBody2D and move_and_slide(): platformer run/jump with gravity, top-down 8-direction motion, slope handling, and reading collisions. Use when coding a 2D player or enemy controller, a platformer or top-down character, or fixing move_and_slide()/ is_on_floor() behavior in a .tscn with a CharacterBody2D.\n",
+      "paths": ["library/godot/godot-2d-movement/SKILL.md", "library/godot/godot-2d-movement"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-2d-movement/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-3d-essentials",
+      "collection": "gamedev",
+      "title": "godot-3d-essentials",
+      "category": "game-guide",
+      "uses": [
+        "Set up a Godot 4.7 3D scene: Node3D transforms, Camera3D, lighting (DirectionalLight3D/OmniLight3D), WorldEnvironment for sky/ambient/tonemap/post, MeshInstance3D materials, and GridMap for tile-based 3D levels. Use when building a 3D scene in a Godot project, placing cameras/lights, configuring environment and post-processing, or working with Node3D/.tscn 3D content and GridMap.\n"
+      ],
+      "description": "Set up a Godot 4.7 3D scene: Node3D transforms, Camera3D, lighting (DirectionalLight3D/OmniLight3D), WorldEnvironment for sky/ambient/tonemap/post, MeshInstance3D materials, and GridMap for tile-based 3D levels. Use when building a 3D scene in a Godot project, placing cameras/lights, configuring environment and post-processing, or working with Node3D/.tscn 3D content and GridMap.\n",
+      "paths": ["library/godot/godot-3d-essentials/SKILL.md", "library/godot/godot-3d-essentials"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-3d-essentials/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-animation",
+      "collection": "gamedev",
+      "title": "godot-animation",
+      "category": "game-guide",
+      "uses": [
+        "Animate in Godot 4.7 three ways: AnimationPlayer for keyframed clips (incl. Call Method tracks), AnimationTree with state machines and blend spaces for character animation, and Tween for short procedural/UI tweens via create_tween(). Use when working with AnimationPlayer/AnimationTree nodes in a .tscn, blending character states, sprite-sheet animation, or code-driven Tweens.\n"
+      ],
+      "description": "Animate in Godot 4.7 three ways: AnimationPlayer for keyframed clips (incl. Call Method tracks), AnimationTree with state machines and blend spaces for character animation, and Tween for short procedural/UI tweens via create_tween(). Use when working with AnimationPlayer/AnimationTree nodes in a .tscn, blending character states, sprite-sheet animation, or code-driven Tweens.\n",
+      "paths": ["library/godot/godot-animation/SKILL.md", "library/godot/godot-animation"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-animation/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-audio",
+      "collection": "gamedev",
+      "title": "godot-audio",
+      "category": "game-guide",
+      "uses": [
+        "Play and mix audio in Godot 4.7: AudioStreamPlayer (2D/3D variants), audio buses with volume/mute and effects, music vs SFX routing, db/linear volume, and precise sync-to-beat playback timing. Use when playing sounds or music in a Godot project, routing AudioStreamPlayer nodes to buses, adjusting bus volume via AudioServer, or syncing gameplay to the beat.\n"
+      ],
+      "description": "Play and mix audio in Godot 4.7: AudioStreamPlayer (2D/3D variants), audio buses with volume/mute and effects, music vs SFX routing, db/linear volume, and precise sync-to-beat playback timing. Use when playing sounds or music in a Godot project, routing AudioStreamPlayer nodes to buses, adjusting bus volume via AudioServer, or syncing gameplay to the beat.\n",
+      "paths": ["library/godot/godot-audio/SKILL.md", "library/godot/godot-audio"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-audio/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-csharp",
+      "collection": "gamedev",
+      "title": "godot-csharp",
+      "category": "game-guide",
+      "uses": [
+        "Use C#/.NET in Godot 4.7: partial classes extending nodes, the PascalCase lifecycle (_Ready/_Process/_PhysicsProcess), [Export] fields, [Signal] delegates as C# events, type-safe node lookup, and calling between C# and GDScript. Use when writing Godot game code in C# (.cs files, .csproj), needing the Godot .NET build, converting GDScript patterns to C#, or wiring Godot signals as C# events.\n"
+      ],
+      "description": "Use C#/.NET in Godot 4.7: partial classes extending nodes, the PascalCase lifecycle (_Ready/_Process/_PhysicsProcess), [Export] fields, [Signal] delegates as C# events, type-safe node lookup, and calling between C# and GDScript. Use when writing Godot game code in C# (.cs files, .csproj), needing the Godot .NET build, converting GDScript patterns to C#, or wiring Godot signals as C# events.\n",
+      "paths": ["library/godot/godot-csharp/SKILL.md", "library/godot/godot-csharp"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-csharp/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-export",
+      "collection": "gamedev",
+      "title": "godot-export",
+      "category": "game-guide",
+      "uses": [
+        "Export and build a Godot 4.7 project for distribution: install export templates, define export presets (Windows/macOS/Linux/Web/Android), run headless command-line exports for CI, and handle web (HTML5) COOP/COEP and dedicated-server/headless builds. Use when exporting a Godot game, configuring export_presets.cfg, building for web/desktop/mobile, or automating builds from the command line.\n"
+      ],
+      "description": "Export and build a Godot 4.7 project for distribution: install export templates, define export presets (Windows/macOS/Linux/Web/Android), run headless command-line exports for CI, and handle web (HTML5) COOP/COEP and dedicated-server/headless builds. Use when exporting a Godot game, configuring export_presets.cfg, building for web/desktop/mobile, or automating builds from the command line.\n",
+      "paths": ["library/godot/godot-export/SKILL.md", "library/godot/godot-export"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-export/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-gdscript",
+      "collection": "gamedev",
+      "title": "godot-gdscript",
+      "category": "game-guide",
+      "uses": [
+        "Write idiomatic GDScript for Godot 4.7: static typing, the node lifecycle (_ready/_process/_physics_process), @export/@onready/@tool annotations, signals, and await for asynchronous flow. Use when editing .gd scripts in a Godot project (project.godot), writing or debugging GDScript, or porting 3.x GDScript to 4.x (function signatures, yield to await, export to @export).\n"
+      ],
+      "description": "Write idiomatic GDScript for Godot 4.7: static typing, the node lifecycle (_ready/_process/_physics_process), @export/@onready/@tool annotations, signals, and await for asynchronous flow. Use when editing .gd scripts in a Godot project (project.godot), writing or debugging GDScript, or porting 3.x GDScript to 4.x (function signatures, yield to await, export to @export).\n",
+      "paths": ["library/godot/godot-gdscript/SKILL.md", "library/godot/godot-gdscript"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-gdscript/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-gdscript-headless-testing",
+      "collection": "gamedev",
+      "title": "godot-gdscript-headless-testing",
+      "category": "game-guide",
+      "uses": [
+        "Run GDScript test suites from the command line with `godot --headless`, using a SceneTree/MainLoop runner script that exits non-zero on failure so CI can gate merges. Use when a Godot project needs unit tests without opening the editor, when wiring a CI job (GitHub Actions or similar) that must fail the build on a failing `.gd` test, or when a `godot --headless` invocation hangs, opens a window, or exits 0 despite failed assertions.\n"
+      ],
+      "description": "Run GDScript test suites from the command line with `godot --headless`, using a SceneTree/MainLoop runner script that exits non-zero on failure so CI can gate merges. Use when a Godot project needs unit tests without opening the editor, when wiring a CI job (GitHub Actions or similar) that must fail the build on a failing `.gd` test, or when a `godot --headless` invocation hangs, opens a window, or exits 0 despite failed assertions.\n",
+      "paths": ["library/godot/godot-gdscript-headless-testing/SKILL.md", "library/godot/godot-gdscript-headless-testing"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-gdscript-headless-testing/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-multiplayer",
+      "collection": "gamedev",
+      "title": "godot-multiplayer",
+      "category": "game-guide",
+      "uses": [
+        "Build networked games with Godot 4.7 high-level multiplayer: set up an ENetMultiplayerPeer server/client, define RPCs with the @rpc annotation (call via rpc()/rpc_id()), set per-node multiplayer authority, and replicate state with MultiplayerSpawner and MultiplayerSynchronizer. Use when adding multiplayer/networking to a Godot project, writing @rpc functions, or syncing player/world state across peers.\n"
+      ],
+      "description": "Build networked games with Godot 4.7 high-level multiplayer: set up an ENetMultiplayerPeer server/client, define RPCs with the @rpc annotation (call via rpc()/rpc_id()), set per-node multiplayer authority, and replicate state with MultiplayerSpawner and MultiplayerSynchronizer. Use when adding multiplayer/networking to a Godot project, writing @rpc functions, or syncing player/world state across peers.\n",
+      "paths": ["library/godot/godot-multiplayer/SKILL.md", "library/godot/godot-multiplayer"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-multiplayer/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-nodes-scenes",
+      "collection": "gamedev",
+      "title": "godot-nodes-scenes",
+      "category": "game-guide",
+      "uses": [
+        "Structure a Godot 4.7 project with the scene tree and node composition: build reusable scenes, instance PackedScenes at runtime, navigate the tree safely, and register autoload singletons. Use when designing .tscn scenes, deciding how to split nodes, spawning instances with instantiate(), wiring autoloads, or fixing \"node not found\"/freed-node errors in a Godot project.\n"
+      ],
+      "description": "Structure a Godot 4.7 project with the scene tree and node composition: build reusable scenes, instance PackedScenes at runtime, navigate the tree safely, and register autoload singletons. Use when designing .tscn scenes, deciding how to split nodes, spawning instances with instantiate(), wiring autoloads, or fixing \"node not found\"/freed-node errors in a Godot project.\n",
+      "paths": ["library/godot/godot-nodes-scenes/SKILL.md", "library/godot/godot-nodes-scenes"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-nodes-scenes/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-physics",
+      "collection": "gamedev",
+      "title": "godot-physics",
+      "category": "game-guide",
+      "uses": [
+        "Use Godot 4.7 physics bodies and detection in 2D and 3D: RigidBody, StaticBody, Area, and CharacterBody; collision layers vs masks; contact/overlap signals; and raycasts (RayCast nodes and direct space-state queries). Use when configuring collision layers/masks, detecting overlaps with Area2D/Area3D, applying forces to a RigidBody, or casting rays in a Godot project (.tscn with physics bodies), including 3D projects running Jolt Physics, the default 3D engine for projects created in 4.6+.\n"
+      ],
+      "description": "Use Godot 4.7 physics bodies and detection in 2D and 3D: RigidBody, StaticBody, Area, and CharacterBody; collision layers vs masks; contact/overlap signals; and raycasts (RayCast nodes and direct space-state queries). Use when configuring collision layers/masks, detecting overlaps with Area2D/Area3D, applying forces to a RigidBody, or casting rays in a Godot project (.tscn with physics bodies), including 3D projects running Jolt Physics, the default 3D engine for projects created in 4.6+.\n",
+      "paths": ["library/godot/godot-physics/SKILL.md", "library/godot/godot-physics"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-physics/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-resources",
+      "collection": "gamedev",
+      "title": "godot-resources",
+      "category": "game-guide",
+      "uses": [
+        "Design data-driven Godot 4.7 games with custom Resource classes: define typed data with class_name + @export, save/load .tres/.res files, instance and duplicate resources, and load on demand with ResourceLoader (incl. threaded loading). Use when modeling items/stats/configs as data in a Godot project, creating .tres resources, or working with custom Resource subclasses and ResourceLoader/ResourceSaver.\n"
+      ],
+      "description": "Design data-driven Godot 4.7 games with custom Resource classes: define typed data with class_name + @export, save/load .tres/.res files, instance and duplicate resources, and load on demand with ResourceLoader (incl. threaded loading). Use when modeling items/stats/configs as data in a Godot project, creating .tres resources, or working with custom Resource subclasses and ResourceLoader/ResourceSaver.\n",
+      "paths": ["library/godot/godot-resources/SKILL.md", "library/godot/godot-resources"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-resources/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-shaders",
+      "collection": "gamedev",
+      "title": "godot-shaders",
+      "category": "game-guide",
+      "uses": [
+        "Write Godot 4.7 shaders in the Godot Shading Language: canvas_item shaders for 2D and spatial shaders for 3D, with vertex/fragment functions, uniforms (source_color, hint_range), TIME/UV animation, and screen-reading via hint_screen_texture. Use when authoring .gdshader files, writing fragment/vertex code, making 2D/3D visual effects, or porting 3.x shaders (SCREEN_TEXTURE, hint_color) to 4.x.\n"
+      ],
+      "description": "Write Godot 4.7 shaders in the Godot Shading Language: canvas_item shaders for 2D and spatial shaders for 3D, with vertex/fragment functions, uniforms (source_color, hint_range), TIME/UV animation, and screen-reading via hint_screen_texture. Use when authoring .gdshader files, writing fragment/vertex code, making 2D/3D visual effects, or porting 3.x shaders (SCREEN_TEXTURE, hint_color) to 4.x.\n",
+      "paths": ["library/godot/godot-shaders/SKILL.md", "library/godot/godot-shaders"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-shaders/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-signals-groups",
+      "collection": "gamedev",
+      "title": "godot-signals-groups",
+      "category": "game-guide",
+      "uses": [
+        "Build event-driven, decoupled Godot 4.7 gameplay with signals and node groups: declare and emit custom signals, connect with Callables (incl. bind/one-shot), and broadcast to many nodes via groups and call_group. Use when wiring node communication in a Godot project, replacing tight references with signals, emitting/connecting events, or porting 3.x connect(\"sig\", self, \"method\") code.\n"
+      ],
+      "description": "Build event-driven, decoupled Godot 4.7 gameplay with signals and node groups: declare and emit custom signals, connect with Callables (incl. bind/one-shot), and broadcast to many nodes via groups and call_group. Use when wiring node communication in a Godot project, replacing tight references with signals, emitting/connecting events, or porting 3.x connect(\"sig\", self, \"method\") code.\n",
+      "paths": ["library/godot/godot-signals-groups/SKILL.md", "library/godot/godot-signals-groups"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-signals-groups/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-tilemap",
+      "collection": "gamedev",
+      "title": "godot-tilemap",
+      "category": "game-guide",
+      "uses": [
+        "Build and edit tile-based 2D levels in Godot 4.7 with TileMapLayer and TileSet: paint layers, set up collision/navigation/custom-data on tiles, autotile with terrain sets, and read/write cells from code (set_cell, get_cell_tile_data, local_to_map). Use when working with TileMapLayer nodes, .tres TileSets, autotiling, or migrating a deprecated TileMap node to TileMapLayer.\n"
+      ],
+      "description": "Build and edit tile-based 2D levels in Godot 4.7 with TileMapLayer and TileSet: paint layers, set up collision/navigation/custom-data on tiles, autotile with terrain sets, and read/write cells from code (set_cell, get_cell_tile_data, local_to_map). Use when working with TileMapLayer nodes, .tres TileSets, autotiling, or migrating a deprecated TileMap node to TileMapLayer.\n",
+      "paths": ["library/godot/godot-tilemap/SKILL.md", "library/godot/godot-tilemap"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-tilemap/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:godot/godot-ui-control",
+      "collection": "gamedev",
+      "title": "godot-ui-control",
+      "category": "game-guide",
+      "uses": [
+        "Build Godot 4.7 user interfaces with Control nodes: anchors and offsets for responsive layout, Container nodes (VBox/HBox/Grid/Margin) for automatic arrangement, Theme resources for consistent styling, and keyboard/gamepad focus navigation. Use when laying out a HUD, menu, or UI in a Godot project, working with Control/Container nodes, anchors, themes, or focus in a .tscn.\n"
+      ],
+      "description": "Build Godot 4.7 user interfaces with Control nodes: anchors and offsets for responsive layout, Container nodes (VBox/HBox/Grid/Margin) for automatic arrangement, Theme resources for consistent styling, and keyboard/gamepad focus navigation. Use when laying out a HUD, menu, or UI in a Godot project, working with Control/Container nodes, anchors, themes, or focus in a .tscn.\n",
+      "paths": ["library/godot/godot-ui-control/SKILL.md", "library/godot/godot-ui-control"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/godot/godot-ui-control/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/bevy-ecs",
+      "collection": "gamedev",
+      "title": "bevy-ecs",
+      "category": "game-guide",
+      "uses": [
+        "Structure a Bevy app around its Entity Component System: build the App with plugins, define Component/Resource types, write systems with Query/Res/Commands, filter and order systems, and use the Time resource for frame-rate-independent motion. Use when building or debugging a Bevy game in Rust — when the user mentions Bevy, ECS, App::new, add_systems, Query, Commands, components/systems, or a Cargo.toml depending on bevy.\n"
+      ],
+      "description": "Structure a Bevy app around its Entity Component System: build the App with plugins, define Component/Resource types, write systems with Query/Res/Commands, filter and order systems, and use the Time resource for frame-rate-independent motion. Use when building or debugging a Bevy game in Rust — when the user mentions Bevy, ECS, App::new, add_systems, Query, Commands, components/systems, or a Cargo.toml depending on bevy.\n",
+      "paths": ["library/other-engines/bevy-ecs/SKILL.md", "library/other-engines/bevy-ecs"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/bevy-ecs/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/defold-core",
+      "collection": "gamedev",
+      "title": "defold-core",
+      "category": "game-guide",
+      "uses": [
+        "Build and debug the core of a Defold game in Lua: game.project settings, collections, game objects and components, script lifecycle and self state, go.property, input focus and bindings, URLs and message passing, factories, collection factories and collection proxies, plus building and smoke-running with Bob. Use when a project has game.project or .collection, .go, .script, .gui_script or .input_binding files, or the request mentions Defold, msg.post, on_message, on_input, acquire_input_focus, factory.create, collection proxy, bob.jar, or a Defold build error.\n"
+      ],
+      "description": "Build and debug the core of a Defold game in Lua: game.project settings, collections, game objects and components, script lifecycle and self state, go.property, input focus and bindings, URLs and message passing, factories, collection factories and collection proxies, plus building and smoke-running with Bob. Use when a project has game.project or .collection, .go, .script, .gui_script or .input_binding files, or the request mentions Defold, msg.post, on_message, on_input, acquire_input_focus, factory.create, collection proxy, bob.jar, or a Defold build error.\n",
+      "paths": ["library/other-engines/defold-core/SKILL.md", "library/other-engines/defold-core"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/defold-core/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/love2d-core",
+      "collection": "gamedev",
+      "title": "love2d-core",
+      "category": "game-guide",
+      "uses": [
+        "Structure and debug a LÖVE (Love2D) game in Lua: the love.load/update/draw loop, delta-time movement, input, and screen states. Use when building a LÖVE 11.x game (main.lua, conf.lua, .love).\n"
+      ],
+      "description": "Structure and debug a LÖVE (Love2D) game in Lua: the love.load/update/draw loop, delta-time movement, input, and screen states. Use when building a LÖVE 11.x game (main.lua, conf.lua, .love).\n",
+      "paths": ["library/other-engines/love2d-core/SKILL.md", "library/other-engines/love2d-core"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/love2d-core/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/pygame-core",
+      "collection": "gamedev",
+      "title": "pygame-core",
+      "category": "game-guide",
+      "uses": [
+        "Structure a pygame (pygame-ce) game in Python: the init/event/update/draw loop, delta-time movement, Surface/Rect blitting, keyboard/mouse input, and Sprite/Group management with collision. Use when building or debugging a pygame game — when the user mentions pygame, pygame-ce, the game loop, blit, Surface, Rect, sprite groups, or clock.tick. Targets pygame-ce.\n"
+      ],
+      "description": "Structure a pygame (pygame-ce) game in Python: the init/event/update/draw loop, delta-time movement, Surface/Rect blitting, keyboard/mouse input, and Sprite/Group management with collision. Use when building or debugging a pygame game — when the user mentions pygame, pygame-ce, the game loop, blit, Surface, Rect, sprite groups, or clock.tick. Targets pygame-ce.\n",
+      "paths": ["library/other-engines/pygame-core/SKILL.md", "library/other-engines/pygame-core"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/pygame-core/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/roblox-characters",
+      "collection": "gamedev",
+      "title": "roblox-characters",
+      "category": "game-guide",
+      "uses": [
+        "Build respawn-safe Roblox character systems around Players, CharacterAdded/CharacterRemoving, Humanoid, HumanoidRootPart, Animator, R6/R15 rigs, movement, animations and markers, death, tools, accessories, ownership, and custom characters. Use when character scripts break after respawn, cache stale Humanoids, control movement or velocity, load AnimationTracks, handle death, equip Tools, modify avatars, or support custom player rigs.\n"
+      ],
+      "description": "Build respawn-safe Roblox character systems around Players, CharacterAdded/CharacterRemoving, Humanoid, HumanoidRootPart, Animator, R6/R15 rigs, movement, animations and markers, death, tools, accessories, ownership, and custom characters. Use when character scripts break after respawn, cache stale Humanoids, control movement or velocity, load AnimationTracks, handle death, equip Tools, modify avatars, or support custom player rigs.\n",
+      "paths": ["library/other-engines/roblox-characters/SKILL.md", "library/other-engines/roblox-characters"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/roblox-characters/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/roblox-datastores",
+      "collection": "gamedev",
+      "title": "roblox-datastores",
+      "category": "game-guide",
+      "uses": [
+        "Persist player data in Roblox with DataStoreService: GetDataStore, GetAsync/ SetAsync/UpdateAsync/IncrementAsync wrapped in pcall, load-on-join and save-on-leave plus BindToClose, retries, and OrderedDataStore leaderboards. Use when saving or loading persistent data in a Roblox experience — when the user mentions DataStore, DataStoreService, GetAsync, SetAsync, UpdateAsync, save player data, or leaderboards. For general Luau scripting use roblox-luau.\n"
+      ],
+      "description": "Persist player data in Roblox with DataStoreService: GetDataStore, GetAsync/ SetAsync/UpdateAsync/IncrementAsync wrapped in pcall, load-on-join and save-on-leave plus BindToClose, retries, and OrderedDataStore leaderboards. Use when saving or loading persistent data in a Roblox experience — when the user mentions DataStore, DataStoreService, GetAsync, SetAsync, UpdateAsync, save player data, or leaderboards. For general Luau scripting use roblox-luau.\n",
+      "paths": ["library/other-engines/roblox-datastores/SKILL.md", "library/other-engines/roblox-datastores"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/roblox-datastores/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/roblox-luau",
+      "collection": "gamedev",
+      "title": "roblox-luau",
+      "category": "game-guide",
+      "uses": [
+        "Script a Roblox experience in Luau: get services, create and parent Instances, connect events, run server Scripts vs client LocalScripts, and communicate across the client/server boundary with RemoteEvents/RemoteFunctions (server-authoritative). Use when building or debugging Roblox Studio scripts — when the user mentions Roblox, Luau, services, RemoteEvent, Instance.new, PlayerAdded, or client vs server. For saving player data use roblox-datastores.\n"
+      ],
+      "description": "Script a Roblox experience in Luau: get services, create and parent Instances, connect events, run server Scripts vs client LocalScripts, and communicate across the client/server boundary with RemoteEvents/RemoteFunctions (server-authoritative). Use when building or debugging Roblox Studio scripts — when the user mentions Roblox, Luau, services, RemoteEvent, Instance.new, PlayerAdded, or client vs server. For saving player data use roblox-datastores.\n",
+      "paths": ["library/other-engines/roblox-luau/SKILL.md", "library/other-engines/roblox-luau"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/roblox-luau/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/roblox-networking",
+      "collection": "gamedev",
+      "title": "roblox-networking",
+      "category": "game-guide",
+      "uses": [
+        "Design and harden Roblox client/server networking with RemoteEvent, RemoteFunction, and UnreliableRemoteEvent; server authority, argument and Instance validation, rate limits, proximity/ownership checks, targeted replication, streaming, lifecycle, prediction, and reconciliation. Use for Roblox remotes, exploits, request spam, multiplayer replication, network ownership, high-frequency cosmetic updates, or server/client desynchronization.\n"
+      ],
+      "description": "Design and harden Roblox client/server networking with RemoteEvent, RemoteFunction, and UnreliableRemoteEvent; server authority, argument and Instance validation, rate limits, proximity/ownership checks, targeted replication, streaming, lifecycle, prediction, and reconciliation. Use for Roblox remotes, exploits, request spam, multiplayer replication, network ownership, high-frequency cosmetic updates, or server/client desynchronization.\n",
+      "paths": ["library/other-engines/roblox-networking/SKILL.md", "library/other-engines/roblox-networking"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/roblox-networking/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/roblox-physics",
+      "collection": "gamedev",
+      "title": "roblox-physics",
+      "category": "game-guide",
+      "uses": [
+        "Implement Roblox physical simulation and queries with assemblies, anchoring, constraints, collision groups, CanCollide/CanTouch/CanQuery, raycasts and overlap queries, mass, impulses, forces, velocity, moving assemblies, cleanup, and network ownership. Use for Roblox collisions, hit detection, RaycastParams, PhysicsService, projectiles, vehicles, knockback, constraints, deprecated BodyMovers, unstable motion, or client-owned physics exploits.\n"
+      ],
+      "description": "Implement Roblox physical simulation and queries with assemblies, anchoring, constraints, collision groups, CanCollide/CanTouch/CanQuery, raycasts and overlap queries, mass, impulses, forces, velocity, moving assemblies, cleanup, and network ownership. Use for Roblox collisions, hit detection, RaycastParams, PhysicsService, projectiles, vehicles, knockback, constraints, deprecated BodyMovers, unstable motion, or client-owned physics exploits.\n",
+      "paths": ["library/other-engines/roblox-physics/SKILL.md", "library/other-engines/roblox-physics"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/roblox-physics/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/roblox-studio-workflow",
+      "collection": "gamedev",
+      "title": "roblox-studio-workflow",
+      "category": "game-guide",
+      "uses": [
+        "Modify living Roblox Studio projects safely: inspect Explorer and execution locations, preserve existing structure, reuse modules/remotes, create meaningful Instances, apply Attributes and CollectionService tags, test server/client and multiple devices, inspect Output, and remove experiments/debug objects. Use when an agent edits a place or rbxl/rbxlx/Rojo project, operates in Studio, adds Scripts/LocalScripts/ModuleScripts, or must verify a Roblox change in context.\n"
+      ],
+      "description": "Modify living Roblox Studio projects safely: inspect Explorer and execution locations, preserve existing structure, reuse modules/remotes, create meaningful Instances, apply Attributes and CollectionService tags, test server/client and multiple devices, inspect Output, and remove experiments/debug objects. Use when an agent edits a place or rbxl/rbxlx/Rojo project, operates in Studio, adds Scripts/LocalScripts/ModuleScripts, or must verify a Roblox change in context.\n",
+      "paths": ["library/other-engines/roblox-studio-workflow/SKILL.md", "library/other-engines/roblox-studio-workflow"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/roblox-studio-workflow/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:other-engines/roblox-ui",
+      "collection": "gamedev",
+      "title": "roblox-ui",
+      "category": "game-guide",
+      "uses": [
+        "Build production Roblox interfaces with ScreenGui/PlayerGui lifecycle, responsive UDim2 layouts, safe insets, reusable editable Instances, cross-device input and selection, restrained motion, cleanup, and multi-viewport verification. Use for Roblox HUDs, inventories, shops, settings, ability bars, ScrollingFrames, AutomaticSize, GuiService, gamepad focus, touch UI, or UI that clips, resets on respawn, looks generic, or was generated as one giant LocalScript.\n"
+      ],
+      "description": "Build production Roblox interfaces with ScreenGui/PlayerGui lifecycle, responsive UDim2 layouts, safe insets, reusable editable Instances, cross-device input and selection, restrained motion, cleanup, and multi-viewport verification. Use for Roblox HUDs, inventories, shops, settings, ability bars, ScrollingFrames, AutomaticSize, GuiService, gamepad focus, touch UI, or UI that clips, resets on respawn, looks generic, or was generated as one giant LocalScript.\n",
+      "paths": ["library/other-engines/roblox-ui/SKILL.md", "library/other-engines/roblox-ui"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/other-engines/roblox-ui/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unity/unity-animation",
+      "collection": "gamedev",
+      "title": "unity-animation",
+      "category": "game-guide",
+      "uses": [
+        "Drive Unity 6.3 LTS character animation with Animator Controllers: states, transitions, parameters, blend trees, animation layers, and humanoid Avatar IK. Use when wiring an Animator, setting parameters from script (SetFloat/SetBool/SetTrigger), building blend trees, or when the user mentions Animator, Mecanim, state machine, blend tree, or .controller.\n"
+      ],
+      "description": "Drive Unity 6.3 LTS character animation with Animator Controllers: states, transitions, parameters, blend trees, animation layers, and humanoid Avatar IK. Use when wiring an Animator, setting parameters from script (SetFloat/SetBool/SetTrigger), building blend trees, or when the user mentions Animator, Mecanim, state machine, blend tree, or .controller.\n",
+      "paths": ["library/unity/unity-animation/SKILL.md", "library/unity/unity-animation"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unity/unity-animation/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unity/unity-build-pipeline",
+      "collection": "gamedev",
+      "title": "unity-build-pipeline",
+      "category": "game-guide",
+      "uses": [
+        "Build and ship Unity 6.3 LTS players: build settings and scenes, player/quality settings, the IL2CPP vs Mono scripting backend, managed code stripping, scripted BuildPipeline.BuildPlayer, and CI/headless builds. Use when configuring or automating a build, choosing a scripting backend, shrinking build size, or when the user mentions Unity build, player settings, IL2CPP, code stripping, or Addressables.\n"
+      ],
+      "description": "Build and ship Unity 6.3 LTS players: build settings and scenes, player/quality settings, the IL2CPP vs Mono scripting backend, managed code stripping, scripted BuildPipeline.BuildPlayer, and CI/headless builds. Use when configuring or automating a build, choosing a scripting backend, shrinking build size, or when the user mentions Unity build, player settings, IL2CPP, code stripping, or Addressables.\n",
+      "paths": ["library/unity/unity-build-pipeline/SKILL.md", "library/unity/unity-build-pipeline"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unity/unity-build-pipeline/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unity/unity-csharp-scripting",
+      "collection": "gamedev",
+      "title": "unity-csharp-scripting",
+      "category": "game-guide",
+      "uses": [
+        "Write Unity 6.3 LTS C# gameplay scripts: the MonoBehaviour lifecycle (Awake/OnEnable/Start/Update/FixedUpdate/LateUpdate), GameObject and component access, coroutines, and Inspector serialization. Use when creating or editing .cs scripts in a Unity project, or when the user mentions MonoBehaviour, Start/Update, GetComponent, SerializeField, coroutines, or \"Unity script\".\n"
+      ],
+      "description": "Write Unity 6.3 LTS C# gameplay scripts: the MonoBehaviour lifecycle (Awake/OnEnable/Start/Update/FixedUpdate/LateUpdate), GameObject and component access, coroutines, and Inspector serialization. Use when creating or editing .cs scripts in a Unity project, or when the user mentions MonoBehaviour, Start/Update, GetComponent, SerializeField, coroutines, or \"Unity script\".\n",
+      "paths": ["library/unity/unity-csharp-scripting/SKILL.md", "library/unity/unity-csharp-scripting"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unity/unity-csharp-scripting/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unity/unity-input-system",
+      "collection": "gamedev",
+      "title": "unity-input-system",
+      "category": "game-guide",
+      "uses": [
+        "Wire player input in Unity 6.3 LTS with the Input System package: Input Actions, action maps, the PlayerInput component, and reading values via callbacks or polling. Use when the project has a .inputactions asset or com.unity.inputsystem, or when the user mentions the Unity Input System, InputAction, action maps, PlayerInput, control schemes, or rebinding.\n"
+      ],
+      "description": "Wire player input in Unity 6.3 LTS with the Input System package: Input Actions, action maps, the PlayerInput component, and reading values via callbacks or polling. Use when the project has a .inputactions asset or com.unity.inputsystem, or when the user mentions the Unity Input System, InputAction, action maps, PlayerInput, control schemes, or rebinding.\n",
+      "paths": ["library/unity/unity-input-system/SKILL.md", "library/unity/unity-input-system"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unity/unity-input-system/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unity/unity-navmesh",
+      "collection": "gamedev",
+      "title": "unity-navmesh",
+      "category": "game-guide",
+      "uses": [
+        "Add AI navigation in Unity 6.3 LTS: bake a NavMesh with the AI Navigation package (NavMeshSurface), move agents with NavMeshAgent.SetDestination, and handle dynamic obstacles. Use when setting up pathfinding, making an enemy chase the player, baking navigation, or when the user mentions NavMesh, NavMeshAgent, NavMeshSurface, NavMeshObstacle, or Unity pathfinding.\n"
+      ],
+      "description": "Add AI navigation in Unity 6.3 LTS: bake a NavMesh with the AI Navigation package (NavMeshSurface), move agents with NavMeshAgent.SetDestination, and handle dynamic obstacles. Use when setting up pathfinding, making an enemy chase the player, baking navigation, or when the user mentions NavMesh, NavMeshAgent, NavMeshSurface, NavMeshObstacle, or Unity pathfinding.\n",
+      "paths": ["library/unity/unity-navmesh/SKILL.md", "library/unity/unity-navmesh"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unity/unity-navmesh/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unity/unity-physics",
+      "collection": "gamedev",
+      "title": "unity-physics",
+      "category": "game-guide",
+      "uses": [
+        "Set up 3D physics in Unity 6.3 LTS: Rigidbody movement and forces, colliders, triggers vs collisions, layer-based collision, raycasts, and joints. Use when adding a Rigidbody, handling OnCollisionEnter/OnTriggerEnter, tuning collision layers, casting rays, or when the user mentions Unity physics, AddForce, isKinematic, or linearVelocity.\n"
+      ],
+      "description": "Set up 3D physics in Unity 6.3 LTS: Rigidbody movement and forces, colliders, triggers vs collisions, layer-based collision, raycasts, and joints. Use when adding a Rigidbody, handling OnCollisionEnter/OnTriggerEnter, tuning collision layers, casting rays, or when the user mentions Unity physics, AddForce, isKinematic, or linearVelocity.\n",
+      "paths": ["library/unity/unity-physics/SKILL.md", "library/unity/unity-physics"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unity/unity-physics/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unity/unity-scriptableobjects",
+      "collection": "gamedev",
+      "title": "unity-scriptableobjects",
+      "category": "game-guide",
+      "uses": [
+        "Architect Unity 6.3 LTS data and decoupling with ScriptableObjects: config/data assets, shared runtime variables, event channels, and runtime sets/registries. Use when designing data-driven systems, replacing singletons/managers, creating .asset data with CreateAssetMenu, or when the user mentions ScriptableObject, SO architecture, or data assets.\n"
+      ],
+      "description": "Architect Unity 6.3 LTS data and decoupling with ScriptableObjects: config/data assets, shared runtime variables, event channels, and runtime sets/registries. Use when designing data-driven systems, replacing singletons/managers, creating .asset data with CreateAssetMenu, or when the user mentions ScriptableObject, SO architecture, or data assets.\n",
+      "paths": ["library/unity/unity-scriptableobjects/SKILL.md", "library/unity/unity-scriptableobjects"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unity/unity-scriptableobjects/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unity/unity-tilemap-2d",
+      "collection": "gamedev",
+      "title": "unity-tilemap-2d",
+      "category": "game-guide",
+      "uses": [
+        "Build and script 2D tilemaps in Unity 6.3 LTS: the Grid + Tilemap components, the Tile Palette, tilemap colliders, rule tiles, and runtime SetTile/GetTile painting. Use when painting tile levels, adding a TilemapCollider2D, using rule or animated tiles, generating tilemaps from code, or when the user mentions Unity tilemap, tile palette, rule tile, or Grid.\n"
+      ],
+      "description": "Build and script 2D tilemaps in Unity 6.3 LTS: the Grid + Tilemap components, the Tile Palette, tilemap colliders, rule tiles, and runtime SetTile/GetTile painting. Use when painting tile levels, adding a TilemapCollider2D, using rule or animated tiles, generating tilemaps from code, or when the user mentions Unity tilemap, tile palette, rule tile, or Grid.\n",
+      "paths": ["library/unity/unity-tilemap-2d/SKILL.md", "library/unity/unity-tilemap-2d"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unity/unity-tilemap-2d/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unreal/unreal-behavior-trees",
+      "collection": "gamedev",
+      "title": "unreal-behavior-trees",
+      "category": "game-guide",
+      "uses": [
+        "Build NPC AI in Unreal Engine 5 with Behavior Trees and Blackboards: composites (Selector/Sequence), tasks, decorators, services, and running the tree from an AIController. Use when creating enemy/NPC AI, BT_/BB_ assets, custom BTTask or BTService nodes, or when the user mentions Behavior Tree, Blackboard, AIController, BTTask, decorator, or service.\n"
+      ],
+      "description": "Build NPC AI in Unreal Engine 5 with Behavior Trees and Blackboards: composites (Selector/Sequence), tasks, decorators, services, and running the tree from an AIController. Use when creating enemy/NPC AI, BT_/BB_ assets, custom BTTask or BTService nodes, or when the user mentions Behavior Tree, Blackboard, AIController, BTTask, decorator, or service.\n",
+      "paths": ["library/unreal/unreal-behavior-trees/SKILL.md", "library/unreal/unreal-behavior-trees"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unreal/unreal-behavior-trees/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unreal/unreal-blueprints",
+      "collection": "gamedev",
+      "title": "unreal-blueprints",
+      "category": "game-guide",
+      "uses": [
+        "Build Unreal Engine 5 gameplay with Blueprint visual scripting: Blueprint Classes, the Event Graph and Construction Script, variables/functions/macros, and Blueprint communication (Cast, Interfaces, Event Dispatchers). Use when working in Blueprints, wiring an event graph, deciding how Blueprints talk to each other, or when the user mentions Blueprint, BP, event graph, construction script, or a Blueprint .uasset.\n"
+      ],
+      "description": "Build Unreal Engine 5 gameplay with Blueprint visual scripting: Blueprint Classes, the Event Graph and Construction Script, variables/functions/macros, and Blueprint communication (Cast, Interfaces, Event Dispatchers). Use when working in Blueprints, wiring an event graph, deciding how Blueprints talk to each other, or when the user mentions Blueprint, BP, event graph, construction script, or a Blueprint .uasset.\n",
+      "paths": ["library/unreal/unreal-blueprints/SKILL.md", "library/unreal/unreal-blueprints"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unreal/unreal-blueprints/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unreal/unreal-cpp-gameplay",
+      "collection": "gamedev",
+      "title": "unreal-cpp-gameplay",
+      "category": "game-guide",
+      "uses": [
+        "Write Unreal Engine 5 C++ gameplay code: the UCLASS/UPROPERTY/UFUNCTION reflection macros, the Gameplay Framework (GameMode, Pawn, Character, PlayerController, Actor components), and the module Build.cs. Use when writing or debugging UE C++, deriving from AActor/ACharacter/ AGameModeBase, exposing properties to the editor or Blueprints, or when the user mentions Unreal C++, UCLASS, GENERATED_BODY, GameMode, ACharacter, or .Build.cs.\n"
+      ],
+      "description": "Write Unreal Engine 5 C++ gameplay code: the UCLASS/UPROPERTY/UFUNCTION reflection macros, the Gameplay Framework (GameMode, Pawn, Character, PlayerController, Actor components), and the module Build.cs. Use when writing or debugging UE C++, deriving from AActor/ACharacter/ AGameModeBase, exposing properties to the editor or Blueprints, or when the user mentions Unreal C++, UCLASS, GENERATED_BODY, GameMode, ACharacter, or .Build.cs.\n",
+      "paths": ["library/unreal/unreal-cpp-gameplay/SKILL.md", "library/unreal/unreal-cpp-gameplay"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unreal/unreal-cpp-gameplay/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unreal/unreal-enhanced-input",
+      "collection": "gamedev",
+      "title": "unreal-enhanced-input",
+      "category": "game-guide",
+      "uses": [
+        "Set up player input in Unreal Engine 5 with Enhanced Input: Input Actions, Input Mapping Contexts, modifiers and triggers, adding the mapping context, and binding actions by ETriggerEvent. Use when wiring movement/look/jump input, creating IA_/IMC_ assets, binding in C++ or Blueprints, or when the user mentions Enhanced Input, Input Mapping Context, Input Action, IA_/IMC_, or ETriggerEvent.\n"
+      ],
+      "description": "Set up player input in Unreal Engine 5 with Enhanced Input: Input Actions, Input Mapping Contexts, modifiers and triggers, adding the mapping context, and binding actions by ETriggerEvent. Use when wiring movement/look/jump input, creating IA_/IMC_ assets, binding in C++ or Blueprints, or when the user mentions Enhanced Input, Input Mapping Context, Input Action, IA_/IMC_, or ETriggerEvent.\n",
+      "paths": ["library/unreal/unreal-enhanced-input/SKILL.md", "library/unreal/unreal-enhanced-input"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unreal/unreal-enhanced-input/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unreal/unreal-niagara",
+      "collection": "gamedev",
+      "title": "unreal-niagara",
+      "category": "game-guide",
+      "uses": [
+        "Create and control VFX in Unreal Engine 5 with Niagara: systems and emitters, modules and the spawn/update stages, exposed User parameters, and spawning or driving effects from Blueprints or C++. Use when building particle effects, NS_/NE_ assets, spawning a Niagara system at runtime, setting User parameters, or when the user mentions Niagara, VFX, or a particle system in Unreal.\n"
+      ],
+      "description": "Create and control VFX in Unreal Engine 5 with Niagara: systems and emitters, modules and the spawn/update stages, exposed User parameters, and spawning or driving effects from Blueprints or C++. Use when building particle effects, NS_/NE_ assets, spawning a Niagara system at runtime, setting User parameters, or when the user mentions Niagara, VFX, or a particle system in Unreal.\n",
+      "paths": ["library/unreal/unreal-niagara/SKILL.md", "library/unreal/unreal-niagara"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unreal/unreal-niagara/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:unreal/unreal-packaging",
+      "collection": "gamedev",
+      "title": "unreal-packaging",
+      "category": "game-guide",
+      "uses": [
+        "Package and ship an Unreal Engine 5 project: the Platforms menu Package Project flow, build configurations (Development vs Shipping), cooking content, packaging settings and the Game Default Map, and command-line builds with RunUAT BuildCookRun. Use when packaging a build, making a shipping build, cooking content, configuring packaging settings, or when the user mentions package Unreal, cook content, shipping build, or BuildCookRun.\n"
+      ],
+      "description": "Package and ship an Unreal Engine 5 project: the Platforms menu Package Project flow, build configurations (Development vs Shipping), cooking content, packaging settings and the Game Default Map, and command-line builds with RunUAT BuildCookRun. Use when packaging a build, making a shipping build, cooking content, configuring packaging settings, or when the user mentions package Unreal, cook content, shipping build, or BuildCookRun.\n",
+      "paths": ["library/unreal/unreal-packaging/SKILL.md", "library/unreal/unreal-packaging"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/unreal/unreal-packaging/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:web-engines/phaser-arcade-physics",
+      "collection": "gamedev",
+      "title": "phaser-arcade-physics",
+      "category": "game-guide",
+      "uses": [
+        "Use Phaser 4 Arcade Physics: enable the world, give sprites bodies, set velocity/acceleration/gravity, and resolve collisions with colliders, overlaps, groups, and world bounds. Use when a Phaser game needs movement or collisions — when the user mentions Arcade Physics, this.physics, setVelocity, collider, overlap, gravity, onFloor, or a platformer/top-down controller. For game config, scenes, and the loader use phaser-core.\n"
+      ],
+      "description": "Use Phaser 4 Arcade Physics: enable the world, give sprites bodies, set velocity/acceleration/gravity, and resolve collisions with colliders, overlaps, groups, and world bounds. Use when a Phaser game needs movement or collisions — when the user mentions Arcade Physics, this.physics, setVelocity, collider, overlap, gravity, onFloor, or a platformer/top-down controller. For game config, scenes, and the loader use phaser-core.\n",
+      "paths": ["library/web-engines/phaser-arcade-physics/SKILL.md", "library/web-engines/phaser-arcade-physics"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/web-engines/phaser-arcade-physics/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:web-engines/phaser-core",
+      "collection": "gamedev",
+      "title": "phaser-core",
+      "category": "game-guide",
+      "uses": [
+        "Set up and debug a Phaser 4 game: the Game config, the Scene lifecycle (init/preload/create/update), the asset loader, cameras, and cross-scene communication. Use when building or debugging a Phaser game — when the user mentions Phaser, Phaser.Game, Phaser.Scene, preload/create/update, this.load, this.add, or scene transitions. For Arcade Physics movement/collisions use phaser-arcade-physics.\n"
+      ],
+      "description": "Set up and debug a Phaser 4 game: the Game config, the Scene lifecycle (init/preload/create/update), the asset loader, cameras, and cross-scene communication. Use when building or debugging a Phaser game — when the user mentions Phaser, Phaser.Game, Phaser.Scene, preload/create/update, this.load, this.add, or scene transitions. For Arcade Physics movement/collisions use phaser-arcade-physics.\n",
+      "paths": ["library/web-engines/phaser-core/SKILL.md", "library/web-engines/phaser-core"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/web-engines/phaser-core/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:web-engines/pixijs-rendering",
+      "collection": "gamedev",
+      "title": "pixijs-rendering",
+      "category": "game-guide",
+      "uses": [
+        "Build a PixiJS v8 render layer: create the async Application, load textures with Assets, compose the scene graph with Container and Sprite, drive the ticker loop, wire pointer events, and group draws with render groups. Use when building or debugging PixiJS v8 — when the user mentions PixiJS, Pixi, Application, app.stage, Container, Sprite, Assets.load, app.ticker, or eventMode. Pins the v8 async init() API (examples checked against 8.22).\n"
+      ],
+      "description": "Build a PixiJS v8 render layer: create the async Application, load textures with Assets, compose the scene graph with Container and Sprite, drive the ticker loop, wire pointer events, and group draws with render groups. Use when building or debugging PixiJS v8 — when the user mentions PixiJS, Pixi, Application, app.stage, Container, Sprite, Assets.load, app.ticker, or eventMode. Pins the v8 async init() API (examples checked against 8.22).\n",
+      "paths": ["library/web-engines/pixijs-rendering/SKILL.md", "library/web-engines/pixijs-rendering"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/web-engines/pixijs-rendering/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:web-engines/threejs-gltf-loading",
+      "collection": "gamedev",
+      "title": "threejs-gltf-loading",
+      "category": "game-guide",
+      "uses": [
+        "Load glTF/GLB models in three.js with GLTFLoader and play their skinned animations with AnimationMixer, including DRACO/Meshopt-compressed meshes and KTX2 textures. Use when importing 3D models into three.js — when the user mentions glTF, GLB, GLTFLoader, AnimationMixer, animation clips, DRACOLoader, or \"load a 3D model\". For scene/camera/renderer setup use threejs-scene-setup; for materials and lights use threejs-materials-lighting.\n"
+      ],
+      "description": "Load glTF/GLB models in three.js with GLTFLoader and play their skinned animations with AnimationMixer, including DRACO/Meshopt-compressed meshes and KTX2 textures. Use when importing 3D models into three.js — when the user mentions glTF, GLB, GLTFLoader, AnimationMixer, animation clips, DRACOLoader, or \"load a 3D model\". For scene/camera/renderer setup use threejs-scene-setup; for materials and lights use threejs-materials-lighting.\n",
+      "paths": ["library/web-engines/threejs-gltf-loading/SKILL.md", "library/web-engines/threejs-gltf-loading"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/web-engines/threejs-gltf-loading/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:web-engines/threejs-materials-lighting",
+      "collection": "gamedev",
+      "title": "threejs-materials-lighting",
+      "category": "game-guide",
+      "uses": [
+        "Light and shade a three.js scene: choose materials (MeshStandardMaterial PBR vs unlit MeshBasicMaterial), add ambient/hemisphere/directional/point/spot lights, turn on shadow maps, and use an environment map (IBL) for realistic reflections. Use when a three.js model looks black, flat, or wrong — when the user mentions three.js materials, MeshStandardMaterial, lights, shadows, envMap, or PBR. For renderer/loop setup use threejs-scene-setup; for loading models use threejs-gltf-loading.\n"
+      ],
+      "description": "Light and shade a three.js scene: choose materials (MeshStandardMaterial PBR vs unlit MeshBasicMaterial), add ambient/hemisphere/directional/point/spot lights, turn on shadow maps, and use an environment map (IBL) for realistic reflections. Use when a three.js model looks black, flat, or wrong — when the user mentions three.js materials, MeshStandardMaterial, lights, shadows, envMap, or PBR. For renderer/loop setup use threejs-scene-setup; for loading models use threejs-gltf-loading.\n",
+      "paths": ["library/web-engines/threejs-materials-lighting/SKILL.md", "library/web-engines/threejs-materials-lighting"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/web-engines/threejs-materials-lighting/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:web-engines/threejs-scene-setup",
+      "collection": "gamedev",
+      "title": "threejs-scene-setup",
+      "category": "game-guide",
+      "uses": [
+        "Stand up a three.js scene: import maps and the three/addons path, the Scene/PerspectiveCamera/WebGLRenderer trio, the setAnimationLoop render loop, responsive resize, OrbitControls, and opting into WebGPURenderer. Use when starting or debugging a three.js app — when the user mentions three.js, THREE.Scene, WebGLRenderer, WebGPURenderer, PerspectiveCamera, the render loop, resizing, or OrbitControls. For models use threejs-gltf-loading; for materials/lights use threejs-materials-lighting.\n"
+      ],
+      "description": "Stand up a three.js scene: import maps and the three/addons path, the Scene/PerspectiveCamera/WebGLRenderer trio, the setAnimationLoop render loop, responsive resize, OrbitControls, and opting into WebGPURenderer. Use when starting or debugging a three.js app — when the user mentions three.js, THREE.Scene, WebGLRenderer, WebGPURenderer, PerspectiveCamera, the render loop, resizing, or OrbitControls. For models use threejs-gltf-loading; for materials/lights use threejs-materials-lighting.\n",
+      "paths": ["library/web-engines/threejs-scene-setup/SKILL.md", "library/web-engines/threejs-scene-setup"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/web-engines/threejs-scene-setup/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:workflows/game-jam",
+      "collection": "gamedev",
+      "title": "game-jam",
+      "category": "game-guide",
+      "uses": [
+        "Plan and ship a game under a jam deadline: lock scope to the clock, schedule the hours, cut features, and submit on time. Use for a game jam (Ludum Dare, GMTK Jam, Global Game Jam), a 48-hour or weekend build, or scoping and submitting a jam entry.\n"
+      ],
+      "description": "Plan and ship a game under a jam deadline: lock scope to the clock, schedule the hours, cut features, and submit on time. Use for a game jam (Ludum Dare, GMTK Jam, Global Game Jam), a 48-hour or weekend build, or scoping and submitting a jam entry.\n",
+      "paths": ["library/workflows/game-jam/SKILL.md", "library/workflows/game-jam"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/workflows/game-jam/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:workflows/itch-publish",
+      "collection": "gamedev",
+      "title": "itch-publish",
+      "category": "game-guide",
+      "uses": [
+        "Publish and update a game on itch.io: create the project page and upload builds with the butler CLI (butler push) to named channels. Use for itch.io publishing, butler push, channel naming for Windows/macOS/Linux/HTML5, versioning uploads, or shipping a jam or release build to itch.io.\n"
+      ],
+      "description": "Publish and update a game on itch.io: create the project page and upload builds with the butler CLI (butler push) to named channels. Use for itch.io publishing, butler push, channel naming for Windows/macOS/Linux/HTML5, versioning uploads, or shipping a jam or release build to itch.io.\n",
+      "paths": ["library/workflows/itch-publish/SKILL.md", "library/workflows/itch-publish"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/workflows/itch-publish/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:workflows/prototype-fast",
+      "collection": "gamedev",
+      "title": "prototype-fast",
+      "category": "game-guide",
+      "uses": [
+        "Build a playable prototype in about an hour to answer one question — is it fun? — with greybox primitives, a hard timebox, and explicit keep/kill criteria. Use when prototyping a mechanic, making a vertical slice or MVP, greyboxing/blockout, or judging throwaway vs keep.\n"
+      ],
+      "description": "Build a playable prototype in about an hour to answer one question — is it fun? — with greybox primitives, a hard timebox, and explicit keep/kill criteria. Use when prototyping a mechanic, making a vertical slice or MVP, greyboxing/blockout, or judging throwaway vs keep.\n",
+      "paths": ["library/workflows/prototype-fast/SKILL.md", "library/workflows/prototype-fast"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/workflows/prototype-fast/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "gamedev:workflows/steam-publish",
+      "collection": "gamedev",
+      "title": "steam-publish",
+      "category": "game-guide",
+      "uses": [
+        "Publish or update a game on Steam with Steamworks and SteamPipe: configure depots and packages, upload builds with steamcmd, set a build live on a branch, and run the release checklists. Use for Steam publishing, app_build.vdf/steamcmd uploads, depots, beta branches, or a store page release.\n"
+      ],
+      "description": "Publish or update a game on Steam with Steamworks and SteamPipe: configure depots and packages, upload builds with steamcmd, set a build live on a branch, and run the release checklists. Use for Steam publishing, app_build.vdf/steamcmd uploads, depots, beta branches, or a store page release.\n",
+      "paths": ["library/workflows/steam-publish/SKILL.md", "library/workflows/steam-publish"],
+      "source_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/184b72be02884f782a0058f2eeae2ce4277453e4/skills/workflows/steam-publish/SKILL.md",
+      "source_commit": "184b72be02884f782a0058f2eeae2ce4277453e4",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt", "NOTICE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The containing directory includes this guide and its supporting references, templates, or helpers. Engine/platform dependencies and starter notices remain separate."
+    },
+    {
+      "id": "go-fonts:starter",
+      "collection": "go-fonts",
+      "title": "Go Fonts starter attribution",
+      "category": "third-party-notice",
+      "uses": ["Go Fonts license retained with the Ebitengine starter."],
+      "description": "Go Fonts license retained with the Ebitengine starter.",
+      "paths": ["library/ebitengine/ebitengine-game/assets/starter/licenses/Go-Fonts.txt"],
+      "source_url": "https://blog.golang.org/go-fonts",
+      "source_commit": "Unknown",
+      "license": "BSD-3-Clause",
+      "notice_paths": ["library/ebitengine/ebitengine-game/assets/starter/licenses/Go-Fonts.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "The bundled notice identifies the original Go Fonts announcement; a source revision is not recorded."
+    }
+  ]
+}

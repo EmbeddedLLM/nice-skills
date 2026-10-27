@@ -1,5 +1,7 @@
 # Sources and provenance
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 Reference colours and displayed like counts were observed on **20 October 2026** during the guide refresh. This skill was packaged on **21 October 2026 (Asia/Kuala_Lumpur)** from that guide; packaging did not re-fetch popularity data.
 
 - Color Hunt Vintage: https://colorhunt.co/palettes/vintage

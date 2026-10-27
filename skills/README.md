@@ -47,3 +47,5 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for the format, authoring conventions,
 Executable helper contracts and the coverage inventory are documented in [tests/README.md](../tests/README.md). CI runs these alongside formatting and skill-local regressions; agent behavior and visual quality still require separate verification.
 
 The [2026-10-26 source review](../SOURCE_REVIEW.md) records every requested repository/post, linked-source decisions, license boundaries, and exclusions. Source updates extend existing skills where possible; published skills remain independently usable.
+
+Browse the [external material catalogues](../SOURCE_CATALOGUE.md) for per-skill source links, local paths, uses, licenses, and explicit `"Unknown"` provenance fields.

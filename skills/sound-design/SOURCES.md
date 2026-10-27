@@ -1,5 +1,7 @@
 # Sources and notices
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 ## earshot: adaptation retrieved 2026-10-26
 
 Source: [https://github.com/Leonxlnx/earshot](https://github.com/Leonxlnx/earshot/tree/591fa3e028032e6dce56620a20e932e35667e8d8), revision `591fa3e028032e6dce56620a20e932e35667e8d8`. License: MIT; retained in [LICENSE-earshot.txt](LICENSE-earshot.txt).

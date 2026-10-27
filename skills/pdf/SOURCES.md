@@ -1,5 +1,7 @@
 # Sources and notices
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 ## Replacement work for issue 6
 
 The supporting files listed below replace the internal-export carry-over identified in [issue 6](https://github.com/jiahuei/agentic-skills/issues/6). Helpers were reimplemented from their public interfaces, artifact contracts, and regression requirements; matching an interface does not require retaining its old implementation. The prose now uses the supplied **Design Office Artifacts** permissive-source revision as its main reference, adapted to this package's local tools and preservation requirements.

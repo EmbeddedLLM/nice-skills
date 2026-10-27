@@ -1,5 +1,7 @@
 # Sources and provenance
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 ## Repository adaptation
 
 Imported from the user-supplied reference package without changing the 1,882-file pinned upstream asset tree. The repository adaptation adds provider-independent prerequisites, legacy production-mode guidance, and pinned Python installation tiers outside that tree. It excludes online TTS from the default installer. Original retrieval dates below are preserved and were not re-verified against the network during this migration.

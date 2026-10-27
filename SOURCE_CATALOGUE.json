@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "updated_utc": "2026-10-27",
+  "catalogues": [
+    {
+      "skill": "algorithmic-art",
+      "catalogue_path": "skills/algorithmic-art/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "canvas-design",
+      "catalogue_path": "skills/canvas-design/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "create-motion-videos",
+      "catalogue_path": "skills/create-motion-videos/references/material-catalogue.json",
+      "entries": 991,
+      "unknown_sources": 2
+    },
+    {
+      "skill": "deep-research",
+      "catalogue_path": "skills/deep-research/references/material-catalogue.json",
+      "entries": 7,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "design-research",
+      "catalogue_path": "skills/design-research/references/material-catalogue.json",
+      "entries": 40,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "design-taste",
+      "catalogue_path": "skills/design-taste/references/material-catalogue.json",
+      "entries": 389,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "doc-coauthoring",
+      "catalogue_path": "skills/doc-coauthoring/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "documents",
+      "catalogue_path": "skills/documents/references/material-catalogue.json",
+      "entries": 9,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "explainer-video",
+      "catalogue_path": "skills/explainer-video/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "frontend-design",
+      "catalogue_path": "skills/frontend-design/references/material-catalogue.json",
+      "entries": 4,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "game-development",
+      "catalogue_path": "skills/game-development/references/material-catalogue.json",
+      "entries": 77,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "gif-creator",
+      "catalogue_path": "skills/gif-creator/references/material-catalogue.json",
+      "entries": 2,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "mcp-builder",
+      "catalogue_path": "skills/mcp-builder/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "pdf",
+      "catalogue_path": "skills/pdf/references/material-catalogue.json",
+      "entries": 13,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "presenter-video",
+      "catalogue_path": "skills/presenter-video/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "procedural-3d",
+      "catalogue_path": "skills/procedural-3d/references/material-catalogue.json",
+      "entries": 3,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "resolve-recipients",
+      "catalogue_path": "skills/resolve-recipients/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "review-agent",
+      "catalogue_path": "skills/review-agent/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "security-audit",
+      "catalogue_path": "skills/security-audit/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "skill-creator",
+      "catalogue_path": "skills/skill-creator/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "slides",
+      "catalogue_path": "skills/slides/references/material-catalogue.json",
+      "entries": 13,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "software-workflow",
+      "catalogue_path": "skills/software-workflow/references/material-catalogue.json",
+      "entries": 2,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "sound-design",
+      "catalogue_path": "skills/sound-design/references/material-catalogue.json",
+      "entries": 238,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "spreadsheets",
+      "catalogue_path": "skills/spreadsheets/references/material-catalogue.json",
+      "entries": 4,
+      "unknown_sources": 1
+    },
+    {
+      "skill": "theme-factory",
+      "catalogue_path": "skills/theme-factory/references/material-catalogue.json",
+      "entries": 98,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "vector-art",
+      "catalogue_path": "skills/vector-art/references/material-catalogue.json",
+      "entries": 46,
+      "unknown_sources": 0
+    },
+    {
+      "skill": "webapp-testing",
+      "catalogue_path": "skills/webapp-testing/references/material-catalogue.json",
+      "entries": 1,
+      "unknown_sources": 1
+    }
+  ]
+}

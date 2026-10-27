@@ -50,3 +50,5 @@ The skills and supporting tests are adapted from [Agentic Skills](https://github
 [MIT](LICENSE). Preserve any bundled third-party license notices and attribution.
 
 The [source adaptation review](SOURCE_REVIEW.md) documents the additional design, motion, game, sound, and engineering sources reviewed on 2026-10-26, including material excluded from redistribution.
+
+Browse the [external material catalogues](SOURCE_CATALOGUE.md) for per-skill source links, local paths, uses, licenses, and explicit `"Unknown"` provenance fields.

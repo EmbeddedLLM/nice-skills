@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "skill": "pdf",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 13,
+    "unknown_sources": 1,
+    "collections": {
+      "reference-package": 1,
+      "reference-source": 12
+    }
+  },
+  "entries": [
+    {
+      "id": "reference-package:design-office-artifacts",
+      "collection": "reference-package",
+      "title": "Design Office Artifacts supplied reference",
+      "category": "workflow",
+      "uses": [
+        "Reorganized format-preservation, calculation, layout, and verification guidance for the existing local tools. Reimplemented the issue 6 flagged helpers from behavior contracts; no upstream engine, palette, font, template, or sample artifact was imported."
+      ],
+      "description": "Reorganized format-preservation, calculation, layout, and verification guidance for the existing local tools. Reimplemented the issue 6 flagged helpers from behavior contracts; no upstream engine, palette, font, template, or sample artifact was imported.",
+      "paths": [
+        "examples/smoke_test.md",
+        "tasks/batch.md",
+        "tasks/compare.md",
+        "tasks/convert.md",
+        "tasks/coords.md",
+        "tasks/create.md",
+        "tasks/edit.md",
+        "tasks/extract.md",
+        "tasks/forms_annotations.md",
+        "tasks/forms_debugging.md",
+        "tasks/forms_nonfillable.md",
+        "tasks/js_tools.md",
+        "tasks/preflight.md",
+        "tasks/read_review.md",
+        "tasks/redact.md",
+        "troubleshooting/common.md"
+      ],
+      "source_url": "Unknown",
+      "source_commit": "Unknown",
+      "license": "MIT",
+      "notice_paths": ["LICENSE.design-office-artifacts.txt", "NOTICE.design-office-artifacts.txt"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "The immediate supplied reference package has no recorded public URL or revision. Its contributing upstream sources are listed individually below; original replacement helpers are not imported source implementations."
+    },
+    {
+      "id": "reference-source:baoyu-slide-deck",
+      "collection": "reference-source",
+      "title": "Baoyu Slide Deck",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/JimLiu/baoyu-skills/tree/1567581c26ec29f4216c6e6835415bf30343b0e3",
+      "source_commit": "1567581c26ec29f4216c6e6835415bf30343b0e3",
+      "license": "MIT",
+      "notice_paths": ["licenses/baoyu-slide-deck/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "baoyu-slide-deck"
+    },
+    {
+      "id": "reference-source:cyberppt",
+      "collection": "reference-source",
+      "title": "CyberPPT",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/crazyykhllc-bit/CyberPPT/tree/980e5576565f0673c67ee41b01d20ed66cb8417c",
+      "source_commit": "980e5576565f0673c67ee41b01d20ed66cb8417c",
+      "license": "MIT",
+      "notice_paths": ["licenses/cyberppt/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "cyberppt"
+    },
+    {
+      "id": "reference-source:diagram-design",
+      "collection": "reference-source",
+      "title": "Diagram Design",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/cathrynlavery/diagram-design/tree/f2f4d49ea8d632f17cf196ba26599277a93f767b",
+      "source_commit": "f2f4d49ea8d632f17cf196ba26599277a93f767b",
+      "license": "MIT",
+      "notice_paths": ["licenses/diagram-design/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "diagram-design"
+    },
+    {
+      "id": "reference-source:frontend-slides",
+      "collection": "reference-source",
+      "title": "Frontend Slides",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/zarazhangrui/frontend-slides/tree/9906a34d640d2111f724544cbc50f7f130569ae1",
+      "source_commit": "9906a34d640d2111f724544cbc50f7f130569ae1",
+      "license": "MIT",
+      "notice_paths": ["licenses/frontend-slides/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "frontend-slides"
+    },
+    {
+      "id": "reference-source:hands-on-deck",
+      "collection": "reference-source",
+      "title": "Hands-on-Deck",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/EveryInc/hands-on-deck/tree/a24b996ecff6393ccf39c4fee2b88c493fb0b693",
+      "source_commit": "a24b996ecff6393ccf39c4fee2b88c493fb0b693",
+      "license": "MIT",
+      "notice_paths": ["licenses/hands-on-deck/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "hands-on-deck"
+    },
+    {
+      "id": "reference-source:huashu_report",
+      "collection": "reference-source",
+      "title": "Huashu-Report",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/alchaincyf/huashu-report/tree/eda161cf693f2f2016b09abc1385b8e3df5fb9ad",
+      "source_commit": "eda161cf693f2f2016b09abc1385b8e3df5fb9ad",
+      "license": "MIT",
+      "notice_paths": ["licenses/huashu_report/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "huashu_report"
+    },
+    {
+      "id": "reference-source:kami",
+      "collection": "reference-source",
+      "title": "Kami",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/tw93/Kami/tree/6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6",
+      "source_commit": "6b399e93a5dfce0eaa7e3aabcc04cc260f01b8f6",
+      "license": "MIT",
+      "notice_paths": ["licenses/kami/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "kami"
+    },
+    {
+      "id": "reference-source:luobo-ppt",
+      "collection": "reference-source",
+      "title": "Luobo PPT",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/zhouwei713/luobo-ppt/tree/0437696197cef91fceccb618c7928e1c220b41b9",
+      "source_commit": "0437696197cef91fceccb618c7928e1c220b41b9",
+      "license": "MIT",
+      "notice_paths": ["licenses/luobo-ppt/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "luobo-ppt"
+    },
+    {
+      "id": "reference-source:marp-cli",
+      "collection": "reference-source",
+      "title": "Marp CLI — export capabilities",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/marp-team/marp-cli/tree/ffc4128626cbc64965fe1cc805717c6d4438c384",
+      "source_commit": "ffc4128626cbc64965fe1cc805717c6d4438c384",
+      "license": "MIT",
+      "notice_paths": ["licenses/marp-cli/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "marp-cli"
+    },
+    {
+      "id": "reference-source:microsoft_powerbi_report",
+      "collection": "reference-source",
+      "title": "Microsoft Power BI Report skill / Skills for Fabric",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/microsoft/skills-for-fabric/tree/bc42aaf734771bf752c1d7082dd91e5a6ca72b9f",
+      "source_commit": "bc42aaf734771bf752c1d7082dd91e5a6ca72b9f",
+      "license": "MIT",
+      "notice_paths": ["licenses/microsoft_powerbi_report/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "microsoft_powerbi_report"
+    },
+    {
+      "id": "reference-source:officecli",
+      "collection": "reference-source",
+      "title": "OfficeCLI and its document skills",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/iOfficeAI/OfficeCLI/tree/06ab520135a5289d0556d3e47fc2d42523f86547",
+      "source_commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
+      "license": "Apache-2.0",
+      "notice_paths": ["licenses/officecli/LICENSE", "licenses/officecli/NOTICE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "officecli"
+    },
+    {
+      "id": "reference-source:ppt-master",
+      "collection": "reference-source",
+      "title": "PPT Master",
+      "category": "guidance-source",
+      "uses": [
+        "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies."
+      ],
+      "description": "Only the listed source files support the selected palette excerpts and original package synthesis. Approval does not extend to unrelated assets or dependencies.",
+      "paths": ["references/source-manifest.json"],
+      "source_url": "https://github.com/hugohe3/ppt-master/tree/604ecdec8dd6a0405e1abdb49565430902373276",
+      "source_commit": "604ecdec8dd6a0405e1abdb49565430902373276",
+      "license": "MIT",
+      "notice_paths": ["licenses/ppt-master/LICENSE"],
+      "provenance_path": "references/source-manifest.json",
+      "notes": "Indirect guidance source recorded by the supplied reference package; paths locate the exact source-file/notice manifest, not a bundled upstream runtime.",
+      "record_locator": "ppt-master"
+    }
+  ]
+}

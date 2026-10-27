@@ -109,3 +109,5 @@ The two attributed Apache-2.0 skill-creator helpers are outside this replacement
 The seven `test_game_*.py` suites adapt Apache-2.0 upstream synthetic regressions for all nine game helpers (see `skills/game-development/SOURCES.md`). They check static project/layout contracts, asset reports/preview sheets, generated Ebitengine project files, and macOS packaging failure preservation without downloading an engine, launching a game, signing, or publishing. They do not prove engine/runtime compatibility or gameplay quality.
 
 All are discovered by the existing top-level CI command. The Markdown link check ignores fenced/inline code so language indexing expressions are not mistaken for documentation links. No agent behavioral or visual-quality pass is implied by these tests.
+
+`test_material_catalogues.py` verifies the per-skill external-material indexes, portable paths, source-field conventions, and named collection membership against the existing data. It preserves all existing runtime catalogues and provenance manifests.

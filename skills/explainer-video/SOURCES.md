@@ -1,5 +1,7 @@
 # Sources and modifications
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 Adapted at the repository owner's request from [the explainer archive](https://github.com/jiahuei/agent-skills/tree/235e920a4e494b74b46af67f813167699257c039/archive/explainer-video), revision `235e920a4e494b74b46af67f813167699257c039`. The source checkout's unrelated files and uncommitted material were not imported.
 
 The archive attributes its story builder, subtitle exporter, and delivery finalizer to [Lanshu](https://github.com/cclank/lanshu-create-ai-presenter-video/tree/762d3ee42623b75a4ec63ad6aa61ace69d78ce6e), revision `762d3ee42623b75a4ec63ad6aa61ace69d78ce6e`, under the retained [MIT notice](LICENSE-lanshu.txt). Changes here require explicit paid TTS selection, reject conflicting speech modes, preserve millisecond audio duration and accepted audio on failed local replacement, write story metadata atomically, and publish delivery exclusively with the technical report last. The entry point, reference guides, local still-scene renderer, and repository tests are this repository's adaptations/additions under the [repository MIT license](LICENSE.repository.txt). The archive's HyperFrames (Apache-2.0) browser-kit material and CDN assets are omitted, so that notice is not bundled; the full provenance record is [references/sources.md](references/sources.md).
