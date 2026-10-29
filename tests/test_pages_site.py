@@ -52,14 +52,14 @@ class SnapshotTests(unittest.TestCase):
     def test_production_and_multiple_previews_then_close(self):
         """Ensures main stays at root, each PR uses its own source, and closing removes stale files."""
         template = self.repository / "site/index.html"
-        template.write_text(template.read_text().replace("Great work.", "First preview."))
+        template.write_text(template.read_text().replace("Just nice skills.", "First preview."))
         (self.repository / "skills/theme-factory/SKILL.md").write_text("# Preview skill document\n\nRead **this** version. {{COUNT}}")
         first = self.commit()
         template.write_text(template.read_text().replace("First preview.", "Second preview."))
         second = self.commit()
         output = self.package({"main": self.main, "previews": [
             {"number": 5, "sha": first}, {"number": 6, "sha": second}]})
-        self.assertIn("Great work.", (output / "index.html").read_text())
+        self.assertIn("Just nice skills.", (output / "index.html").read_text())
         self.assertIn("First preview.", (output / "pr-preview/5/index.html").read_text())
         preview_page = (output / "pr-preview/5/index.html").read_text()
         self.assertIn(f"/blob/{first}/skills/", preview_page)

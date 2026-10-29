@@ -85,7 +85,7 @@ def build(output, source=None, source_ref="main"):
     escape = html.escape
     cards = []
     readers = []
-    for entry in entries:
+    for entry in sorted(entries, key=lambda entry: entry["name"]):
         source_url = f"{REPOSITORY}/blob/{source_ref}/skills/{entry['path']}"
         document = render_skill((source / "skills" / entry["path"]).read_text(), entry["name"], source_url)
         readers.append(f'<template id="skill-doc-{escape(entry["name"])}">{document}</template>')
