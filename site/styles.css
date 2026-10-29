@@ -41,6 +41,27 @@ select {
   min-height: 48px;
   padding: 10px 14px;
 }
+.select-control {
+  position: relative;
+  min-width: 0;
+}
+.select-control select {
+  appearance: none;
+  width: 100%;
+  padding-right: 40px;
+}
+.select-control::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
 :focus-visible {
   outline: 3px solid var(--mca-focus-ring);
   outline-offset: 5px;
@@ -223,21 +244,20 @@ nav a:hover,
 }
 .theme-control {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  grid-template-columns: 48px minmax(0, 1fr) 48px auto;
   gap: 12px 8px;
   margin-top: auto;
 }
 .theme-control select {
   min-width: 0;
-  padding-inline: 8px;
+  padding-left: 12px;
 }
 .theme-control label {
   grid-column: 1 / -1;
   font-size: 15px;
 }
 #random-theme {
-  grid-column: 1 / -1;
-  justify-self: start;
+  white-space: nowrap;
 }
 .theme-control button:hover {
   background: var(--mca-selected-surface);
@@ -425,6 +445,17 @@ code {
   }
 }
 @media (max-width: 1000px) {
+  .theme-control {
+    grid-template-columns: 48px 48px minmax(0, 1fr);
+  }
+  .theme-control .select-control {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  #random-theme {
+    font-size: 14px;
+    padding-inline: 8px;
+  }
   .frame {
     padding-inline: 24px;
   }

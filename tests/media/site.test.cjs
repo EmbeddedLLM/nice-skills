@@ -114,7 +114,32 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
             .join(", "),
         )}`,
       );
+      // Keeps theme actions aligned and both dropdown carets inset from their borders.
+      const controls = await page
+        .locator(".theme-control button")
+        .evaluateAll((buttons) =>
+          buttons.map((button) => ({ top: button.getBoundingClientRect().top, height: button.getBoundingClientRect().height })),
+        );
+      assert.ok(
+        controls.every((button) => Math.abs(button.top - controls[0].top) < 1),
+        `Theme buttons share a row at ${width}`,
+      );
+      if (width > 1000) {
+        const selectTop = await page.locator("#theme").evaluate((element) => element.getBoundingClientRect().top);
+        assert.ok(Math.abs(selectTop - controls[0].top) < 1, "Theme dropdown and buttons share a desktop row");
+      }
+      for (const id of ["theme", "category"]) {
+        const caret = await page.locator(`#${id}`).evaluate((element) => {
+          const wrapper = element.parentElement;
+          const style = getComputedStyle(wrapper, "::after");
+          return { appearance: getComputedStyle(element).appearance, right: style.right, top: parseFloat(style.top), height: wrapper.offsetHeight };
+        });
+        assert.equal(caret.appearance, "none");
+        assert.equal(caret.right, "16px");
+        assert.ok(Math.abs(caret.top - caret.height / 2) < 1, `${id} caret is vertically centered`);
+      }
       if (screenshots) {
+        await page.locator(".filters").screenshot({ path: join(screenshots, `${width}-filters.png`) });
         await page.locator(".hero").screenshot({ path: join(screenshots, `${width}-hero.png`) });
         await page.screenshot({ path: join(screenshots, `${width}.png`), fullPage: true });
       }
