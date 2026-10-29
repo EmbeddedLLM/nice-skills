@@ -84,4 +84,3 @@ document.querySelector(".skill-grid").addEventListener("click", (event) => {
   readerContent.scrollTop = 0;
 });
 document.getElementById("close-reader").addEventListener("click", () => reader.close());
-reader.addEventListener("close", () => readerContent.replaceChildren());

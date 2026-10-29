@@ -125,6 +125,19 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
     assert.deepEqual(errors, []);
     const dialog = page.getByRole("dialog");
     const skillLinks = page.locator(".skill h3 a");
+    // A queued close event must not erase a document opened before that event is delivered.
+    await skillLinks.first().click();
+    await page.evaluate(async () => {
+      const reader = document.getElementById("skill-reader");
+      const closed = new Promise((resolve) => reader.addEventListener("close", resolve, { once: true }));
+      reader.close();
+      document.querySelector('[data-skill="theme-factory"]').click();
+      await closed;
+    });
+    assert.equal(await dialog.isVisible(), true);
+    assert.equal(await page.locator("#reader-title").textContent(), "theme-factory");
+    assert.ok((await page.locator("#reader-content pre code").count()) > 0, "Queued close must preserve the reopened document");
+    await page.getByRole("button", { name: "Close skill" }).click();
     for (let index = 0; index < skillCount; index += 1) {
       const link = skillLinks.nth(index);
       const name = await link.getAttribute("data-skill");
