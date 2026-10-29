@@ -26,7 +26,7 @@ Python packages belong in a project-local virtual environment, and Node packages
 | FFmpeg / ffprobe | 6.1 | 7.0.2 verified | create-motion-videos, explainer-video, presenter-video, gif-creator (optional) | Encoding, muxing, loudness checks, contact sheets. Needs `libx264`, AAC, `loudnorm`, and image/tile filters; the motion strict exporter needs `-fps_mode` |
 | jq | 1.7 | Ubuntu 24.04 | explainer-video, presenter-video | Delivery finalization reports |
 | Bash and POSIX utilities | — | — | explainer-video, presenter-video | Delivery finalizers; the presenter provider ledger also needs POSIX file locks |
-| Git | current release | — | review-agent | Reading the requested commit, branch, or diff |
+| Git | current release | — | review-agent; homepage PR previews | Reading commits, branches, and diffs; fetching immutable preview snapshots |
 | Tesseract with language data | distribution package | — | pdf OCR tier | Local OCR through `ocrmypdf` |
 | Pandoc | current release | — | pdf Markdown conversion tier | Markdown-to-PDF input |
 | TeX (`latexmk` and packages) | current release | — | pdf TeX tier | TeX-to-PDF input |

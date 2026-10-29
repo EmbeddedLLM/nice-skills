@@ -61,17 +61,18 @@ The portable suite also checks actual recalculated spreadsheet values, formula e
 The homepage packaging suite runs in normal test discovery and in the Pages build:
 
 ```sh
-python -m unittest discover -s tests -p 'test_site.py' -v
+python -m unittest discover -s tests -p 'test_*site*.py' -v
 ```
 
-It checks complete catalog coverage, all theme choices, local asset paths, output isolation, and repeatable builds. The media job also builds the site and runs the homepage browser checks using its existing pinned Playwright Core and Chromium:
+The suites check complete catalog coverage, theme choices, repository links, local assets, repeatable builds, production and multiple-preview snapshots, updates and closure cleanup, fork filtering, API pagination, idempotent bot comments, exact commit links, invalid inputs, and the workflow permission boundaries. Synthetic Git repositories include untrusted Python and symlink inputs to verify that previews use only the trusted builder and never publish unrelated files. API calls are mocked; no tests publish Pages or post real comments. The media job also builds the site and runs the homepage browser checks using its existing pinned Playwright Core and Chromium:
 
 ```sh
 python tools/build_site.py
 node --test tests/media/site.test.cjs
+SITE_PATH=/nice-skills/pr-preview/5/ node --test tests/media/site.test.cjs
 ```
 
-The browser suite checks all 51 theme choices, saved and invalid preferences, blocked storage, combined search/category filtering, empty-state reset, requirements disclosure, keyboard access, JavaScript-disabled reading, and overflow at 1440, 768, 390, and 320 pixels. It serves the site under a repository URL prefix. Set `SITE_SCREENSHOTS` to a local output directory to retain full-page screenshots. Localhost binding and a working Chromium installation are required; these checks do not deploy to GitHub Pages.
+The browser suite checks all 51 theme choices, saved and invalid preferences, blocked storage, combined search/category filtering, empty-state reset, requirements disclosure, keyboard access, JavaScript-disabled reading, and overflow at 1440, 768, 390, and 320 pixels. It serves the site under repository and nested preview URL prefixes (`SITE_PATH` selects the base path). Set `SITE_SCREENSHOTS` to a local output directory to retain full-page screenshots. Localhost binding and a working Chromium installation are required; these checks do not deploy to GitHub Pages.
 
 ## Browser and video integration
 

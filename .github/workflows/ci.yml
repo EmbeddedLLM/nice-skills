@@ -108,6 +108,7 @@ jobs:
         run: |
           python tools/build_site.py
           node --test tests/media/site.test.cjs
+          SITE_PATH=/nice-skills/pr-preview/5/ node --test tests/media/site.test.cjs
       - name: Exercise the design-taste inspector against the locked Chromium
         run: |
           # The vendored DevTools client launches Chrome without --no-sandbox, and Ubuntu 24.04 blocks

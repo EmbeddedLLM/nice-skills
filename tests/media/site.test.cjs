@@ -10,8 +10,9 @@ const { mkdir } = require("node:fs/promises");
 /** Ensures discovery, persistence, all palettes, and responsive layouts work under a Pages prefix. */
 test("Homepage browsing and every theme work on GitHub project Pages", async () => {
   const directory = resolve(__dirname, "../../dist");
+  const prefix = process.env.SITE_PATH || "/nice-skills/";
   const server = createServer(async (request, response) => {
-    const name = request.url.replace(/^\/nice-skills\//, "") || "index.html";
+    const name = (request.url.startsWith(prefix) ? request.url.slice(prefix.length) : "not-found") || "index.html";
     if (!/^(index.html|app.js|styles.css|themes.css|favicon.svg)$/.test(name)) {
       response.writeHead(404).end();
       return;
@@ -28,7 +29,7 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
   let browser;
   try {
     browser = await chromium.launch({ headless: true, args: ["--no-sandbox"] });
-    const url = `http://127.0.0.1:${server.address().port}/nice-skills/`;
+    const url = `http://127.0.0.1:${server.address().port}${prefix}`;
     const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
