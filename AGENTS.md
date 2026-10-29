@@ -236,6 +236,13 @@ From the repository root:
 - Write concrete instructions, explicit prerequisites, and useful examples. Keep long reference material outside the entry point.
 - Update affected documentation and catalog entries when implementing skill changes.
 
+### Homepage maintenance
+
+- Keep the repository homepage in sync whenever adding or updating a skill. Update its entry in `skills/README.md` so the site's purpose statement and local requirements match the skill's actual behavior.
+- Add or adjust the skill's category in `GROUPS` in `tools/build_site.py` when adding or reclassifying a skill. Check that the skill appears under the intended homepage filter and links to the correct `SKILL.md`.
+- Update affected copy, counts, and guidance in `site/`, repository documentation, and homepage tests. Reuse the catalog and theme-factory data as the sources of truth; rebuild ignored `dist/` rather than editing generated files.
+- Run `python3 tools/build_site.py` and `python3 -m unittest discover -s tests -p 'test_*site*.py' -v` before handing off skill changes. Inspect the generated entry for accurate descriptions, requirements, categories, and links. When the site layout or interactions change, run the browser checks documented in `tests/README.md` and review desktop and mobile screenshots.
+
 ## Code Review and Refactoring Guidelines
 
 - Prioritize correctness, security, data integrity, and behavioral regressions.
