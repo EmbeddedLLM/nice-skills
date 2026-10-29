@@ -20,6 +20,8 @@ class HomepageTests(unittest.TestCase):
             css = (output / "themes.css").read_text()
             skills = list((ROOT / "skills").glob("*/SKILL.md"))
             self.assertEqual(page.count('<article class="skill"'), len(skills))
+            skill_names = re.findall(r'<a data-skill="([^"]+)"', page)
+            self.assertEqual(skill_names, sorted(skill.parent.name for skill in skills))
             for skill in skills:
                 self.assertIn(f"/skills/{skill.parent.name}/SKILL.md", page)
             theme_tools = runpy.run_path(str(ROOT / "skills/theme-factory/scripts/themes.py"))
