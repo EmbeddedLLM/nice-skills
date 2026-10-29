@@ -34,16 +34,19 @@ The skill layout follows the [Agent Skills specification](https://agentskills.io
 
 ## Repository homepage
 
-The homepage showcases every published skill with search, focus filters, local requirements, and all 51 theme-factory palettes. Visitors can choose from the dropdown, step through themes with Previous/Next arrows (wrapping at either end), or select a different random theme. Every choice is saved in the visitor's browser. Skill links and setup guidance remain available without JavaScript.
+The homepage showcases every published skill with search, focus filters, local requirements, and all 51 theme-factory palettes. Visitors can choose from the dropdown, step through themes with Previous/Next arrows (wrapping at either end), or select a different random theme. Every choice is saved in the visitor's browser. Selecting a skill opens its rendered `SKILL.md` in an on-page reader with headings, lists, code blocks, tables, and expandable metadata. Escape or Close returns to the catalog. A GitHub source link remains available, and supporting document links resolve relative to the skill directory at the corresponding source commit. Skill source links and setup guidance remain available without JavaScript.
 
-Build and preview locally with Python 3.12 or later; no additional packages are needed:
+Build and preview locally with Python 3.12 or later and the pinned homepage dependencies:
 
 ```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r site/requirements.txt
 python3 tools/build_site.py
 python3 -m http.server 8000 --directory dist
 ```
 
-Open `http://localhost:8000`. The builder reads `skills/README.md` and the theme-factory guide, verifies catalog completeness and theme contrast contracts, and writes only homepage assets to ignored `dist/`. Edit the page layout in `site/`; update skill descriptions in the catalog and palettes in their original guide. `--output <directory>` selects another build destination. `--source <directory>` reads homepage/catalog/theme inputs from a snapshot, and `--source-ref <commit>` points skill links at that commit; Python helpers always execute from the trusted builder checkout. Invalid catalog paths, incomplete catalog coverage, or invalid theme data fail the build with an error.
+Open `http://localhost:8000`. The builder reads `skills/README.md` and the theme-factory guide, verifies catalog completeness and theme contrast contracts, and writes the homepage and its assets to ignored `dist/`. The build bundles rendered skill documents in inert HTML templates, so opening a reader requires no fetch or network access. Markdown is rendered with raw HTML disabled; frontmatter remains readable in a metadata disclosure. Edit the page layout in `site/`; update skill descriptions in the catalog and palettes in their original guide. `--output <directory>` selects another build destination. `--source <directory>` reads homepage/catalog/theme inputs from a snapshot, and `--source-ref <commit>` points skill links at that commit; Python helpers always execute from the trusted builder checkout. Invalid catalog paths, incomplete catalog coverage, or invalid theme data fail the build with an error.
 
 The [GitHub Pages workflow](.github/workflows/pages.yml) follows the snapshot deployment pattern in [pdf-unlocker](https://github.com/jiahuei/pdf-unlocker/blob/main/.github/workflows/deploy.yml). Every deployment includes current `main` at the root and every open same-repository PR targeting `main` at `pr-preview/<number>/`. Opening, reopening, updating, or closing a PR rebuilds that set; pushes to `main` and manual runs from `main` rebuild it too. Closed or merged previews disappear at the next successful deployment. Runs are serialized so production and previews share one complete Pages artifact.
 
@@ -51,11 +54,11 @@ After deployment, a bot comment on each PR links to its preview and exact source
 
 In **Settings > Pages > Build and deployment**, select **GitHub Actions** as the source. The production URL is shown by the deployment's `github-pages` environment. The `github-pages` environment must allow deployments from `main`, and repository Actions settings must allow the workflow's `pull-requests: write` token to create comments. No repository settings are changed by the workflow. Preview automation becomes active once this workflow and its helpers are on `main`; it cannot preview its own initial implementation before merge.
 
-Preview jobs use `pull_request_target` with an explicit trusted `main` checkout. [GitHub's event documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request_target) explains this execution context and why PR code must not run there. The snapshot helper reads only regular Git blobs for the homepage assets, skill catalog, published skill markers, and theme guide. It never checks out or executes PR Python helpers. Consequently, previews reflect PR HTML/CSS/JavaScript, catalog, and palette data; changes to Python rendering logic take effect after merge. Invalid or unsafe inputs fail packaging before replacing the previous output, and the live deployment remains unchanged.
+Preview jobs use `pull_request_target` with an explicit trusted `main` checkout. [GitHub's event documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request_target) explains this execution context and why PR code must not run there. The snapshot helper reads only regular Git blobs for the homepage assets, skill catalog, published `SKILL.md` documents, and theme guide. It never checks out or executes PR Python helpers. Consequently, previews reflect PR HTML/CSS/JavaScript, catalog, and palette data; changes to Python rendering logic take effect after merge. Invalid or unsafe inputs fail packaging before replacing the previous output, and the live deployment remains unchanged.
 
 `python3 tools/pages_preview.py build` requires Git, network access, `GITHUB_REPOSITORY`, a read-only `GITHUB_TOKEN` with contents/PR access, and the Actions `GITHUB_OUTPUT` file. It fetches current immutable commits, renders the site into `dist/`, and exports the packaged preview list. `python3 tools/pages_preview.py comment` uses `PAGE_URL` and `DEPLOYED_PREVIEWS` from the successful deployment plus a token with PR write access to reconcile comments. Both commands run automatically in the workflow; local tests use temporary repositories and mocked API calls without publishing or commenting.
 
-The website uses Python's standard library to build and native HTML/CSS/JavaScript in the browser. Browser checks reuse the existing locked media-test Chromium; see [tests/README.md](tests/README.md).
+The website uses the exact Markdown renderer versions in `site/requirements.txt` during builds and native HTML/CSS/JavaScript in the browser. Browser checks reuse the existing locked media-test Chromium; see [tests/README.md](tests/README.md).
 
 ## Contributing
 

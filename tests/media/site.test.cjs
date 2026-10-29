@@ -123,6 +123,48 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
     await page.keyboard.press("Tab");
     assert.equal(await page.evaluate(() => document.activeElement.textContent), "Skip to skills");
     assert.deepEqual(errors, []);
+    const dialog = page.getByRole("dialog");
+    const skillLinks = page.locator(".skill h3 a");
+    for (let index = 0; index < skillCount; index += 1) {
+      const link = skillLinks.nth(index);
+      const name = await link.getAttribute("data-skill");
+      const source = await link.getAttribute("href");
+      await link.click();
+      assert.equal(await dialog.isVisible(), true);
+      assert.equal(await dialog.getAttribute("aria-labelledby"), "reader-title");
+      assert.equal(await page.locator("#reader-title").textContent(), name);
+      assert.equal(await page.getByRole("link", { name: "View on GitHub" }).getAttribute("href"), source);
+      assert.ok((await page.locator("#reader-content").textContent()).length > 100);
+      assert.ok((await page.locator("#reader-content h1").count()) >= 1);
+      await page.keyboard.press("Escape");
+      assert.equal(await dialog.isVisible(), false);
+      assert.equal(await link.evaluate((element) => document.activeElement === element), true);
+    }
+    await page.locator('[data-skill="theme-factory"]').focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await dialog.isVisible(), true);
+    assert.ok((await page.locator("#reader-content pre code").count()) > 0);
+    const relativeReference = page.locator('#reader-content a[href$="references/selection.md"]');
+    assert.ok((await relativeReference.getAttribute("href")).includes("/blob/main/skills/theme-factory/"));
+    await page.getByRole("button", { name: "Close skill" }).click();
+    await page.locator('[data-skill="create-motion-videos"]').click();
+    assert.ok((await page.locator("#reader-content table").count()) > 0);
+    const swatchBefore = await page.locator("html").getAttribute("data-palette");
+    await page.getByRole("button", { name: "Close skill" }).click();
+    await page.getByRole("button", { name: "Next theme", exact: true }).click();
+    await page.locator('[data-skill="theme-factory"]').click();
+    assert.notEqual(await page.locator("html").getAttribute("data-palette"), swatchBefore);
+    for (const width of [1440, 768, 390, 320]) {
+      await page.setViewportSize({ width, height: 1000 });
+      const fits = await dialog.evaluate((element) => {
+        const rect = element.getBoundingClientRect();
+        return rect.left >= 0 && rect.right <= innerWidth && rect.top >= 0 && rect.bottom <= innerHeight;
+      });
+      assert.equal(fits, true, `Reader must fit viewport at ${width}`);
+      if (screenshots) await page.screenshot({ path: join(screenshots, `${width}-reader.png`) });
+    }
+    await page.getByRole("button", { name: "Close skill" }).click();
+    assert.deepEqual(errors, []);
     await page.close();
     const noScript = await browser.newContext({ javaScriptEnabled: false });
     const fallback = await noScript.newPage();

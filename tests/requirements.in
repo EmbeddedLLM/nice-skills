@@ -1,4 +1,5 @@
-# Versions match the skill manifests; this file is the test environment only.
+# Versions match the skill and homepage manifests; this file is the test environment only.
+-r ../site/requirements.txt
 -r ../skills/documents/requirements.txt
 -r ../skills/slides/requirements.txt
 -r ../skills/pdf/requirements.txt

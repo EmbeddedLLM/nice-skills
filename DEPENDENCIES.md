@@ -17,6 +17,12 @@ The pins inside each skill directory (`requirements*.txt`, `package-lock.json`) 
 
 Python packages belong in a project-local virtual environment, and Node packages in a writable copy of the owning directory (`npm ci` writes `node_modules`). Installed skill directories are treated as read-only.
 
+## Repository homepage
+
+Homepage builds use `site/requirements.txt`, independently of the published skills: `markdown-it-py==3.0.0` renders the skill documents and `mdurl==0.1.2` supplies its URL parsing dependency. The manifest pins the complete runtime set. Install with `python -m pip install -r site/requirements.txt` in a writable Python environment. CI installs these pins in the Pages build, contract-test, and browser jobs; the preview-comment helper remains standard-library only.
+
+The renderer uses the HTML-disabled `js-default` preset described in the [markdown-it-py security documentation](https://markdown-it-py.readthedocs.io/en/latest/security.html). Rendered skill documents are bundled with the homepage, so selecting a skill requires no browser package or runtime fetch.
+
 ## Command-line tools
 
 | Tool | Minimum | Tested | Used by | Purpose |

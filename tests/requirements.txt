@@ -26,6 +26,12 @@ lxml==6.0.2
     #   -r tests/../skills/slides/requirements.txt
     #   python-docx
     #   python-pptx
+markdown-it-py==3.0.0
+    # via -r tests/../site/requirements.txt
+mdurl==0.1.2
+    # via
+    #   -r tests/../site/requirements.txt
+    #   markdown-it-py
 numba==0.61.2
     # via -r tests/../skills/sound-design/requirements.txt
 numpy==2.2.6

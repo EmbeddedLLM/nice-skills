@@ -53,6 +53,7 @@ class SnapshotTests(unittest.TestCase):
         """Ensures main stays at root, each PR uses its own source, and closing removes stale files."""
         template = self.repository / "site/index.html"
         template.write_text(template.read_text().replace("Great work.", "First preview."))
+        (self.repository / "skills/theme-factory/SKILL.md").write_text("# Preview skill document\n\nRead **this** version. {{COUNT}}")
         first = self.commit()
         template.write_text(template.read_text().replace("First preview.", "Second preview."))
         second = self.commit()
@@ -60,7 +61,11 @@ class SnapshotTests(unittest.TestCase):
             {"number": 5, "sha": first}, {"number": 6, "sha": second}]})
         self.assertIn("Great work.", (output / "index.html").read_text())
         self.assertIn("First preview.", (output / "pr-preview/5/index.html").read_text())
-        self.assertIn(f"/blob/{first}/skills/", (output / "pr-preview/5/index.html").read_text())
+        preview_page = (output / "pr-preview/5/index.html").read_text()
+        self.assertIn(f"/blob/{first}/skills/", preview_page)
+        self.assertIn('Preview skill document</h1>', preview_page)
+        self.assertIn('<strong>this</strong> version. {{COUNT}}', preview_page)
+        self.assertNotIn('Preview skill document</h1>', (output / "index.html").read_text())
         self.assertIn("Second preview.", (output / "pr-preview/6/index.html").read_text())
         for number in (5, 6):
             page = (output / f"pr-preview/{number}/index.html").read_text()

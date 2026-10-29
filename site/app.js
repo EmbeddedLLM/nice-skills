@@ -70,3 +70,18 @@ document.getElementById("reset").addEventListener("click", () => {
   filterSkills();
   search.focus();
 });
+
+const reader = document.getElementById("skill-reader");
+const readerContent = document.getElementById("reader-content");
+document.querySelector(".skill-grid").addEventListener("click", (event) => {
+  const link = event.target.closest("a[data-skill]");
+  if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  document.getElementById("reader-title").textContent = link.dataset.skill;
+  document.getElementById("reader-source").href = link.href;
+  readerContent.replaceChildren(document.getElementById(`skill-doc-${link.dataset.skill}`).content.cloneNode(true));
+  reader.showModal();
+  readerContent.scrollTop = 0;
+});
+document.getElementById("close-reader").addEventListener("click", () => reader.close());
+reader.addEventListener("close", () => readerContent.replaceChildren());

@@ -36,6 +36,8 @@ jobs:
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
+      - name: Install pinned homepage dependencies
+        run: python -m pip install -r site/requirements.txt
       - name: Check homepage and preview packaging
         run: python -m unittest discover -s tests -p 'test_*site*.py' -v
       - name: Package current main and open PR snapshots
