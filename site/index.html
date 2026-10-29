@@ -46,9 +46,14 @@
           </div>
           <div class="theme-control" hidden>
             <label for="theme">Your theme</label>
-            <select id="theme">
-              {{THEME_OPTIONS}}
-            </select>
+            <button id="previous-theme" type="button" aria-label="Previous theme" title="Previous theme">←</button>
+            <div class="select-control">
+              <select id="theme">
+                {{THEME_OPTIONS}}
+              </select>
+            </div>
+            <button id="next-theme" type="button" aria-label="Next theme" title="Next theme">→</button>
+            <button id="random-theme" type="button">Random theme</button>
           </div>
           <a class="theme-credit" href="https://github.com/EmbeddedLLM/nice-skills/tree/main/skills/theme-factory"
             >Made with theme-factory <span aria-hidden="true">↗</span></a
@@ -59,18 +64,20 @@
       <section id="skills" class="catalog" aria-labelledby="skills-heading">
         <div class="section-heading">
           <h2 id="skills-heading">A skill for that.</h2>
-          <p>From the first idea to the final export.</p>
+          <p>Choose a skill to read its guide.</p>
         </div>
         <div class="filters" hidden>
           <div class="search-field">
             <label for="search">Find a skill</label><input id="search" type="search" placeholder="Try design, PDF, sound…" autocomplete="off" />
           </div>
           <div class="category-field">
-            <label for="category">Browse by focus</label
-            ><select id="category">
-              <option value="">All skills</option>
-              {{GROUP_OPTIONS}}
-            </select>
+            <label for="category">Browse by focus</label>
+            <div class="select-control">
+              <select id="category">
+                <option value="">All skills</option>
+                {{GROUP_OPTIONS}}
+              </select>
+            </div>
           </div>
           <p id="result-count" role="status" aria-live="polite">{{COUNT}} skills</p>
         </div>
@@ -113,6 +120,17 @@
         <a href="https://github.com/EmbeddedLLM/nice-skills/blob/main/CONTRIBUTING.md">Contribute a skill <span aria-hidden="true">↗</span></a>
       </aside>
     </main>
+    <dialog id="skill-reader" class="skill-reader" aria-labelledby="reader-title">
+      <header class="reader-header">
+        <h2 id="reader-title"></h2>
+        <div class="reader-actions">
+          <a id="reader-source" href="https://github.com/EmbeddedLLM/nice-skills">View on GitHub <span aria-hidden="true">↗</span></a>
+          <button id="close-reader" type="button" autofocus>Close skill</button>
+        </div>
+      </header>
+      <article id="reader-content" class="reader-document"></article>
+    </dialog>
+    {{SKILL_READERS}}
     <footer class="site-footer frame">
       <a class="wordmark" href="./">Nice Skills</a>
       <p>Open source. Open possibilities.</p>

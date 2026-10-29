@@ -24,9 +24,9 @@ python skills/create-motion-videos/scripts/test_prepare_runtime.py
 python skills/presenter-video/tests/test_provider_job.py
 ```
 
-Install Poppler (`pdftoppm`, `pdftotext`, `pdfinfo`, `pdffonts`) for PDF tests. CI also installs LibreOffice Writer, Impress, and Calc, DejaVu fonts, FFmpeg/ffprobe, and jq. Its Ubuntu 24.04 jobs install the distribution FFmpeg/jq and fail fast when they are older than the asserted minimums (FFmpeg 6.1, jq 1.7); raise those minimums deliberately with their runtime checks. The Python lock includes the document, PDF, slide, and font libraries needed for collection. Missing optional tools (LibreOffice, Pandoc, Playwright, or slide Node peers) skip their dependent cases; required Python imports and Poppler must be installed. Browser capture also needs a matching Playwright Chromium installation if Playwright is installed. LaTeX and OCR tests exercise argument/dependency checks without requiring their full toolchains. Server lifecycle tests require POSIX process groups and permission to bind loopback sockets.
+Install Poppler (`pdftoppm`, `pdftotext`, `pdfinfo`, `pdffonts`) for PDF tests. CI also installs LibreOffice Writer, Impress, and Calc, DejaVu fonts, FFmpeg/ffprobe, and jq. Its Ubuntu 24.04 jobs install the distribution FFmpeg/jq and fail fast when they are older than the asserted minimums (FFmpeg 6.1, jq 1.7); raise those minimums deliberately with their runtime checks. The Python lock includes the document, PDF, slide, font, and homepage Markdown libraries needed for collection. Missing optional tools (LibreOffice, Pandoc, Playwright, or slide Node peers) skip their dependent cases; required Python imports and Poppler must be installed. Browser capture also needs a matching Playwright Chromium installation if Playwright is installed. LaTeX and OCR tests exercise argument/dependency checks without requiring their full toolchains. Server lifecycle tests require POSIX process groups and permission to bind loopback sockets.
 
-`requirements.in` takes direct pins from the skill manifests. `requirements.txt` locks the resolved Python environment; the existing skill package lockfiles supply Node dependencies, avoiding a duplicate test-only Node package. Regenerate the Python lock intentionally with `uv pip compile --python-version 3.12 tests/requirements.in -o tests/requirements.txt` (generated using uv 0.12.7). `SKILL_NODE_MODULES` can point to an alternative directory containing all slide helper peers.
+`requirements.in` takes direct pins from the skill and homepage manifests. `requirements.txt` locks the resolved Python environment; the existing skill package lockfiles supply Node dependencies, avoiding a duplicate test-only Node package. Regenerate the Python lock intentionally with `uv pip compile --python-version 3.12 tests/requirements.in -o tests/requirements.txt` (generated using uv 0.12.7). `SKILL_NODE_MODULES` can point to an alternative directory containing all slide helper peers.
 
 To run one case:
 
@@ -61,17 +61,20 @@ The portable suite also checks actual recalculated spreadsheet values, formula e
 The homepage packaging suite runs in normal test discovery and in the Pages build:
 
 ```sh
-python -m unittest discover -s tests -p 'test_site.py' -v
+python -m pip install -r site/requirements.txt
+python -m unittest discover -s tests -p 'test_*site*.py' -v
 ```
 
-It checks complete catalog coverage, all theme choices, local asset paths, output isolation, and repeatable builds. The media job also builds the site and runs the homepage browser checks using its existing pinned Playwright Core and Chromium:
+The suites check complete catalog coverage, theme choices, repository links, local assets, repeatable builds, Markdown structure, safe HTML handling, metadata disclosures, document anchors and relative source links, production and multiple-preview snapshots, updates and closure cleanup, fork filtering, API pagination, idempotent bot comments, exact commit links, invalid inputs, and the workflow permission boundaries. Workflow checks cover PR lifecycle triggers, triggering-commit checkouts, fork exclusion, serialized deployment, and comment permissions. Synthetic Git repositories include Python and symlink inputs to verify that snapshot packaging uses only the workflow checkout's builder and never executes snapshot helpers or publishes unrelated files. API calls are mocked; no tests publish Pages or post real comments. The media job also builds the site and runs the homepage browser checks using its existing pinned Playwright Core and Chromium:
 
 ```sh
+python -m pip install -r site/requirements.txt
 python tools/build_site.py
 node --test tests/media/site.test.cjs
+SITE_PATH=/nice-skills/pr-preview/5/ node --test tests/media/site.test.cjs
 ```
 
-The browser suite checks all 51 theme choices, saved and invalid preferences, blocked storage, combined search/category filtering, empty-state reset, requirements disclosure, keyboard access, JavaScript-disabled reading, and overflow at 1440, 768, 390, and 320 pixels. It serves the site under a repository URL prefix. Set `SITE_SCREENSHOTS` to a local output directory to retain full-page screenshots. Localhost binding and a working Chromium installation are required; these checks do not deploy to GitHub Pages.
+The browser suite opens all 27 skill documents, checks reader closing by backdrop click, Escape, and Close, keeps content clicks open, verifies focus restoration, and rapid reopening before queued close events are delivered, Markdown code/tables, source links, responsive reader bounds, and all 51 theme choices, the wider theme panel, aligned theme buttons and dropdown carets, Previous/Next wraparound and keyboard activation, different random selections and persistence, saved and invalid preferences, blocked storage, combined search/category filtering, empty-state reset, requirements disclosure, keyboard access, JavaScript-disabled reading, and overflow at 1440, 768, 390, and 320 pixels. It serves the site under repository and nested preview URL prefixes (`SITE_PATH` selects the base path). Set `SITE_SCREENSHOTS` to a local output directory to retain full-page screenshots. Localhost binding and a working Chromium installation are required; these checks do not deploy to GitHub Pages.
 
 ## Browser and video integration
 

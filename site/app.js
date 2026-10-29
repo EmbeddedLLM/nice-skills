@@ -21,13 +21,27 @@ try {
 }
 applyTheme(savedTheme);
 document.querySelector(".theme-control").hidden = false;
-themeSelect.addEventListener("change", () => {
-  applyTheme(themeSelect.value);
+function chooseTheme(slug) {
+  applyTheme(slug);
   try {
     localStorage.setItem(storageKey, themeSelect.value);
   } catch {
     // Browsing in a storage-restricted context does not disable the picker.
   }
+}
+
+function moveTheme(offset) {
+  const count = themeSelect.options.length;
+  const index = (themeSelect.selectedIndex + offset + count) % count;
+  chooseTheme(themeSelect.options[index].value);
+}
+
+themeSelect.addEventListener("change", () => chooseTheme(themeSelect.value));
+document.getElementById("previous-theme").addEventListener("click", () => moveTheme(-1));
+document.getElementById("next-theme").addEventListener("click", () => moveTheme(1));
+document.getElementById("random-theme").addEventListener("click", () => {
+  // A nonzero offset makes Random choose a different theme without retries.
+  moveTheme(1 + Math.floor(Math.random() * (themeSelect.options.length - 1)));
 });
 
 const search = document.getElementById("search");
@@ -55,4 +69,26 @@ document.getElementById("reset").addEventListener("click", () => {
   category.value = "";
   filterSkills();
   search.focus();
+});
+
+const reader = document.getElementById("skill-reader");
+const readerContent = document.getElementById("reader-content");
+document.querySelector(".skill-grid").addEventListener("click", (event) => {
+  const link = event.target.closest("a[data-skill]");
+  if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  document.getElementById("reader-title").textContent = link.dataset.skill;
+  document.getElementById("reader-source").href = link.href;
+  readerContent.replaceChildren(document.getElementById(`skill-doc-${link.dataset.skill}`).content.cloneNode(true));
+  reader.showModal();
+  readerContent.scrollTop = 0;
+});
+document.getElementById("close-reader").addEventListener("click", () => reader.close());
+reader.addEventListener("click", (event) => {
+  if (event.target !== reader) return;
+  // Backdrop clicks target the dialog too; its own empty space must stay clickable.
+  const bounds = reader.getBoundingClientRect();
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) {
+    reader.close();
+  }
 });

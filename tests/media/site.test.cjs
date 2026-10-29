@@ -10,8 +10,9 @@ const { mkdir } = require("node:fs/promises");
 /** Ensures discovery, persistence, all palettes, and responsive layouts work under a Pages prefix. */
 test("Homepage browsing and every theme work on GitHub project Pages", async () => {
   const directory = resolve(__dirname, "../../dist");
+  const prefix = process.env.SITE_PATH || "/nice-skills/";
   const server = createServer(async (request, response) => {
-    const name = request.url.replace(/^\/nice-skills\//, "") || "index.html";
+    const name = (request.url.startsWith(prefix) ? request.url.slice(prefix.length) : "not-found") || "index.html";
     if (!/^(index.html|app.js|styles.css|themes.css|favicon.svg)$/.test(name)) {
       response.writeHead(404).end();
       return;
@@ -28,7 +29,7 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
   let browser;
   try {
     browser = await chromium.launch({ headless: true, args: ["--no-sandbox"] });
-    const url = `http://127.0.0.1:${server.address().port}/nice-skills/`;
+    const url = `http://127.0.0.1:${server.address().port}${prefix}`;
     const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
@@ -40,6 +41,9 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
     const catalog = await readFile(resolve(__dirname, "../../skills/README.md"), "utf8");
     const skillCount = catalog.split("\n").filter((line) => line.startsWith("| [")).length;
     assert.equal(await page.locator(".skill:visible").count(), skillCount);
+    const panelWidth = await page.locator(".palette").evaluate((element) => element.getBoundingClientRect().width);
+    const introWidth = await page.locator(".intro").evaluate((element) => element.getBoundingClientRect().width);
+    assert.ok(panelWidth >= introWidth - 1, "Theme panel should occupy at least half the hero width");
     const themes = await page.locator("#theme option").evaluateAll((options) => options.map((option) => option.value));
     assert.equal(themes.length, 51);
     for (const slug of themes) {
@@ -55,6 +59,27 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
       });
       assert.equal(styles.primary, styles.swatch);
       assert.notEqual(styles.background, "rgba(0, 0, 0, 0)");
+    }
+    await page.getByLabel("Your theme").selectOption(themes[0]);
+    await page.getByRole("button", { name: "Previous theme", exact: true }).click();
+    assert.equal(await page.getByLabel("Your theme").inputValue(), themes.at(-1));
+    await page.getByRole("button", { name: "Next theme", exact: true }).click();
+    assert.equal(await page.getByLabel("Your theme").inputValue(), themes[0]);
+    await page.getByRole("button", { name: "Next theme", exact: true }).focus();
+    await page.keyboard.press("Space");
+    assert.equal(await page.getByLabel("Your theme").inputValue(), themes[1]);
+    await page.getByRole("button", { name: "Previous theme", exact: true }).focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await page.getByLabel("Your theme").inputValue(), themes[0]);
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      const previous = await page.getByLabel("Your theme").inputValue();
+      await page.getByRole("button", { name: "Random theme", exact: true }).click();
+      const current = await page.getByLabel("Your theme").inputValue();
+      assert.notEqual(current, previous);
+      assert.ok(themes.includes(current));
+      assert.equal(await page.locator("html").getAttribute("data-palette"), current);
+      await page.reload();
+      assert.equal(await page.getByLabel("Your theme").inputValue(), current);
     }
     await page.getByLabel("Your theme").selectOption(themes[0]);
     await page.reload();
@@ -89,11 +114,104 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
             .join(", "),
         )}`,
       );
-      if (screenshots) await page.screenshot({ path: join(screenshots, `${width}.png`), fullPage: true });
+      // Keeps theme actions aligned and both dropdown carets inset from their borders.
+      const controls = await page
+        .locator(".theme-control button")
+        .evaluateAll((buttons) =>
+          buttons.map((button) => ({ top: button.getBoundingClientRect().top, height: button.getBoundingClientRect().height })),
+        );
+      assert.ok(
+        controls.every((button) => Math.abs(button.top - controls[0].top) < 1),
+        `Theme buttons share a row at ${width}`,
+      );
+      if (width > 1000) {
+        const selectTop = await page.locator("#theme").evaluate((element) => element.getBoundingClientRect().top);
+        assert.ok(Math.abs(selectTop - controls[0].top) < 1, "Theme dropdown and buttons share a desktop row");
+      }
+      for (const id of ["theme", "category"]) {
+        const caret = await page.locator(`#${id}`).evaluate((element) => {
+          const wrapper = element.parentElement;
+          const style = getComputedStyle(wrapper, "::after");
+          return { appearance: getComputedStyle(element).appearance, right: style.right, top: parseFloat(style.top), height: wrapper.offsetHeight };
+        });
+        assert.equal(caret.appearance, "none");
+        assert.equal(caret.right, "16px");
+        assert.ok(Math.abs(caret.top - caret.height / 2) < 1, `${id} caret is vertically centered`);
+      }
+      if (screenshots) {
+        await page.locator(".filters").screenshot({ path: join(screenshots, `${width}-filters.png`) });
+        await page.locator(".hero").screenshot({ path: join(screenshots, `${width}-hero.png`) });
+        await page.screenshot({ path: join(screenshots, `${width}.png`), fullPage: true });
+      }
     }
     await page.goto(url);
     await page.keyboard.press("Tab");
     assert.equal(await page.evaluate(() => document.activeElement.textContent), "Skip to skills");
+    assert.deepEqual(errors, []);
+    const dialog = page.getByRole("dialog");
+    const skillLinks = page.locator(".skill h3 a");
+    // Outside clicks dismiss the reader and restore focus; content clicks keep it open.
+    for (const width of [1440, 390]) {
+      await page.setViewportSize({ width, height: 1000 });
+      await skillLinks.first().click();
+      await page.locator("#reader-content h1").first().click();
+      assert.equal(await dialog.isVisible(), true, "Reading inside must not dismiss the preview");
+      await page.mouse.click(2, 2);
+      assert.equal(await dialog.isVisible(), false, `Backdrop click closes the reader at ${width}`);
+      assert.equal(await skillLinks.first().evaluate((element) => document.activeElement === element), true);
+    }
+    // A queued close event must not erase a document opened before that event is delivered.
+    await skillLinks.first().click();
+    await page.evaluate(async () => {
+      const reader = document.getElementById("skill-reader");
+      const closed = new Promise((resolve) => reader.addEventListener("close", resolve, { once: true }));
+      reader.close();
+      document.querySelector('[data-skill="theme-factory"]').click();
+      await closed;
+    });
+    assert.equal(await dialog.isVisible(), true);
+    assert.equal(await page.locator("#reader-title").textContent(), "theme-factory");
+    assert.ok((await page.locator("#reader-content pre code").count()) > 0, "Queued close must preserve the reopened document");
+    await page.getByRole("button", { name: "Close skill" }).click();
+    for (let index = 0; index < skillCount; index += 1) {
+      const link = skillLinks.nth(index);
+      const name = await link.getAttribute("data-skill");
+      const source = await link.getAttribute("href");
+      await link.click();
+      assert.equal(await dialog.isVisible(), true);
+      assert.equal(await dialog.getAttribute("aria-labelledby"), "reader-title");
+      assert.equal(await page.locator("#reader-title").textContent(), name);
+      assert.equal(await page.getByRole("link", { name: "View on GitHub" }).getAttribute("href"), source);
+      assert.ok((await page.locator("#reader-content").textContent()).length > 100);
+      assert.ok((await page.locator("#reader-content h1").count()) >= 1);
+      await page.keyboard.press("Escape");
+      assert.equal(await dialog.isVisible(), false);
+      assert.equal(await link.evaluate((element) => document.activeElement === element), true);
+    }
+    await page.locator('[data-skill="theme-factory"]').focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await dialog.isVisible(), true);
+    assert.ok((await page.locator("#reader-content pre code").count()) > 0);
+    const relativeReference = page.locator('#reader-content a[href$="references/selection.md"]');
+    assert.ok((await relativeReference.getAttribute("href")).includes("/blob/main/skills/theme-factory/"));
+    await page.getByRole("button", { name: "Close skill" }).click();
+    await page.locator('[data-skill="create-motion-videos"]').click();
+    assert.ok((await page.locator("#reader-content table").count()) > 0);
+    const swatchBefore = await page.locator("html").getAttribute("data-palette");
+    await page.getByRole("button", { name: "Close skill" }).click();
+    await page.getByRole("button", { name: "Next theme", exact: true }).click();
+    await page.locator('[data-skill="theme-factory"]').click();
+    assert.notEqual(await page.locator("html").getAttribute("data-palette"), swatchBefore);
+    for (const width of [1440, 768, 390, 320]) {
+      await page.setViewportSize({ width, height: 1000 });
+      const fits = await dialog.evaluate((element) => {
+        const rect = element.getBoundingClientRect();
+        return rect.left >= 0 && rect.right <= innerWidth && rect.top >= 0 && rect.bottom <= innerHeight;
+      });
+      assert.equal(fits, true, `Reader must fit viewport at ${width}`);
+      if (screenshots) await page.screenshot({ path: join(screenshots, `${width}-reader.png`) });
+    }
+    await page.getByRole("button", { name: "Close skill" }).click();
     assert.deepEqual(errors, []);
     await page.close();
     const noScript = await browser.newContext({ javaScriptEnabled: false });
@@ -114,6 +232,8 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
     await restrictedPage.goto(url);
     await restrictedPage.getByLabel("Your theme").selectOption(themes[0]);
     assert.equal(await restrictedPage.locator("html").getAttribute("data-palette"), themes[0]);
+    await restrictedPage.getByRole("button", { name: "Next theme", exact: true }).click();
+    assert.equal(await restrictedPage.getByLabel("Your theme").inputValue(), themes[1]);
     await restricted.close();
   } finally {
     if (browser) await browser.close();
