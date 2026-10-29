@@ -206,18 +206,20 @@ class GitHubTests(unittest.TestCase):
 
 
 class WorkflowTests(unittest.TestCase):
-    def test_trusted_checkout_serial_deployment_and_comment_permissions(self):
-        """Ensures PR data cannot select executable code or acquire deployment/comment credentials."""
+    def test_pr_trigger_serial_deployment_and_comment_permissions(self):
+        """Ensures same-repository PRs can deploy before merge with serialized, scoped jobs."""
         workflow = (ROOT / ".github/workflows/pages.yml").read_text()
-        self.assertIn("pull_request_target:", workflow)
-        self.assertIn("types: [opened, reopened, synchronize, closed]", workflow)
+        self.assertIn("on:\n  push:\n    branches: [main]\n  pull_request:\n"
+                      "    types: [opened, reopened, synchronize, closed]\n  workflow_dispatch:", workflow)
+        self.assertNotIn("pull_request_target:", workflow)
         self.assertIn("group: pages\n", workflow)
         self.assertIn("cancel-in-progress: false", workflow)
         build, deploy = workflow.split("\n  deploy:\n")
         deploy, comment = deploy.split("\n  comment:\n")
-        self.assertIn("ref: main", build)
-        self.assertIn("head.repo.full_name == github.repository", build)
-        self.assertIn("github.ref == 'refs/heads/main'", build)
+        self.assertIn("ref: ${{ github.sha }}", build)
+        self.assertIn("if: github.event_name != 'pull_request' || "
+                      "github.event.pull_request.head.repo.full_name == github.repository", build)
+        self.assertNotIn("github.ref == 'refs/heads/main'", workflow)
         self.assertIn("contents: read", build)
         self.assertIn("pull-requests: read", build)
         self.assertNotIn(": write", build)
@@ -226,5 +228,5 @@ class WorkflowTests(unittest.TestCase):
         self.assertNotIn("checkout@", deploy)
         self.assertIn("needs: [build, deploy]", comment)
         self.assertIn("pull-requests: write", comment)
-        self.assertIn("ref: main", comment)
+        self.assertIn("ref: ${{ github.sha }}", comment)
         self.assertNotIn("head.sha", workflow)

@@ -3,8 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches: [main]
-  pull_request_target:
-    branches: [main]
+  pull_request:
     types: [opened, reopened, synchronize, closed]
   workflow_dispatch:
 
@@ -18,7 +17,7 @@ concurrency:
 jobs:
   build:
     name: Build homepage and PR previews
-    if: github.ref == 'refs/heads/main' && (github.event_name != 'pull_request_target' || github.event.pull_request.head.repo.full_name == github.repository)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -27,11 +26,10 @@ jobs:
     outputs:
       previews: ${{ steps.snapshot.outputs.previews }}
     steps:
-      # Run trusted main code; PR blobs are read only as homepage inputs.
-      - name: Checkout trusted builder
+      - name: Checkout workflow commit
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          ref: main
+          ref: ${{ github.sha }}
       - name: Set up Python
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
@@ -77,10 +75,10 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - name: Checkout trusted comment helper
+      - name: Checkout workflow commit
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          ref: main
+          ref: ${{ github.sha }}
       - name: Set up Python
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
