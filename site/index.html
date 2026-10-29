@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" data-palette="lavender">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An open source collection of focused agent skills for research, design, documents, media, and development. Find your next skill and make it yours."
+    />
+    <title>Nice Skills — Small skills. Great work.</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./themes.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script id="theme-data" type="application/json">
+      {{THEME_DATA}}
+    </script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#skills">Skip to skills</a>
+    <header class="site-header frame">
+      <a class="wordmark" href="./" aria-label="Nice Skills home"><span class="mark" aria-hidden="true">n.</span> Nice Skills</a>
+      <nav aria-label="Main navigation">
+        <a href="#skills">The skills</a>
+        <a href="#get-started">Use a skill</a>
+        <a href="https://github.com/EmbeddedLLM/nice-skills">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main class="frame">
+      <div class="hero board">
+        <div class="intro tile">
+          <h1>Small skills.<br />Great work.</h1>
+          <p>Give your agent a little more know-how. Open source skills for the things you want to make, explore, and get done.</p>
+          <a class="primary-button" href="#skills">Find your next skill <span aria-hidden="true">↘</span></a>
+          <div class="hero-note">{{COUNT}} skills. Independently usable. Yours to build with.</div>
+        </div>
+        <section class="palette tile" aria-labelledby="palette-heading">
+          <div class="palette-top">
+            <h2 id="palette-heading">Make yourself at home.</h2>
+          </div>
+          <p>This page wears {{THEME_COUNT}} different themes.<br />Try one on.</p>
+          <div class="swatch-display" aria-label="Current theme colors">
+            <div class="swatch swatch-primary"><span>Primary</span><code id="primary-hex">#E7DEFA</code></div>
+            <div class="swatch swatch-secondary"><span>Secondary</span><code id="secondary-hex">#DDF2E5</code></div>
+            <div class="swatch swatch-accent"><span>Accent</span><code id="accent-hex">#FFE3D3</code></div>
+          </div>
+          <div class="theme-control" hidden>
+            <label for="theme">Your theme</label>
+            <select id="theme">
+              {{THEME_OPTIONS}}
+            </select>
+          </div>
+          <a class="theme-credit" href="https://github.com/EmbeddedLLM/nice-skills/tree/main/skills/theme-factory"
+            >Made with theme-factory <span aria-hidden="true">↗</span></a
+          >
+          <noscript><p>Enable JavaScript to try the themes.</p></noscript>
+        </section>
+      </div>
+      <section id="skills" class="catalog" aria-labelledby="skills-heading">
+        <div class="section-heading">
+          <h2 id="skills-heading">A skill for that.</h2>
+          <p>From the first idea to the final export.</p>
+        </div>
+        <div class="filters" hidden>
+          <div class="search-field">
+            <label for="search">Find a skill</label><input id="search" type="search" placeholder="Try design, PDF, sound…" autocomplete="off" />
+          </div>
+          <div class="category-field">
+            <label for="category">Browse by focus</label
+            ><select id="category">
+              <option value="">All skills</option>
+              {{GROUP_OPTIONS}}
+            </select>
+          </div>
+          <p id="result-count" role="status" aria-live="polite">{{COUNT}} skills</p>
+        </div>
+        <div class="skill-grid">{{SKILLS}}</div>
+        <div id="empty" class="empty tile" hidden>
+          <h3>No skills found.</h3>
+          <p>Try another word, or explore the full collection.</p>
+          <button id="reset" type="button">Show all skills</button>
+        </div>
+      </section>
+      <section id="get-started" class="getting-started board" aria-labelledby="start-heading">
+        <div class="start-intro tile">
+          <h2 id="start-heading">Pick it.<br />Make it yours.</h2>
+          <p>
+            Each skill is a folder of instructions and resources. Bring the whole folder along, and give your agent something useful to work with.
+          </p>
+          <a class="primary-button" href="https://github.com/EmbeddedLLM/nice-skills/tree/main/skills"
+            >Open the collection <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <ol class="instructions tile">
+          <li>
+            <h3>Find your fit</h3>
+            <p>Read the skill's <code>SKILL.md</code> for its purpose, workflow, and requirements.</p>
+          </li>
+          <li>
+            <h3>Bring the whole folder</h3>
+            <p>
+              Copy the selected skill directory, including its scripts, references, and assets. Follow your agent's local installation instructions.
+            </p>
+          </li>
+          <li>
+            <h3>Give it a real task</h3>
+            <p>Install the local tools it needs, then describe what you want to make. No paid model-provider API is required by these skills.</p>
+          </li>
+        </ol>
+      </section>
+      <aside class="contribute tile">
+        <p>Have a little know-how to share?</p>
+        <a href="https://github.com/EmbeddedLLM/nice-skills/blob/main/CONTRIBUTING.md">Contribute a skill <span aria-hidden="true">↗</span></a>
+      </aside>
+    </main>
+    <footer class="site-footer frame">
+      <a class="wordmark" href="./">Nice Skills</a>
+      <p>Open source. Open possibilities.</p>
+      <div>
+        <a href="https://github.com/EmbeddedLLM/nice-skills/blob/main/DEPENDENCIES.md">Dependencies</a
+        ><a href="https://github.com/EmbeddedLLM/nice-skills/blob/main/LICENSE">License &amp; source notices</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -104,6 +104,10 @@ jobs:
           node tests/media/node_modules/playwright-core/cli.js install --with-deps chromium
       - name: Exercise actual capture, encoding, and failure cleanup
         run: python -m unittest discover -s tests/media -p 'test_*.py' -v
+      - name: Verify homepage interactions and responsive layouts
+        run: |
+          python tools/build_site.py
+          node --test tests/media/site.test.cjs
       - name: Exercise the design-taste inspector against the locked Chromium
         run: |
           # The vendored DevTools client launches Chrome without --no-sandbox, and Ubuntu 24.04 blocks

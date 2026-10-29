@@ -56,6 +56,23 @@ Skill-local regressions cover PDF interpreter propagation, skill metadata edge c
 
 The portable suite also checks actual recalculated spreadsheet values, formula errors versus literal text, legitimate empty-string caches, macro/external-link rejection, and a motion skill copied outside the repository. The new media skills keep local production usable without provider credentials. Tests use synthetic tones and images, not real likenesses or generated speech.
 
+## Homepage verification
+
+The homepage packaging suite runs in normal test discovery and in the Pages build:
+
+```sh
+python -m unittest discover -s tests -p 'test_site.py' -v
+```
+
+It checks complete catalog coverage, all theme choices, local asset paths, output isolation, and repeatable builds. The media job also builds the site and runs the homepage browser checks using its existing pinned Playwright Core and Chromium:
+
+```sh
+python tools/build_site.py
+node --test tests/media/site.test.cjs
+```
+
+The browser suite checks all 51 theme choices, saved and invalid preferences, blocked storage, combined search/category filtering, empty-state reset, requirements disclosure, keyboard access, JavaScript-disabled reading, and overflow at 1440, 768, 390, and 320 pixels. It serves the site under a repository URL prefix. Set `SITE_SCREENSHOTS` to a local output directory to retain full-page screenshots. Localhost binding and a working Chromium installation are required; these checks do not deploy to GitHub Pages.
+
 ## Browser and video integration
 
 The `Local motion rendering` job uses Node 24, the single-dependency [media package lock](media/package-lock.json), Playwright Core 1.63.0 and its matching Chromium revision, and the minimum-version FFmpeg asserted above. It runs independently from the office tests, without API credentials or remote scene assets:
