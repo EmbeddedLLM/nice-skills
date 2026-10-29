@@ -3,7 +3,7 @@
   "commit": "b5e8ef93930b6d828f352055a689320f138237b1",
   "retrieved_utc": "2026-10-20",
   "upstream_files_unmodified": false,
-  "main_style_count": 51,
+  "main_style_count": 59,
   "opuscar_reference_count": 98,
   "included": [
     {
@@ -9747,6 +9747,102 @@
       "path": "tools/fetch.sh",
       "bytes": 5768,
       "sha256": "05e2ca17a643bdfd49a3788afb8af0058643dceb744a477fd08efaee25c38b79"
+    },
+    {
+      "path": "styles/caption-news/STYLE.md",
+      "bytes": 17153,
+      "sha256": "ba4c0bb5dd13e49c2c2b520af5e42a28112b36354dc445d0f6ade3727b458fd2",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/caption-news/style.json",
+      "bytes": 517,
+      "sha256": "efa7d8e1dd42d11301dd5e7f1a4f66968c7b8d0259292153454a7926b6a52a0f",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/city-symphony/STYLE.md",
+      "bytes": 18474,
+      "sha256": "8b78d2b08cadb045ac1649cade1e5274fba935b1177c64c176e7567c6e8b31e1",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/city-symphony/style.json",
+      "bytes": 515,
+      "sha256": "4ad353d02e858d16534179ed39eaa05761225865dc818e0544529e2fff2fcd4b",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/countdown/STYLE.md",
+      "bytes": 17032,
+      "sha256": "867cca6e0c9bb0d6fb914cc4e9a2e295623ecd345fda9bd00bc362ff233f220f",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/countdown/style.json",
+      "bytes": 551,
+      "sha256": "d30ae465e30a1576cd08d2357e488209d5042cfde16d85dc6452562400c12e61",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/kino-montage/STYLE.md",
+      "bytes": 20124,
+      "sha256": "8c63deefda22d4677d286ddfffb243ce6385dfa7ab56fbc493705fe13908f204",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/kino-montage/style.json",
+      "bytes": 547,
+      "sha256": "57ffe5f5aabf16c010ea0ae8c96de5b265ab744307e76a473023b8b9008a7f6a",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/news-package/STYLE.md",
+      "bytes": 20556,
+      "sha256": "6f9d1b6a04878229260ea542fe71f2b77c560ed8e40df68b68e80ac4e21710ce",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/news-package/style.json",
+      "bytes": 546,
+      "sha256": "7b399ecf0a748e4f4b3dab016fda9eed2167a1c707aed6c8b0d2eee896bd7965",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/newsreel/STYLE.md",
+      "bytes": 17715,
+      "sha256": "0f82c1423d2463dfc2700b23dff9ec183f596724a4820757e189c6fa5225e600",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/newsreel/style.json",
+      "bytes": 532,
+      "sha256": "d20ae96a49893f17a46b4d549bd9324d6129e76392376b6089673f72a2a2339f",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/telestrator/STYLE.md",
+      "bytes": 16954,
+      "sha256": "7289027728dc5e1b6d095b7c7bc7806790bb579934c81682265c0c1b4897a3d0",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/telestrator/style.json",
+      "bytes": 523,
+      "sha256": "e9eb4d0796252b34b6eb5042f943258dcaeacf32e4ee8dc02b1c985cf99821ee",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/visual-investigation/STYLE.md",
+      "bytes": 18977,
+      "sha256": "9b39ebaa00c3d77ae544d7453e99b79caf4dfaae1d37798b1f995a5578aac30b",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
+    },
+    {
+      "path": "styles/visual-investigation/style.json",
+      "bytes": 562,
+      "sha256": "4c07d9fdf3c14c7ceb375c65933b7de9fba4d5b1aef788a73ddbc43596e39d8b",
+      "source_commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df"
     }
   ],
   "omitted_reference_media": [
@@ -13620,5 +13716,13 @@
     }
   ],
   "patched_date": "2026-10-21",
-  "patch_timezone": "Asia/Kuala_Lumpur"
+  "patch_timezone": "Asia/Kuala_Lumpur",
+  "supplements": [
+    {
+      "commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df",
+      "retrieved_utc": "2026-10-26",
+      "styles": ["caption-news", "city-symphony", "countdown", "kino-montage", "news-package", "newsreel", "telestrator", "visual-investigation"],
+      "scope": "STYLE.md and style.json only; existing patched runtime remains at the original snapshot."
+    }
+  ]
 }

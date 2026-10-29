@@ -24,6 +24,8 @@ Before adding complexity for a speculative or vanishingly unlikely race or secur
 4. Implement action labels and loading, empty, success, and error states as part of behavior. Label illustrative data. Keep important content available without hover or animation and respect reduced motion.
 5. For a single-file or offline deliverable, read [portable HTML](references/portable-html.md). Keep this as an output mode of the same interface workflow.
 
+For material-first page planning, targeted audit/redesign modes, component selection, or design-to-motion work, read [design workflows](references/design-workflows.md).
+
 ## Optional Openverse imagery
 
 When a page benefits from photographs or illustrations, use the free anonymous [Openverse image API](https://api.openverse.org/v1/) through an available HTTP tool with permitted network access. Example:

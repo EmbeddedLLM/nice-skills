@@ -17,6 +17,8 @@ Use local Pillow drawing/encoding and optional FFmpeg conversion. No media API, 
 
 From the skill directory, import `GIFBuilder` from `core.gif_builder`, with optional drawing helpers in `core.frame_composer` and timing helpers in `core.easing`. Add equal-sized Pillow frames and call `builder.save("new.gif")`. The builder composites onto its explicit background, white by default; use a separate palette-transparency workflow for transparent output.
 
+For a supplied browser video or ordered screenshots, use [browser recordings](references/browser-recordings.md) and `scripts/encode_gif.py` for trim, speed, final hold, and checked byte budgets.
+
 ## Optional Openverse image assets
 
 Use the free anonymous [Openverse image API](https://api.openverse.org/v1/) for stills to animate when network access and an HTTP tool are available. Example:

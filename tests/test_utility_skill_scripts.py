@@ -172,7 +172,9 @@ class CatalogTests(unittest.TestCase):
             for document in root.rglob("*.md"):
                 if document.is_relative_to(pinned.resolve()) or "node_modules" in document.parts:
                     continue
-                for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", document.read_text(errors="replace")):
+                prose = re.sub(r"(?ms)^[ \t]*```[^\n]*\n.*?^[ \t]*```[^\n]*$", "", document.read_text(errors="replace"))
+                prose = re.sub(r"`[^`\n]+`", "", prose)
+                for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", prose):
                     url = urlsplit(target)
                     if url.scheme or url.netloc or not url.path:
                         continue

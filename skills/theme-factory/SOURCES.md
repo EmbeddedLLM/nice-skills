@@ -1,5 +1,7 @@
 # Sources and provenance
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 Reference colours and displayed like counts were observed on **20 October 2026** during the guide refresh. This skill was packaged on **21 October 2026 (Asia/Kuala_Lumpur)** from that guide; packaging did not re-fetch popularity data.
 
 - Color Hunt Vintage: https://colorhunt.co/palettes/vintage
@@ -24,3 +26,9 @@ This package includes selected colour values, source metadata, original role map
 - Office colour scheme structure: https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.colorscheme
 
 These links explain the implementation concepts. The current packaging task did not re-fetch them. Numerical checks use the standard sRGB relative-luminance formula and final opaque HEX values; XML is validated structurally, not in native PowerPoint.
+
+## hallmark: adaptation retrieved 2026-10-26
+
+Source: [https://github.com/Nutlope/hallmark](https://github.com/Nutlope/hallmark/tree/7ec868225c6caa040558c321ee0fefa0e73f83a8), revision `7ec868225c6caa040558c321ee0fefa0e73f83a8`. License: MIT; retained in [LICENSE-hallmark.txt](LICENSE-hallmark.txt).
+
+Adapted 48 theme recipes as optional material references, with a local list/show/CSS exporter. Excluded preview photographs, screenshots, photo catalogs, paid generation, installers, hooks, and automatic project mutation. These are web material recipes, separate from the existing 51 cross-format palettes. Font names are suggestions, not bundled font files; use installed fallbacks or acquire fonts with their own notices.

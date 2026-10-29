@@ -1,5 +1,7 @@
 # Sources and modifications
 
+Browse the [material catalogue](references/material-catalogue.json) for local paths, uses, source links, revisions, and recorded licenses. Unresolved provenance fields are written as `"Unknown"`; the catalogue does not replace the notices and scope below.
+
 Adapted at the repository owner's request from [the presenter archive](https://github.com/jiahuei/agent-skills/tree/235e920a4e494b74b46af67f813167699257c039/archive/presenter-video), revision `235e920a4e494b74b46af67f813167699257c039`. The source checkout's unrelated files and uncommitted material were not imported.
 
 The archive attributes its job template, initializer, preflight, evidence checker, segmentation helper, finalizer, and production guidance to [Lanshu](https://github.com/cclank/lanshu-create-ai-presenter-video/tree/762d3ee42623b75a4ec63ad6aa61ace69d78ce6e), revision `762d3ee42623b75a4ec63ad6aa61ace69d78ce6e`, under the retained [MIT notice](LICENSE-lanshu.txt). The repository owner's provider ledger and mock tests are retained under the [repository MIT license](LICENSE.repository.txt) with this authorized adaptation. This does not assert a blanket license over unrelated material in the source repository.

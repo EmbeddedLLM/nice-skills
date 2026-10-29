@@ -137,3 +137,16 @@ Nearest Lemo styles overlap in some features but differ in their invariants; see
 ## Find and load
 
 Use `scripts/styles.py list --query "watercolor"`, `list --query "水彩"`, `show lemo:whiteboard`, or `show twoclipping:ui-morph`. A broad name matching two variants returns both IDs rather than choosing silently.
+
+## Additional edit and documentary styles (2026-10-26)
+
+These eight additions bundle style guides and metadata. Author a new film with the existing browser starter; their upstream demo footage, sample factual stories, and provider-specific scripts are not bundled.
+
+- [Caption News](../assets/lemo/styles/caption-news/STYLE.md): Social news, Report explainers, Data shorts.
+- [Time-lapse Symphony](../assets/lemo/styles/city-symphony/STYLE.md): City films, Music montages, Openers.
+- [Live Countdown Split-screen](../assets/lemo/styles/countdown/STYLE.md): Launches, Countdowns, Live events.
+- [Constructivist Montage](../assets/lemo/styles/kino-montage/STYLE.md): Industry histories, Milestones, Collective effort.
+- [Broadcast News Package](../assets/lemo/styles/news-package/STYLE.md): News round-ups, Bulletins, Market updates.
+- [1920s Newsreel](../assets/lemo/styles/newsreel/STYLE.md): History stories, Fads & eras, Anniversaries.
+- [Sports Telestrator](../assets/lemo/styles/telestrator/STYLE.md): Sports analysis, Match recaps, Coaching.
+- [Visual Investigation](../assets/lemo/styles/visual-investigation/STYLE.md): Reconstructions, Fact-checks, Incident reports.

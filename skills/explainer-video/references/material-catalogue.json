@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "skill": "explainer-video",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 1,
+    "unknown_sources": 0,
+    "collections": {
+      "lanshu": 1
+    }
+  },
+  "entries": [
+    {
+      "id": "lanshu:adaptation",
+      "collection": "lanshu",
+      "title": "Lanshu-derived video workflow",
+      "category": "workflow",
+      "uses": ["Story/job preparation, validation, captions/segmentation and delivery, with local safety and portability changes."],
+      "description": "Story/job preparation, validation, captions/segmentation and delivery, with local safety and portability changes.",
+      "paths": ["SKILL.md", "references", "scripts"],
+      "source_url": "https://github.com/cclank/lanshu-create-ai-presenter-video/tree/762d3ee42623b75a4ec63ad6aa61ace69d78ce6e",
+      "source_commit": "762d3ee42623b75a4ec63ad6aa61ace69d78ce6e",
+      "license": "MIT",
+      "notice_paths": ["LICENSE-lanshu.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "Adapted through the attributed archive. Local rendering, provider-ledger additions, and replacement implementations are original repository contributions; no provider assets are bundled.",
+      "distribution_url": "https://github.com/jiahuei/agent-skills/tree/235e920a4e494b74b46af67f813167699257c039/archive/explainer-video"
+    }
+  ]
+}

@@ -18,12 +18,21 @@ et-xmlfile==2.0.0
     # via openpyxl
 fonttools==4.60.1
     # via -r tests/requirements.in
+llvmlite==0.44.0
+    # via numba
 lxml==6.0.2
     # via
     #   -r tests/../skills/documents/requirements.txt
     #   -r tests/../skills/slides/requirements.txt
     #   python-docx
     #   python-pptx
+numba==0.61.2
+    # via -r tests/../skills/sound-design/requirements.txt
+numpy==2.2.6
+    # via
+    #   -r tests/../skills/sound-design/requirements.txt
+    #   numba
+    #   scipy
 openpyxl==3.1.5
     # via
     #   -r tests/../skills/documents/requirements.txt
@@ -62,6 +71,8 @@ pyyaml==6.0.3
     # via -r tests/../skills/skill-creator/requirements.txt
 reportlab==4.4.4
     # via -r tests/../skills/pdf/requirements.txt
+scipy==1.15.3
+    # via -r tests/../skills/sound-design/requirements.txt
 typing-extensions==4.16.0
     # via
     #   python-docx

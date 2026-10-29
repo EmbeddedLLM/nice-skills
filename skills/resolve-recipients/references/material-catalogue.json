@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "skill": "resolve-recipients",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 1,
+    "unknown_sources": 1,
+    "collections": {
+      "legacy": 1
+    }
+  },
+  "entries": [
+    {
+      "id": "legacy:resolve-recipients",
+      "collection": "legacy",
+      "title": "Resolve Recipients supplied-snapshot adaptation",
+      "category": "workflow",
+      "uses": [
+        "Disambiguate people and bound recipient groups before an authorized message, invitation, or meeting action. Use for ambiguous names, cross-platform identities, or requests such as everyone on a project; this skill resolves identities and does not send."
+      ],
+      "description": "Disambiguate people and bound recipient groups before an authorized message, invitation, or meeting action. Use for ambiguous names, cross-platform identities, or requests such as everyone on a project; this skill resolves identities and does not send.",
+      "paths": ["SKILL.md"],
+      "source_url": "Unknown",
+      "source_commit": "Unknown",
+      "license": "Unknown",
+      "notice_paths": [],
+      "provenance_path": "SOURCES.md",
+      "notes": "SOURCES.md identifies a user-supplied snapshot, but records no verified upstream URL or revision. Local rewrites and additions coexist with inherited material; this entry does not assign the inherited license to every file."
+    }
+  ]
+}

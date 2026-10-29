@@ -295,6 +295,20 @@ class MotionTests(ScriptCase):
         self.run_python(self.scripts / 'prepare_project.py', self.work / 'bad', '--style', '../whiteboard', code=2)
         self.assertFalse((self.work / 'bad').exists())
 
+    def test_guide_only_style_has_no_fictitious_resource_paths(self):
+        """Ensures documentary guides create usable starters without promising absent demos."""
+        project = self.work / 'documentary'
+        result = self.run_python(self.scripts / 'prepare_project.py', project,
+                                 '--style', 'visual-investigation').json()
+        self.assertIsNone(result['resources'])
+        config = json.loads((project / 'motion-project.json').read_text())
+        self.assertIsNone(config['style_resources'])
+        self.assertIn('guidance only', config['instructions'])
+        self.assertTrue((project / 'STYLE.md').is_file())
+        self.assertTrue((project / 'index.html').is_file())
+        self.assertFalse((project / 'style').exists())
+        self.run_python(self.scripts / 'audit_assets.py', project, '--strict')
+
     def test_asset_audit_distinguishes_existing_and_missing_files(self):
         """Strict audits report a missing local asset and succeed once it is supplied."""
         self.write('film/index.html', '<img src="picture.svg">')

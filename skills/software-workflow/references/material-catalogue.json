@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "skill": "software-workflow",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 2,
+    "unknown_sources": 0,
+    "collections": {
+      "addy": 1,
+      "deepseek": 1
+    }
+  },
+  "entries": [
+    {
+      "id": "addy:workflow",
+      "collection": "addy",
+      "title": "Addy workflow adaptation",
+      "category": "workflow",
+      "uses": ["Planning, implementation, contracts, testing, security, performance, migration and handoff."],
+      "description": "Planning, implementation, contracts, testing, security, performance, migration and handoff.",
+      "paths": ["SKILL.md", "references"],
+      "source_url": "https://github.com/addyosmani/agent-skills/tree/aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "source_commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "notice_paths": ["LICENSE-addy.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    },
+    {
+      "id": "deepseek:workflow",
+      "collection": "deepseek",
+      "title": "Deepseek workflow adaptation",
+      "category": "workflow",
+      "uses": ["Failure ownership, CI reliability, state, profiling, simplification and documentation."],
+      "description": "Failure ownership, CI reliability, state, profiling, simplification and documentation.",
+      "paths": ["SKILL.md", "references"],
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness/tree/22ddee3792402c3e70ec5f86a63c3e3e895a2f60",
+      "source_commit": "22ddee3792402c3e70ec5f86a63c3e3e895a2f60",
+      "license": "MIT",
+      "notice_paths": ["LICENSE-deepseek.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    }
+  ]
+}

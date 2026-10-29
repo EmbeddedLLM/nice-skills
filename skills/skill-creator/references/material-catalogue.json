@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "skill": "skill-creator",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 1,
+    "unknown_sources": 1,
+    "collections": {
+      "legacy": 1
+    }
+  },
+  "entries": [
+    {
+      "id": "legacy:skill-creator",
+      "collection": "legacy",
+      "title": "Skill Creator supplied-snapshot adaptation",
+      "category": "workflow",
+      "uses": [
+        "Create or revise a portable agent skill with precise triggers, concise instructions, self-contained resources, and structural and behavioral checks. Use for skill packages rather than ordinary task documentation."
+      ],
+      "description": "Create or revise a portable agent skill with precise triggers, concise instructions, self-contained resources, and structural and behavioral checks. Use for skill packages rather than ordinary task documentation.",
+      "paths": ["SKILL.md", "references", "scripts"],
+      "source_url": "Unknown",
+      "source_commit": "Unknown",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.anthropic.txt", "LICENSE.openai.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "SOURCES.md identifies a user-supplied snapshot, but records no verified upstream URL or revision. Local rewrites and additions coexist with inherited material; this entry does not assign the inherited license to every file."
+    }
+  ]
+}

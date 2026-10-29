@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "skill": "procedural-3d",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 3,
+    "unknown_sources": 0,
+    "collections": {
+      "blender-plugin": 1,
+      "dioramas": 1,
+      "img2threejs": 1
+    }
+  },
+  "entries": [
+    {
+      "id": "blender-plugin:workflow",
+      "collection": "blender-plugin",
+      "title": "Blender Plugin workflow adaptation",
+      "category": "workflow",
+      "uses": ["Units, headless scene APIs, assembly and multi-view checks."],
+      "description": "Units, headless scene APIs, assembly and multi-view checks.",
+      "paths": ["references/reconstruction.md", "references/scene-delivery.md"],
+      "source_url": "https://github.com/sixtysevenlf/dsh-blender-plugin/tree/f9f115f86b3c40fbe8d3dba811283acf71df03f9",
+      "source_commit": "f9f115f86b3c40fbe8d3dba811283acf71df03f9",
+      "license": "BSD-3-Clause",
+      "notice_paths": ["LICENSE-blender-plugin.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    },
+    {
+      "id": "dioramas:workflow",
+      "collection": "dioramas",
+      "title": "Dioramas workflow adaptation",
+      "category": "workflow",
+      "uses": ["Interactive scenes, performance and reduced motion."],
+      "description": "Interactive scenes, performance and reduced motion.",
+      "paths": ["references/scene-delivery.md"],
+      "source_url": "https://github.com/blendi-remade/dioramas/tree/868539fb5b64a843071a2247d5d8bacb706a07b1",
+      "source_commit": "868539fb5b64a843071a2247d5d8bacb706a07b1",
+      "license": "MIT",
+      "notice_paths": ["LICENSE-dioramas.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    },
+    {
+      "id": "img2threejs:workflow",
+      "collection": "img2threejs",
+      "title": "Img2Threejs workflow adaptation",
+      "category": "workflow",
+      "uses": ["Staged reconstruction, camera matching and semantic part/pivot contracts."],
+      "description": "Staged reconstruction, camera matching and semantic part/pivot contracts.",
+      "paths": ["SKILL.md", "references/reconstruction.md"],
+      "source_url": "https://github.com/img2threejs/img2threejs/tree/954cd5845e90efd045694bab725d68a9863c20e0",
+      "source_commit": "954cd5845e90efd045694bab725d68a9863c20e0",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE-img2threejs.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    }
+  ]
+}

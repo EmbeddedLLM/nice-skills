@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "skill": "frontend-design",
+  "updated_utc": "2026-10-27",
+  "path_base": "skill-root",
+  "unknown_value": "Unknown",
+  "counts": {
+    "entries": 4,
+    "unknown_sources": 1,
+    "collections": {
+      "hallmark": 1,
+      "impeccable": 1,
+      "landing": 1,
+      "legacy": 1
+    }
+  },
+  "entries": [
+    {
+      "id": "hallmark:workflow",
+      "collection": "hallmark",
+      "title": "Hallmark workflow adaptation",
+      "category": "workflow",
+      "uses": ["Material selection, content-led page anatomy and redesign preservation."],
+      "description": "Material selection, content-led page anatomy and redesign preservation.",
+      "paths": ["references/design-workflows.md"],
+      "source_url": "https://github.com/Nutlope/hallmark/tree/7ec868225c6caa040558c321ee0fefa0e73f83a8",
+      "source_commit": "7ec868225c6caa040558c321ee0fefa0e73f83a8",
+      "license": "MIT",
+      "notice_paths": ["LICENSE-hallmark.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    },
+    {
+      "id": "impeccable:workflow",
+      "collection": "impeccable",
+      "title": "Impeccable workflow adaptation",
+      "category": "workflow",
+      "uses": ["Targeted audit, critique, polish, distill and harden passes."],
+      "description": "Targeted audit, critique, polish, distill and harden passes.",
+      "paths": ["references/design-workflows.md"],
+      "source_url": "https://github.com/pbakaus/impeccable/tree/bce6e0fbfa836a13902a9632d6e1f042747e0bf7",
+      "source_commit": "bce6e0fbfa836a13902a9632d6e1f042747e0bf7",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE-impeccable.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    },
+    {
+      "id": "landing:workflow",
+      "collection": "landing",
+      "title": "Landing workflow adaptation",
+      "category": "workflow",
+      "uses": ["Audience/action planning and design-to-motion fidelity."],
+      "description": "Audience/action planning and design-to-motion fidelity.",
+      "paths": ["references/design-workflows.md"],
+      "source_url": "https://github.com/elayadesign/ai-design-skills/tree/a2735a3eaf092eaaffb6dc17df25de33ef3bd048",
+      "source_commit": "a2735a3eaf092eaaffb6dc17df25de33ef3bd048",
+      "license": "MIT",
+      "notice_paths": ["LICENSE-landing.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "See the source record for adaptation scope and retained notices."
+    },
+    {
+      "id": "legacy:frontend-design",
+      "collection": "legacy",
+      "title": "Frontend Design supplied-snapshot adaptation",
+      "category": "workflow",
+      "uses": [
+        "Design and implement websites, application interfaces, and portable interactive HTML artifacts with responsive layouts and usable interaction states. Use for new UI, substantial redesigns, or a shareable HTML deliverable."
+      ],
+      "description": "Design and implement websites, application interfaces, and portable interactive HTML artifacts with responsive layouts and usable interaction states. Use for new UI, substantial redesigns, or a shareable HTML deliverable.",
+      "paths": ["SKILL.md", "references", "scripts"],
+      "source_url": "Unknown",
+      "source_commit": "Unknown",
+      "license": "Apache-2.0",
+      "notice_paths": ["LICENSE.txt"],
+      "provenance_path": "SOURCES.md",
+      "notes": "SOURCES.md identifies a user-supplied snapshot, but records no verified upstream URL or revision. Local rewrites and additions coexist with inherited material; this entry does not assign the inherited license to every file."
+    }
+  ]
+}

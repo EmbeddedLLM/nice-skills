@@ -16,6 +16,8 @@ Deliver editable SVG and requested previews using local geometry and browser ren
 4. For comparable variants, freeze subject, pose, canvas, and anchor positions. Let a primary style govern geometry; secondary styles may supply color/material. Use [modes](reference/modes.md) and [SVG craft](reference/svg-craft.md) for conversions and blending.
 5. Use real data for infographics and document the origin of reused assets. Never invent facts to fill the composition.
 
+For architecture, data relationships, processes, timelines, or other diagrams, read [semantic diagrams](references/semantic-diagrams.md) to select the structure and preserve relationship meaning.
+
 ## Validate and render
 
 [Backend setup](references/backend.md) and [requirements.txt](requirements.txt) describe the local Python/Chromium dependencies. Resolve commands from this skill directory:

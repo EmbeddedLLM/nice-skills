@@ -40,3 +40,7 @@
 /skills/create-motion-videos/assets/mg-styles15/
 /skills/create-motion-videos/assets/lyric-alignment/
 /skills/design-taste/examples/
+
+# Upstream catalog snapshots retain hashes verified by design-research/validate_data.py.
+/skills/design-research/data/google-font-licenses.json
+/skills/design-research/data/phosphor-icons-upstream.json
