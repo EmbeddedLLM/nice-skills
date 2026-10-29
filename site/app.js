@@ -84,3 +84,11 @@ document.querySelector(".skill-grid").addEventListener("click", (event) => {
   readerContent.scrollTop = 0;
 });
 document.getElementById("close-reader").addEventListener("click", () => reader.close());
+reader.addEventListener("click", (event) => {
+  if (event.target !== reader) return;
+  // Backdrop clicks target the dialog too; its own empty space must stay clickable.
+  const bounds = reader.getBoundingClientRect();
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) {
+    reader.close();
+  }
+});

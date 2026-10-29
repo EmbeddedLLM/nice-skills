@@ -150,6 +150,16 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
     assert.deepEqual(errors, []);
     const dialog = page.getByRole("dialog");
     const skillLinks = page.locator(".skill h3 a");
+    // Outside clicks dismiss the reader and restore focus; content clicks keep it open.
+    for (const width of [1440, 390]) {
+      await page.setViewportSize({ width, height: 1000 });
+      await skillLinks.first().click();
+      await page.locator("#reader-content h1").first().click();
+      assert.equal(await dialog.isVisible(), true, "Reading inside must not dismiss the preview");
+      await page.mouse.click(2, 2);
+      assert.equal(await dialog.isVisible(), false, `Backdrop click closes the reader at ${width}`);
+      assert.equal(await skillLinks.first().evaluate((element) => document.activeElement === element), true);
+    }
     // A queued close event must not erase a document opened before that event is delivered.
     await skillLinks.first().click();
     await page.evaluate(async () => {
