@@ -46,9 +46,12 @@
           </div>
           <div class="theme-control" hidden>
             <label for="theme">Your theme</label>
+            <button id="previous-theme" type="button" aria-label="Previous theme" title="Previous theme">←</button>
             <select id="theme">
               {{THEME_OPTIONS}}
             </select>
+            <button id="next-theme" type="button" aria-label="Next theme" title="Next theme">→</button>
+            <button id="random-theme" type="button">Random theme</button>
           </div>
           <a class="theme-credit" href="https://github.com/EmbeddedLLM/nice-skills/tree/main/skills/theme-factory"
             >Made with theme-factory <span aria-hidden="true">↗</span></a

@@ -41,6 +41,9 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
     const catalog = await readFile(resolve(__dirname, "../../skills/README.md"), "utf8");
     const skillCount = catalog.split("\n").filter((line) => line.startsWith("| [")).length;
     assert.equal(await page.locator(".skill:visible").count(), skillCount);
+    const panelWidth = await page.locator(".palette").evaluate((element) => element.getBoundingClientRect().width);
+    const introWidth = await page.locator(".intro").evaluate((element) => element.getBoundingClientRect().width);
+    assert.ok(panelWidth >= introWidth - 1, "Theme panel should occupy at least half the hero width");
     const themes = await page.locator("#theme option").evaluateAll((options) => options.map((option) => option.value));
     assert.equal(themes.length, 51);
     for (const slug of themes) {
@@ -56,6 +59,27 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
       });
       assert.equal(styles.primary, styles.swatch);
       assert.notEqual(styles.background, "rgba(0, 0, 0, 0)");
+    }
+    await page.getByLabel("Your theme").selectOption(themes[0]);
+    await page.getByRole("button", { name: "Previous theme", exact: true }).click();
+    assert.equal(await page.getByLabel("Your theme").inputValue(), themes.at(-1));
+    await page.getByRole("button", { name: "Next theme", exact: true }).click();
+    assert.equal(await page.getByLabel("Your theme").inputValue(), themes[0]);
+    await page.getByRole("button", { name: "Next theme", exact: true }).focus();
+    await page.keyboard.press("Space");
+    assert.equal(await page.getByLabel("Your theme").inputValue(), themes[1]);
+    await page.getByRole("button", { name: "Previous theme", exact: true }).focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await page.getByLabel("Your theme").inputValue(), themes[0]);
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      const previous = await page.getByLabel("Your theme").inputValue();
+      await page.getByRole("button", { name: "Random theme", exact: true }).click();
+      const current = await page.getByLabel("Your theme").inputValue();
+      assert.notEqual(current, previous);
+      assert.ok(themes.includes(current));
+      assert.equal(await page.locator("html").getAttribute("data-palette"), current);
+      await page.reload();
+      assert.equal(await page.getByLabel("Your theme").inputValue(), current);
     }
     await page.getByLabel("Your theme").selectOption(themes[0]);
     await page.reload();
@@ -90,7 +114,10 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
             .join(", "),
         )}`,
       );
-      if (screenshots) await page.screenshot({ path: join(screenshots, `${width}.png`), fullPage: true });
+      if (screenshots) {
+        await page.locator(".hero").screenshot({ path: join(screenshots, `${width}-hero.png`) });
+        await page.screenshot({ path: join(screenshots, `${width}.png`), fullPage: true });
+      }
     }
     await page.goto(url);
     await page.keyboard.press("Tab");
@@ -115,6 +142,8 @@ test("Homepage browsing and every theme work on GitHub project Pages", async () 
     await restrictedPage.goto(url);
     await restrictedPage.getByLabel("Your theme").selectOption(themes[0]);
     assert.equal(await restrictedPage.locator("html").getAttribute("data-palette"), themes[0]);
+    await restrictedPage.getByRole("button", { name: "Next theme", exact: true }).click();
+    assert.equal(await restrictedPage.getByLabel("Your theme").inputValue(), themes[1]);
     await restricted.close();
   } finally {
     if (browser) await browser.close();

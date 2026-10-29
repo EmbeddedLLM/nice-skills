@@ -122,7 +122,7 @@ nav a:hover,
 }
 .board {
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 8px;
 }
 .tile {
@@ -183,7 +183,7 @@ nav a:hover,
 }
 .palette h2 {
   font-size: clamp(28px, 3vw, 40px);
-  max-width: 11ch;
+  max-width: 18ch;
 }
 .palette > p {
   margin-top: 24px;
@@ -222,17 +222,26 @@ nav a:hover,
   color: var(--mca-on-accent);
 }
 .theme-control {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  gap: 12px 8px;
   margin-top: auto;
 }
 .theme-control select {
-  flex: 1;
   min-width: 0;
+  padding-inline: 8px;
 }
 .theme-control label {
+  grid-column: 1 / -1;
   font-size: 15px;
+}
+#random-theme {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+.theme-control button:hover {
+  background: var(--mca-selected-surface);
+  color: var(--mca-on-selected);
 }
 .theme-credit {
   font-size: 14px;
@@ -489,6 +498,9 @@ code {
   }
   .swatch-display {
     min-height: 150px;
+  }
+  .swatch {
+    padding-inline: 8px;
   }
   .catalog {
     margin-block: 64px;

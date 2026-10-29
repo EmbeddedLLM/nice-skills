@@ -34,7 +34,7 @@ The skill layout follows the [Agent Skills specification](https://agentskills.io
 
 ## Repository homepage
 
-The homepage showcases every published skill with search, focus filters, local requirements, and all 51 theme-factory palettes. The selected theme is saved in the visitor's browser. Skill links and setup guidance remain available without JavaScript.
+The homepage showcases every published skill with search, focus filters, local requirements, and all 51 theme-factory palettes. Visitors can choose from the dropdown, step through themes with Previous/Next arrows (wrapping at either end), or select a different random theme. Every choice is saved in the visitor's browser. Skill links and setup guidance remain available without JavaScript.
 
 Build and preview locally with Python 3.12 or later; no additional packages are needed:
 

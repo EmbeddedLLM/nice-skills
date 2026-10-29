@@ -21,13 +21,27 @@ try {
 }
 applyTheme(savedTheme);
 document.querySelector(".theme-control").hidden = false;
-themeSelect.addEventListener("change", () => {
-  applyTheme(themeSelect.value);
+function chooseTheme(slug) {
+  applyTheme(slug);
   try {
     localStorage.setItem(storageKey, themeSelect.value);
   } catch {
     // Browsing in a storage-restricted context does not disable the picker.
   }
+}
+
+function moveTheme(offset) {
+  const count = themeSelect.options.length;
+  const index = (themeSelect.selectedIndex + offset + count) % count;
+  chooseTheme(themeSelect.options[index].value);
+}
+
+themeSelect.addEventListener("change", () => chooseTheme(themeSelect.value));
+document.getElementById("previous-theme").addEventListener("click", () => moveTheme(-1));
+document.getElementById("next-theme").addEventListener("click", () => moveTheme(1));
+document.getElementById("random-theme").addEventListener("click", () => {
+  // A nonzero offset makes Random choose a different theme without retries.
+  moveTheme(1 + Math.floor(Math.random() * (themeSelect.options.length - 1)));
 });
 
 const search = document.getElementById("search");
