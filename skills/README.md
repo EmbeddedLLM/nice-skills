@@ -19,7 +19,7 @@ Research guidance draws on the permitted Adaptive Deep Research reference; the o
 | [algorithmic-art](algorithmic-art/SKILL.md) | Seeded procedural art and interactive exploration | Browser Canvas/SVG; dependency-free starter included |
 | [vector-art](vector-art/SKILL.md) | Editable SVG creation/conversion and 44 style recipes | Python; Playwright/Chromium for previews |
 | [gif-creator](gif-creator/SKILL.md) | Compact GIF loops, palettes, timing, and size checks | Pillow; optional FFmpeg |
-| [create-motion-videos](create-motion-videos/SKILL.md) | Code-rendered films, explainers, launches, and loops | Node, FFmpeg, Chromium; optional local audio/TTS |
+| [create-motion-videos](create-motion-videos/SKILL.md) | Code-rendered films, launches, and loops with speech alignment and transition continuity | Node, FFmpeg, Chromium; optional local audio/TTS |
 | [explainer-video](explainer-video/SKILL.md) | Narration-led explanations from supplied audio and authored scenes; optional paid TTS | Python, FFmpeg/ffprobe; Bash and jq for final delivery |
 | [presenter-video](presenter-video/SKILL.md) | Presenter-led edits from supplied footage; optional authorized presenter generation | Python, FFmpeg/ffprobe, Bash, jq |
 | [theme-factory](theme-factory/SKILL.md) | Theme selection/application, contrast checks, and offline exports | Python standard library; browser for previews |
