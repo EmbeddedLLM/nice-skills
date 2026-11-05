@@ -120,6 +120,8 @@ node core/render/readcheck.mjs "$FILM_DIR"
 
 Read core/README.md for schemas. Use the actual language/voice pairing. Kokoro runs offline after downloads; EdgeTTS is online. Supplied recordings can be aligned. Do not claim a speech check for an unsupported ASR language.
 
+`core/tts/tts.py` accepts line records with `id`, `text` and optional `voice`, `speed`, `lang`; it has no pause or visual-cue field. Its `dur.json` records generated WAV lengths, not word onsets. For an explicit pause, generate separate phrases and place the gap in the film's own timeline/mix: `next_start = current_start + measured_clip_duration + gap`. Measure the final clips after any trimming or speed changes, preserve word tails, and account for retained silence when judging the audible pause. Derive visual/caption cues from that same timeline; check phrase onsets within each clip separately.
+
 Write the project's score/foley/mix script from its cue map. core/audio supplies primitives, not an automatically composed score. Align all layers to the picture timeline.
 
 ```sh
