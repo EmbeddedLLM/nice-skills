@@ -17,6 +17,6 @@ Adapted failure ownership, CI isolation, performance measurement, simplification
 ## Local revisions
 
 - The first instruction in `SKILL.md` states that project instruction files, such as `AGENTS.md`, override this skill.
-- `SKILL.md` adds a narrower trigger description, a conflict order, a rule for proportional application, a UI example, and a note that working records stay out of new files unless requested.
-- `references/contracts-and-state.md` limits failure ownership and failure messages to failures that a supported path can reach.
-- `references/ui-and-native-apps.md` is locally authored. It does not adapt either upstream source.
+- The core principles, workflow, conflict order, and handoff format follow this repository's `AGENTS.md`: simplicity first, approach validation, owner-first fixes, buy-in for speculative robustness, simplification after implementation, honest verification, and the `## Summary` and `## Verification` pull request structure.
+- The eight task references were consolidated into four: plan and design, build and verify, debug and measure, and change and hand off. Web-specific examples were generalized to other platforms and domains. Translation-workflow guidance was removed.
+- Failure handling is limited to failures that a supported path can reach. State ownership guidance requires side-effect-free render and status functions and the discarding of obsolete asynchronous results.
