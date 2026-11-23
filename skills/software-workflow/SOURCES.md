@@ -13,3 +13,10 @@ Consolidated all 25 engineering skill topics into task-routed references. Remove
 Source: [https://github.com/deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/tree/22ddee3792402c3e70ec5f86a63c3e3e895a2f60), revision `22ddee3792402c3e70ec5f86a63c3e3e895a2f60`. License: MIT; retained in [LICENSE-deepseek.txt](LICENSE-deepseek.txt).
 
 Adapted failure ownership, CI isolation, performance measurement, simplification, session-derived state, documentation, migration, and handoff practices. Excluded DSH-only Cordis APIs, stack APIs, package paths, artwork conventions, translation tooling, and AI grading policy.
+
+## Local revisions
+
+- The first instruction in `SKILL.md` states that project instruction files, such as `AGENTS.md`, override this skill.
+- `SKILL.md` adds a narrower trigger description, a conflict order, a rule for proportional application, a UI example, and a note that working records stay out of new files unless requested.
+- `references/contracts-and-state.md` limits failure ownership and failure messages to failures that a supported path can reach.
+- `references/ui-and-native-apps.md` is locally authored. It does not adapt either upstream source.
