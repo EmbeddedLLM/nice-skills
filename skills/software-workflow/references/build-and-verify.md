@@ -4,7 +4,7 @@
 
 Make the smallest change that delivers the requested behavior, and preserve supported behavior outside that change. The defect being fixed is not a preservation requirement. Locate its callers, the state owner, the boundary contracts, and the existing tests. Follow the existing style of each file and use meaningful names.
 
-Prefer platform conventions and components: the standard library, native controls and dialogs, and idiomatic types. A platform component already provides accessibility, localization, and system behavior that a custom copy must rebuild. A new dependency must remove more work than it adds. Pin its exact version and commit the lockfile.
+Prefer platform conventions and components: the standard library, native controls and dialogs, and idiomatic types. A platform component already provides accessibility, localization, and system behavior that a custom copy must rebuild. A new dependency must remove more work than it adds. Follow the project's version-pinning and lockfile policy, and update the tracked lockfile when the policy requires it. Committing the change is a separate decision that needs authorization.
 
 Write comments only to explain why. Comment logic that is surprising, encodes a business rule or architectural decision, deviates from a convention, reflects a trade-off or workaround, or depends on ordering or a non-obvious invariant. State the problem, the requirement, and the consequence of violating it. Do not narrate the code. Remove comments that become obsolete.
 
