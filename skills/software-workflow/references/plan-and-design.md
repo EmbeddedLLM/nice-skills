@@ -14,13 +14,15 @@ For a question about a library, framework, SDK, engine, or protocol, find the in
 
 An interface is any boundary that other code or people depend on: a function, an API, a command-line tool, a file format, a message, a configuration key, or user-visible behavior. Before changing one, define its observable contract: inputs, outputs, errors, ordering, cancellation, permissions, and compatibility. Follow the project's naming and error conventions. Prefer additive changes when old and new consumers coexist. Keep machine-readable error identities stable, because display text is not an identity. Validate untrusted data once, at the trust boundary. Do not repeat the check between internal layers that already received validated data.
 
+Before you add or move a configuration field, inspect its base and sibling models, presets, validators, and consumers. Choose its owner by responsibility, not by where a failing test accepts it. Then verify defaults, preset inheritance, validation, explicit overrides, and serialization across the affected consumers. A field on the correct model can still lose an explicit override during serialization.
+
 ## State ownership
 
 Give each piece of state one owner. Derive displayed, formatted, or cached values from that owner instead of storing a second copy. When a default depends on other state, decide whether the owner stores it or computes it on read. Store it when later updates must keep it.
 
 Keep functions that render, format, or report status free of side effects. When such a function changes state, starts work, or requests permission, the behavior depends on call order and frequency, and it becomes hard to reproduce.
 
-For asynchronous or concurrent work, tag each request with a generation or token. Discard a result that no longer matches the current state, so that an obsolete result cannot replace newer state. Keep thread-bound state, such as UI state, on its required thread or actor. Do not hide I/O in a getter or property.
+When a newer request supersedes an older one, such as a new search query or a new selection, tag each request with a generation or token. Discard a result whose token is no longer current, so that an obsolete result cannot replace newer state. Do not discard results of independent operations, such as two separate saves: each one must still report its success or failure. Keep thread-bound state, such as UI state, on its required thread or actor. Do not hide I/O in a getter or property.
 
 ## Failure handling
 
@@ -28,6 +30,6 @@ Handle a failure only when a supported path can reach it. An operation is not fa
 
 For each reachable failure, identify the owner of its state, reporting, cleanup, and recovery. State whether the failure leaves no effects, partial effects, committed effects, or an unknown outcome. Catching an error does not roll back changes, and logging is not recovery. Background work has the same obligations as foreground work. When the failure affects the user, show what failed and a safe next action. Keep diagnostic detail and secrets out of user-facing text.
 
-When an operation with external effects must be retried safely, bind one idempotency key to one intent and reuse it across attempts. Keep enough state to reconcile an unknown outcome, because a timeout does not prove that nothing happened. Do not add this machinery when retries are harmless.
+Before you add retry machinery, decide whether repetition is harmless and which duplicate effect must be prevented. Reuse what the operation, a transaction, a uniqueness constraint, or the external provider already guarantees. Add stored deduplication only for the remaining gap. In that case, bind one key to one intent, reuse it across attempts, define how duplicates are handled and how long keys are kept, and reconcile unknown outcomes, because a timeout does not prove that nothing happened. A local record alone cannot show whether a remote operation succeeded.
 
 For persisted or replayed state, persist facts and schemas, not handles, connections, or process ownership. Recovery must be deterministic and must not repeat external effects. Caches can be discarded, so they must not become a second source of truth.

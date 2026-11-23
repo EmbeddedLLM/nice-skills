@@ -2,7 +2,7 @@
 
 ## Implement
 
-Start with the smallest slice that preserves existing behavior. Locate its callers, the state owner, the boundary contracts, and the existing tests. Follow the existing style of each file and use meaningful names.
+Make the smallest change that delivers the requested behavior, and preserve supported behavior outside that change. The defect being fixed is not a preservation requirement. Locate its callers, the state owner, the boundary contracts, and the existing tests. Follow the existing style of each file and use meaningful names.
 
 Prefer platform conventions and components: the standard library, native controls and dialogs, and idiomatic types. A platform component already provides accessibility, localization, and system behavior that a custom copy must rebuild. A new dependency must remove more work than it adds. Pin its exact version and commit the lockfile.
 
@@ -14,7 +14,7 @@ Derive tests from observable behavior and preservation requirements, not from th
 
 Exercise real boundaries where feasible: the file system, a database, a child process, a device, input events, a public API, or cancellation. Keep tests isolated and deterministic with synthetic fixtures.
 
-Run focused checks first, then the project's CI checks for formatting, linting, static analysis, and tests. Use the commands and tool versions that CI defines. Do not weaken the quality bar to make a check pass: deleted assertions, skipped tests, suppressions, lowered budgets, and placeholder implementations can hide a regression. Do not reformat unrelated files. When a check needs an environment you do not have, such as a device, an operating system, or a visual inspection, report it as unverified with the exact command or manual step.
+Before you run a check, find its working directory and package environment from the nearest manifest or the CI job that runs it. In a repository with several projects, a command from the root can use the wrong environment. Run focused checks first, then the project's CI checks for formatting, linting, static analysis, and tests. Use the commands and tool versions that CI defines. Do not weaken the quality bar to make a check pass: deleted assertions, skipped tests, suppressions, lowered budgets, and placeholder implementations can hide a regression. Do not reformat unrelated files. When a check needs an environment you do not have, such as a device, an operating system, or a visual inspection, report it as unverified with the exact command or manual step.
 
 ## Review
 

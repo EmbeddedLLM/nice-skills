@@ -24,7 +24,7 @@ Name the user operation and the point where it completes. Record the workload si
 
 Use synthetic fixtures with fixed seeds and realistic distributions. Never copy private user data into benchmarks. Compare the baseline and the candidate on equal inputs, and report the samples together with the aggregate that drives the decision.
 
-Profile before optimizing. Remove unnecessary work before adding caches or parallelism. A cache needs a real reuse case, an invalidation owner, and a measured memory cost. Use the project's own targets, not budgets imported from another project.
+Base an optimization on evidence: the source, observed operation counts, measurements, or a profile. For example, a query count can show that a list fetch issues one query per item. Profile when the cause or the cost is uncertain. Measure the baseline and the candidate under comparable workloads before you claim an improvement, and label an unmeasured impact as an inference. Remove unnecessary work before adding caches or parallelism. A cache needs a real reuse case, an invalidation owner, and a measured memory cost. Use the project's own targets, not budgets imported from another project.
 
 ## Observe
 

@@ -1,6 +1,6 @@
 ---
 name: software-workflow
-description: Plan, implement, debug, verify, and hand off software changes in any language, platform, or domain, using evidence from the existing project. Use when a change needs a plan, a root cause, a contract or compatibility decision, a performance measurement, a migration, or a release. Do not use for a single-file edit, a mechanical rename, or a question that needs no code change. A review-only request stays read-only.
+description: Plan, implement, debug, verify, and hand off software changes in any language, platform, or domain, using evidence from the existing project. Use when a change needs a plan, a root cause, a contract or compatibility decision, a performance measurement, a migration, or a release. Also use it to review code or architecture. Do not use it for routine mechanical edits, such as a rename or a formatting fix, or for simple factual questions. A review-only request stays read-only.
 license: MIT; see SOURCES.md and LICENSE-addy.txt and LICENSE-deepseek.txt
 ---
 
