@@ -13,3 +13,11 @@ Consolidated all 25 engineering skill topics into task-routed references. Remove
 Source: [https://github.com/deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/tree/22ddee3792402c3e70ec5f86a63c3e3e895a2f60), revision `22ddee3792402c3e70ec5f86a63c3e3e895a2f60`. License: MIT; retained in [LICENSE-deepseek.txt](LICENSE-deepseek.txt).
 
 Adapted failure ownership, CI isolation, performance measurement, simplification, session-derived state, documentation, migration, and handoff practices. Excluded DSH-only Cordis APIs, stack APIs, package paths, artwork conventions, translation tooling, and AI grading policy.
+
+## Local revisions
+
+- The first instruction in `SKILL.md` states that project instruction files, such as `AGENTS.md`, override this skill.
+- The core principles, workflow, conflict order, and handoff format follow this repository's `AGENTS.md`: simplicity first, approach validation, owner-first fixes, buy-in for speculative robustness, simplification after implementation, honest verification, and the `## Summary` and `## Verification` pull request structure.
+- The seven Markdown task guides were consolidated into four: plan and design, build and verify, debug and measure, and change and hand off. Web-specific examples were generalized to other platforms and domains. Translation-workflow guidance was removed.
+- Retry guidance starts from the duplicate effect to prevent and reuses existing guarantees. Stored deduplication keeps the atomic key claim and payload check from the base revision. Optimization requires evidence, with profiling reserved for uncertain causes or costs. Implementation guidance preserves behavior outside the requested change. Configuration changes verify defaults, inheritance, overrides, and serialization. Checks run in the environment that their manifest or CI job selects.
+- Failure handling is limited to failures that a supported path can reach. State ownership guidance requires side-effect-free render and status functions and the discarding of results from superseded requests only.
